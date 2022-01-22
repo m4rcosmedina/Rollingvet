@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <Container fluid className="footerContainer">
       <Row>
-        <Col sm={2} className="textoFooter text-center py-4">
+        <Col sm={3} className="textoFooter text-center">
           {" "}
           <img
             src={logoRollingvet}
@@ -22,7 +22,7 @@ const Footer = () => {
             className="logoRollingvet"
           />{" "}
         </Col>
-        <Col sm={7} className="textoFooter py-3"> <h3 className="text-center">CONTACTANOS!</h3>
+        <Col sm={6} className="textoFooter py-3"> <h3 className="text-center">CONTACTANOS!</h3>
           <div>
             <ul className="py-4 listaContactos">
               <li className="py-1">
