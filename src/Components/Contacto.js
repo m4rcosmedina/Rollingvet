@@ -14,7 +14,7 @@ import "../Contacto.css";
 
 const Contacto = () => {
   return (
-    <div>
+    <div className="fondoGeneral">
         <h1 className="text-center">CONTACTO</h1><hr/>
       <Container>
         <Row>
@@ -24,7 +24,7 @@ const Contacto = () => {
               <Form.Label>Ingrese su nombre y apellido</Form.Label>
               <InputGroup className="mb-3">
                 <FormControl
-                  placeholder="Ej:Natalia Olmi"
+                  placeholder="Ej:Cosme Fulanito"
                   aria-label="Nombre y Apellido"
                   type="text"
                   required
@@ -63,14 +63,14 @@ const Contacto = () => {
                   label="Estoy de acuerdo con los términos y condiciones"
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button  type="submit" className="botonEnviar" >
                 Enviar
               </Button>
             </Form>
           </Col>
 
           <Col sm={6}>
-            <Ratio aspectRatio={"16x9"}>
+            <Ratio aspectRatio={"4x3"}>
               <iframe
                 title="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777519!2d-65.209390485296!3d-26.836696096500955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1638571420780!5m2!1ses-419!2sar "

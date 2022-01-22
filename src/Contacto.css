@@ -1,3 +1,9 @@
 .fondoGeneral{
     background-image:url(./Components/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
 }
+
+.botonEnviar{
+    margin-bottom: 2em;
+    background-color:#02be9d ;
+    border-style: none;
+}
