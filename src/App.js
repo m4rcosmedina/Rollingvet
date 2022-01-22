@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./Components/Inicio";
 import Error404 from "./Components/Error404";
 import ListaTurnos from "./Components/ListaTurnos";
+import Contacto from "./Components/Contacto";
 
 function App() {
   return (
@@ -12,11 +13,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Inicio></Inicio>}></Route>
           <Route exact path="*" element={<Error404></Error404>}></Route>
-          <Route
-            exact
-            path="/ListaTurnos"
-            element={<ListaTurnos></ListaTurnos>}
-          ></Route>
+          <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
+          <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
         </Routes>
       </Router>
       <style>
