@@ -1,0 +1,14 @@
+.imgLogoNavbar {
+    height: 150px;
+    width: 150px;
+}
+
+
+.textoNavbar{
+    font-weight: bold;
+    color: #f7fff7;
+}
+.navbarContainer{
+    background-color:#02be9d;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import logoRollingvet from "../Components/img/logoRollingvet.png";
+import logoRollingvet from "../assets/img/logoRollingvet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWhatsapp,
