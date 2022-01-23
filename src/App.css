@@ -1,7 +1,13 @@
-*{
+
+* {
     font-family: 'Righteous', cursive;
-    font-family: 'Roboto Mono', monospace;
 }
+
+.navbarBg{
+    background-color: #02be9d;
+}
+    
+
 
 .textoFooter{
     font-weight: bold;

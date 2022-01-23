@@ -5,10 +5,13 @@ import Inicio from "./Components/Inicio";
 import Error404 from "./Components/Error404";
 import ListaTurnos from "./Components/ListaTurnos";
 import Contacto from "./Components/Contacto";
+import Footer from "../src/Components/Footer";
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Router>
         <Routes>
           <Route exact path="/" element={<Inicio></Inicio>}></Route>
@@ -17,10 +20,7 @@ function App() {
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
         </Routes>
       </Router>
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&display=swap');
-      </style>
+      <Footer></Footer>
     </div>
   );
 }
