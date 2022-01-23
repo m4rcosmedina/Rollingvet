@@ -14,7 +14,7 @@
     color: #f7fff7;
 }
 .footerContainer{
-    background-color:#1A535c;
+    background-color:#02be9d;
 }
 .iconosFooter{
     display: flex;
@@ -26,8 +26,13 @@
     transform: scale(1.2);
 }
 .logoRollingvet{
-    max-width: 17em;
+    max-width: 20em;
     margin-left:auto;
+}
+
+.logoRollingvet:hover{
+    transform:scale(1.2);
+    transition: 2ms;
 }
 .iconoContacto{
     margin-right: 1em;
