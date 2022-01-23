@@ -8,7 +8,7 @@ const Navegador = () => {
     <>
       <Navbar className="navbarBg" expand="lg">
         <Container>
-          <img src={LogoNavbar} className="imgLogoNavbar" alt="logoNavbar" />
+          <img src={LogoNavbar } className="imgLogoNavbar" alt="logoNavbar" />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
