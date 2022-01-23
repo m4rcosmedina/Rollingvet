@@ -13,9 +13,7 @@ const PromosPrincipal = () => {
           <Card.Body>
             <Card.Title>PROMO 1</Card.Title>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -27,7 +25,8 @@ const PromosPrincipal = () => {
           <Card.Body>
             <Card.Title>PROMO 2</Card.Title>
             <Card.Text>
-              lorem10
+            BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
+
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -39,8 +38,8 @@ const PromosPrincipal = () => {
           <Card.Body>
             <Card.Title>PROMO 3</Card.Title>
             <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{" "}
+            BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
+
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -52,9 +51,8 @@ const PromosPrincipal = () => {
           <Card.Body>
             <Card.Title>PROMO 4</Card.Title>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
+
             </Card.Text>
           </Card.Body>
           <Card.Footer>
