@@ -1,6 +1,6 @@
 import React from "react";
-import styleNavbar from "./CSS/styleNavbar.css";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import "../CSS/styleNavbar.css"
+import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoNavbar from "../assets/img/logoNavbar.png";
 
 const Navegador = () => {

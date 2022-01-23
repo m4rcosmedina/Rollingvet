@@ -1,7 +1,7 @@
 import React from "react";
-import CarouselPrincipal from "./CarouselPrincipal";
-import ContainerPrincipal from "./ContainerPrincipal";
-import PromosPrincipal from "./PromosPrincipal";
+import CarouselPrincipal from "../Components/CarouselPrincipal";
+import ContainerPrincipal from "../Components/ContainerPrincipal";
+import PromosPrincipal from "../Components/PromosPrincipal";
 
 
 const Inicio = () => {

@@ -1,12 +1,12 @@
-import "./App.css";
+import "./CSS/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Inicio from "./Components/Inicio";
-import Error404 from "./Components/Error404";
-import ListaTurnos from "./Components/ListaTurnos";
+import Inicio from "./pages/Inicio";
+import Error404 from "./pages/Error404";
+import ListaTurnos from "./pages/ListaTurnos";
 import Footer from "../src/Components/Footer";
 import Navbar from './Components/Navbar';
-import Contacto from './Components/Contacto';
+import Contacto from './pages/Contacto';
   
 
 function App() {

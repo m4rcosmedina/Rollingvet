@@ -42,3 +42,36 @@
     list-style: none;
     margin-left: auto;
 }
+
+.ladoIzq{
+    background-color: #02be9d;
+ }
+ 
+ .ladoDer{
+    background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
+ }
+ 
+ 
+ .logoHorizontal{
+     max-width: 46vw;
+ }
+ .numero404{
+ font-size: 20vw;
+ }
+ .texto404{
+    font-size: 4vw;
+ }
+ 
+ .numero404:hover{
+    transform: scale(1.2);
+ }
+
+ .fondoGeneral{
+    background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
+}
+
+.botonEnviar{
+    margin-bottom: 2em;
+    background-color:#02be9d ;
+    border-style: none;
+}

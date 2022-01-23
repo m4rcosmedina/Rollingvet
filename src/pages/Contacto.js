@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import "../CSS/App.css";
 import {
   Form,
   InputGroup,
@@ -10,7 +10,6 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import "../Contacto.css";
 
 const Contacto = () => {
   return (
@@ -80,7 +79,6 @@ const Contacto = () => {
         </Row>
       </Container>
 
-      <Footer></Footer>
     </div>
   );
 };
