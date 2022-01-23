@@ -5,8 +5,8 @@
 
 
 .textoNavbar{
-    font-weight: bold;
     color: #f7fff7;
+    font-family: 'Righteous', cursive;
 }
 .navbarContainer{
     background-color:#02be9d;
