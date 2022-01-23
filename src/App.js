@@ -24,7 +24,12 @@ function App() {
         </Routes>
       </Router>
       <Footer></Footer>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&family=VT323&display=swap');
+      </style>
     </div>
+    
   );
 }
 

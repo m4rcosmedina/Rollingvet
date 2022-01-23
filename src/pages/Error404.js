@@ -24,10 +24,7 @@ const Error404 = () => {
         </Row>
       </Container>
 
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&family=VT323&display=swap');
-      </style>
+     
     </div>
   );
 };
