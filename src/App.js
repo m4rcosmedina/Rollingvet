@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./Components/Inicio";
 import Error404 from "./Components/Error404";
 import ListaTurnos from "./Components/ListaTurnos";
-import Contacto from "./Components/Contacto";
 import Footer from "../src/Components/Footer";
 import Navbar from './Components/Navbar';
+import Contacto from './Components/Contacto';
+  
 
 function App() {
   return (

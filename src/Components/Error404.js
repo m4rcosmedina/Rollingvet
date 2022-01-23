@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../Error404.css";
-import logoHorizontal from "../Components/img/logoHorizontal.png";
+import logoHorizontal from '../assets/img/logoHorizontal.png' ;
 import { Container, Row, Col } from "react-bootstrap";
 
 const Error404 = () => {
