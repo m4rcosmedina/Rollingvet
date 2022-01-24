@@ -20,7 +20,6 @@ const ContainerPrincipal = () => {
                 <Card.Title className="py-3">
                   CONOCÉ A NUESTROS ESPECIALISTAS
                 </Card.Title>
-
                 <Carousel.Item>
                   <img
                     src={doctor1}
@@ -37,7 +36,6 @@ const ContainerPrincipal = () => {
                   />
                   <Carousel.Caption></Carousel.Caption>
                 </Carousel.Item>
-
                 <Carousel.Item>
                   <img
                     src={doctor3}
@@ -66,12 +64,12 @@ const ContainerPrincipal = () => {
             </Card.Body>
           </Card>
           <Card className="mx-4">
-            <Card.Title className="py-4 text-center">
+            <Card.Title className="py-5 text-center">
               SOLICITÁ TU TURNO AQUÍ
             </Card.Title>
 
             <Card.Img variant="top" src={perrito} />
-            <Card.Body className="text-center">
+            <Card.Body className="text-center py-4">
               <Button
                 type="submit"
                 variant="outline-primary"
