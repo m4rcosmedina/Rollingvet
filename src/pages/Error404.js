@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/App.css";
-import logoHorizontal from '../assets/img/logoHorizontal.png' ;
+import logoHorizontal from '../assets/img/logoHorizontal.png';
 import { Container, Row, Col } from "react-bootstrap";
 
 const Error404 = () => {
@@ -10,12 +10,10 @@ const Error404 = () => {
       <Container fluid>
         <Row>
           <Col sm={6} className="ladoIzq text-center">
-            
-              <img
-                src={logoHorizontal}
-                className="logoHorizontal"
-                alt="logoHorizontal"/>
-            
+            <img
+              src={logoHorizontal}
+              className="logoHorizontal"
+              alt="logoHorizontal" />
           </Col >
           <Col sm={6} className="ladoDer py-4">
             <p className="text-center numero404"> 404</p>
@@ -23,8 +21,6 @@ const Error404 = () => {
           </Col>
         </Row>
       </Container>
-
-     
     </div>
   );
 };

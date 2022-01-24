@@ -6,39 +6,39 @@ import slider3 from '../assets/img/slider3.jpg'
 
 
 const CarouselPrincipal = () => {
-    return (
-        <div>
-            <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={slider1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={slider2}
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={slider3}
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-        </div>
-    );
+  return (
+    <div>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={slider1}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={slider2}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={slider3}
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
 };
 
 export default CarouselPrincipal;

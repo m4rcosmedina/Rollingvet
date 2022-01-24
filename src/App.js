@@ -9,8 +9,6 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 
-  
-
 function App() {
   return (
     <div>
@@ -29,7 +27,7 @@ function App() {
         url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&family=VT323&display=swap');
       </style>
     </div>
-    
+
   );
 }
 
