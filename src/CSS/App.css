@@ -72,10 +72,17 @@
 
 .botonEnviar{
     margin-bottom: 2em;
-    background-color:#02be9d ;
     border-style: none;
 }
 
 .cardsPromo{
     color: #02be9d;
+}
+
+.cuadroComentarios{
+    margin-top:4em;
+}
+
+.textoComentarios{
+    color:blue;
 }
