@@ -1,54 +1,70 @@
-import React from 'react';
-import {Card,CardGroup} from 'react-bootstrap';
+import React from "react";
+import { Card, CardGroup, Container, Carousel, Button } from "react-bootstrap";
+import pizza from "../assets/img/pizza.jpg";
+import "../CSS/App.css";
+
 
 const ContainerPrincipal = () => {
-    return (
-        <div>
-            <CardGroup>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Natalia conductora de camion</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardGroup>
-            
-        </div>
-    );
+  return (
+    <div>
+      <Container>
+        <CardGroup className="fondoGeneral my-4">
+          <Card className="mx-4">
+            <Card.Body className="text-center">
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    src={pizza}
+                    alt="First slide"
+                    className="d-block w-100"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    src={pizza}
+                    alt="Second slide"
+                    className="d-block w-100"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    src={pizza}
+                    alt="Third slide"
+                    className="d-block w-100"
+                  />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+              <Card.Title>CONOCÉ A NUESTROS ESPECIALISTAS</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card className="mx-4">
+            <Card.Img variant="top" src={pizza} />
+            <Card.Body className="text-center">
+              <Card.Title>
+                REGISTRATE Y RECIBI TU CUPON 15% OFF EN TU PRIMERA COMPRA!{" "}
+              </Card.Title>
+              <Card.Text></Card.Text>
+              <Button type="submit" className="botonEnviar">
+                QUIERO MI CUPÓN!
+              </Button>
+            </Card.Body>
+          </Card>
+          <Card className="mx-4">
+            <Card.Img variant="top" src={pizza} />
+            <Card.Body className="text-center">
+              <Card.Title>SOLICITÁ TU TURNO AQUÍ</Card.Title>
+              <Button type="submit" className="botonEnviar">
+                RESERVAR TURNO
+              </Button>
+            </Card.Body>
+          </Card>
+        </CardGroup>
+      </Container>
+    </div>
+  );
 };
 
 export default ContainerPrincipal;
