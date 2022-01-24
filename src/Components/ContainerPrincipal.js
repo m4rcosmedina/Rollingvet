@@ -49,7 +49,7 @@ const ContainerPrincipal = () => {
           </Card>
           <Card className="mx-4">
             <Card.Title className="py-4 text-center">
-              REGISTRATE Y RECIBI TU CUPON 15% OFF EN TU PRIMERA COMPRA!{" "}
+              CONOCÉ NUESTROS PLANES{" "}
             </Card.Title>
             <Card.Img variant="top" src={perrito} />
             <Card.Body className="text-center">
@@ -59,7 +59,7 @@ const ContainerPrincipal = () => {
                 variant="outline-primary"
                 className="botonEnviar"
               >
-                QUIERO MI CUPÓN!
+                QUIERO SABER MAS!
               </Button>
             </Card.Body>
           </Card>
