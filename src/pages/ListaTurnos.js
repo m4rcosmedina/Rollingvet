@@ -9,6 +9,7 @@ import "react-clock/dist/Clock.css";
 
 const ListaTurnos = () => {
     const [selectedDate, setSelectedDate] = useState(null)
+
     return (
         <div className="fondoGeneral">
             <h1 className='text-center py-4'>TURNOS</h1>
@@ -16,19 +17,24 @@ const ListaTurnos = () => {
                 <Form>
                     <Form.Group className="mb-3">
                         <Form.Label>Seleccione un profesional</Form.Label>
-                        <Form.Select>
+                        <Form.Select required>
                             <option>Dr. Milagro</option>
                             <option>Dr. NoMilagro</option>
                         </Form.Select>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Label>Seleccione la fecha</Form.Label>
-                        <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} dateFormat="dd/MM/yyyy" placeholderText='25/01/2022' minDate={new Date()} filterDate={date => date.getDay() !== 6 && date.getDay() !== 0} isClearable  isClearable showYearDropdown scrollableMonthYearDropdown locale={es}
+                        <Form.Label>Fecha</Form.Label>
+                        <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} dateFormat="dd/MM/yyyy" placeholderText='25/01/2022' minDate={new Date()} filterDate={date => date.getDay() !== 6 && date.getDay() !== 0} showYearDropdown scrollableMonthYearDropdown locale={es} required
                         />
                     </Form.Group>
                     <Form.Group className='mb-3'>
-                        <Form.Label>Seleccione la hora</Form.Label>
-                        <TimePicker />
+                        <Form.Label>Hora</Form.Label>
+                        <TimePicker className="ms-2" hourPlaceholder='02' minutePlaceholder='50' required />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">Seleccione un animal
+                        <Form.Check type="checkbox" label="Gato" />
+                        <Form.Check type="checkbox" label="Perro" />
+                        <Form.Check type="checkbox" label="Otro" />
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label>Seleccione el motivo de su consulta</Form.Label>
