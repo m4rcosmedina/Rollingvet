@@ -15,6 +15,7 @@ const Contacto = () => {
   return (
     <div className="fondoGeneral">
       <h1 className="text-center">CONTACTO</h1><hr />
+        <h1 className="text-center py-4">CONTACTO</h1><hr/>
       <Container>
         <Row>
           <Col sm={6}>
@@ -62,7 +63,8 @@ const Contacto = () => {
                   label="Estoy de acuerdo con los términos y condiciones"
                 />
               </Form.Group>
-              <Button type="submit" className="botonEnviar" >
+              <Button type="submit" className="botonEnviar" ></Button>
+              <Button  type="submit" className="botonEnviar" variant="info" >
                 Enviar
               </Button>
             </Form>
