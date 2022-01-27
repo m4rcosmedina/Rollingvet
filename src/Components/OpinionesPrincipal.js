@@ -21,6 +21,10 @@ const OpinionesPrincipal = () => {
           "Me encanto la atencion, los profesionales son tan buenos que me
           cortaron el pelo a mi tambien!"
         </h5>
+        <h5 className="nombreComentarios">Rodrigo Bazán</h5>
+        <h5 className="textoComentarios">
+          "Pesimo servicio"
+        </h5>
       </Container>
 
       <Modal show={show} onHide={handleClose}>
