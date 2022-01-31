@@ -1,7 +1,7 @@
-import React from "react";
-import { Button, Modal, Form, Container } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Modal, Form } from "react-bootstrap";
 import "../CSS/App.css";
-import { useState } from "react";
+import ListaComentarios from "./ListaComentarios";
 
 const OpinionesPrincipal = () => {
   const [show, setShow] = useState(false);
@@ -9,51 +9,64 @@ const OpinionesPrincipal = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  let comentariosLocalstorage =
+    JSON.parse(localStorage.getItem("comentarios")) || [];
+  const [listaComentarios, setListaComentarios] = useState(
+    comentariosLocalstorage
+  );
+  const [comentario, setComentario] = useState("");
+
+  useEffect(() => {
+    console.log("esto es una prueba");
+    localStorage.setItem("comentarios", JSON.stringify(listaComentarios));
+  }, [listaComentarios]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setListaComentarios([...listaComentarios, comentario]);
+    setComentario("");
+  };
+
   return (
     <div className="py-4 text-center fondoGeneral">
       <Button variant="outline-primary" onClick={handleShow}>
         Dejanos aqui tus comentarios!
       </Button>
 
-      <Container className="py-4 text-center bg-outline-primary cuadroComentarios">
-        <h5 className="nombreComentarios">Natalia Acevedo</h5>
-        <h5 className="textoComentarios">
-          "Me encanto la atencion, los profesionales son tan buenos que me
-          cortaron el pelo a mi tambien!"
-        </h5>
-        <h5 className="nombreComentarios">Rodrigo Bazán</h5>
-        <h5 className="textoComentarios">
-          "Pesimo servicio"
-        </h5>
-      </Container>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Dejanos tus comentarios</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Nombre</Form.Label>
-              <Form.Control type="text" placeholder="ej:Cosme Fulanito" />
-            </Form.Group>
-                     <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1">
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3">
               <Form.Label>Tus comentarios</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control className="py-2"
+                type="text"
+                placeholder="ingrese un texto"
+                onChange={(e) => setComentario(e.target.value.trimStart())}
+                value={comentario}
+              />
+              <hr></hr>
+              <Button variant="outline-danger" className="text-center " onClick={handleClose} >
+                Cerrar
+              </Button>
+              <Button
+                variant="outline-primary"
+                type="submit" className="text-center"
+                onClick={handleClose}
+              >
+                Enviar
+              </Button>
             </Form.Group>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="outline-primary" onClick={handleClose}>
-            Cerrar
-          </Button>
-          <Button variant="outline-primary" onClick={handleClose}>
-            Enviar
-          </Button>
-        </Modal.Footer>
+        <Modal.Footer></Modal.Footer>
       </Modal>
+
+      <ListaComentarios
+        arregloComentarios={listaComentarios}
+      ></ListaComentarios>
     </div>
   );
 };
