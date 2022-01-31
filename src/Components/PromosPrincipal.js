@@ -2,7 +2,6 @@ import React from "react";
 import "../CSS/App.css";
 import { Card, CardGroup, Container } from "react-bootstrap";
 import perrito from "../assets/img/perrito.jpg";
-import pizza from "../assets/img/pizza.jpg";
 
 
 const PromosPrincipal = () => {

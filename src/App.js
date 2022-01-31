@@ -23,7 +23,6 @@ function App() {
           <Route exact path="*" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
-
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
         </Routes>
       </Router>
