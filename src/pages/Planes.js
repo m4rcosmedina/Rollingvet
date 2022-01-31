@@ -52,7 +52,7 @@ const Planes = () => {
                     type="text"
                     required
                     minLength={3}
-                    maxLength={"35"}
+                    maxLength={35}
                   />
                 </InputGroup>
                 <Form.Group className="mb-3">
@@ -73,8 +73,8 @@ const Planes = () => {
                     aria-label="Nombre y Apellido"
                     type="number"
                     required
-                    minLength={"6"}
-                    maxLength={"10"}
+                    minLength={6}
+                    maxLength={10}
                   />
                 </InputGroup>
                 <Form.Group
