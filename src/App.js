@@ -13,8 +13,6 @@ import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
 
 
-  
-
 function App() {
   return (
     <div>
@@ -25,7 +23,6 @@ function App() {
           <Route exact path="*" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
-
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
         </Routes>
       </Router>
@@ -35,7 +32,7 @@ function App() {
         url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&family=VT323&display=swap');
       </style>
     </div>
-    
+
   );
 }
 

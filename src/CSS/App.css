@@ -54,16 +54,20 @@
  
  .logoHorizontal{
      max-width: 46vw;
+     margin-top: 10vw;
  }
  .numero404{
- font-size: 20vw;
+ font-size: 18vw;
  }
  .texto404{
     font-size: 4vw;
  }
- 
+ .boton404{
+     margin-top: 4vw;
+ }
  .numero404:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: #02be9d;
  }
 
  .fondoGeneral{

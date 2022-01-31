@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, CardGroup, Container, Carousel, Button } from "react-bootstrap";
+import {
+  Card,
+  CardGroup,
+  Container,
+  Carousel,
+  Button,
+  Nav,
+} from "react-bootstrap";
 import perrito from "../assets/img/perrito.jpg";
 import doctor1 from "../assets/img/doctor1.jpg";
 import doctor2 from "../assets/img/doctor2.jpg";
@@ -70,13 +77,15 @@ const ContainerPrincipal = () => {
 
             <Card.Img variant="top" src={perrito} />
             <Card.Body className="text-center py-4">
-              <Button
-                type="submit"
-                variant="outline-primary"
-                className="botonEnviar"
-              >
-                RESERVAR TURNO
-              </Button>
+              <Nav.Link href="/ListaTurnos" className="navbarInicio">
+                <Button
+                  type="submit"
+                  variant="outline-primary"
+                  className="botonEnviar"
+                >
+                  RESERVAR TURNO
+                </Button>
+              </Nav.Link>
             </Card.Body>
           </Card>
         </CardGroup>

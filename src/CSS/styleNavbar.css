@@ -8,12 +8,12 @@
 .textoNavbar{
     color: #f7fff7;
     font-family: 'Righteous', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: auto;
 }
 
 
-.navbarContacto:hover,.navbarInicio:hover,.navbarQuienes:hover {
+.navbarContacto:hover,.navbarInicio:hover,.navbarQuienes:hover,.navbarLogin:hover {
     transform: scale(1.03) ;
 }
 .navbarContainer{
