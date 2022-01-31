@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/App.css";
-import logoHorizontal from '../assets/img/logoHorizontal.png';
-import { Container, Row, Col } from "react-bootstrap";
+import logoNavbar from '../assets/img/logoNavbar.png';
+import { Container, Row, Col,Nav,Button } from "react-bootstrap";
 
 const Error404 = () => {
   return (
@@ -11,9 +11,19 @@ const Error404 = () => {
         <Row>
           <Col sm={6} className="ladoIzq text-center">
             <img
-              src={logoHorizontal}
+              src={logoNavbar}
               className="logoHorizontal"
               alt="logoHorizontal" />
+
+               <Nav.Link href="/" className="boton404">
+                <Button
+                  type="submit"
+                  variant="outline-light"
+                  className="botonEnviar"
+                >
+                 Volver al Home
+                </Button>
+                </Nav.Link>
           </Col >
           <Col sm={6} className="ladoDer py-4">
             <p className="text-center numero404"> 404</p>

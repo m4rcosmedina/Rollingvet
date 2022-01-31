@@ -59,7 +59,7 @@ const ListaTurnos = () => {
             <Form.Label>Seleccione el motivo de su consulta</Form.Label>
             <Form.Control type="textarea" />
           </Form.Group>
-          <Button type="submit" className="botonEnviar">
+          <Button type="submit" variant="outline-primary" className="botonEnviar">
             Enviar
           </Button>
         </Form>

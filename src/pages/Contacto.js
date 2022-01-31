@@ -14,7 +14,7 @@ import {
 const Contacto = () => {
   return (
     <div className="fondoGeneral">
-      <h1 className="text-center">CONTACTO</h1> <hr></hr>
+      <h1 className="text-center py-2">CONTACTO</h1> <hr/>
       <Container>
         <Row>
           <Col sm={6}>
@@ -62,7 +62,7 @@ const Contacto = () => {
                   label="Estoy de acuerdo con los términos y condiciones"
                 />
               </Form.Group>
-              <Button  type="submit" className="botonEnviar" variant="info" >
+              <Button  type="submit" className="botonEnviar" variant="outline-primary" >
                 Enviar
               </Button>
             </Form>
