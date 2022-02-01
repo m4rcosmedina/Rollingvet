@@ -53,7 +53,7 @@ const OpinionesPrincipal = () => {
               </Button>
               <Button
                 variant="outline-primary"
-                type="submit" className="text-center"
+                type="submit" className="text-center botonModal"
                 onClick={handleClose}
               >
                 Enviar
