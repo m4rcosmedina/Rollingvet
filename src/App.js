@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
+import QuienesSomos from './pages/QuienesSomos';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/" element={<Inicio></Inicio>}></Route>
           <Route exact path="*" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
+          <Route exact path="/QuienesSomos" element={<QuienesSomos></QuienesSomos>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
         </Routes>

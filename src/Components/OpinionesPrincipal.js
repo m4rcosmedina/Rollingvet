@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Modal, Form } from "react-bootstrap";
+import { Button, Modal, Form, Card } from "react-bootstrap";
 import "../CSS/App.css";
 import ListaComentarios from "./ListaComentarios";
 
@@ -28,7 +28,7 @@ const OpinionesPrincipal = () => {
   };
 
   return (
-    <div className="py-4 text-center fondoGeneral">
+    <div className="py-4 text-center ">
       <Button variant="outline-primary" onClick={handleShow}>
         Dejanos aqui tus comentarios!
       </Button>
@@ -63,10 +63,18 @@ const OpinionesPrincipal = () => {
         </Modal.Body>
         <Modal.Footer></Modal.Footer>
       </Modal>
-
+      <Card className="container mt-3">
+  <Card.Header>Comentarios</Card.Header>
+  <Card.Body>
+    <Card.Text>
       <ListaComentarios
         arregloComentarios={listaComentarios}
       ></ListaComentarios>
+      
+    </Card.Text>
+    
+  </Card.Body>
+</Card>
     </div>
   );
 };

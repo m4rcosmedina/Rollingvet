@@ -22,7 +22,7 @@ const Footer = () => {
             className="logoRollingvet"
           />{" "}
         </Col>
-        <Col sm={6} className="textoFooter py-3"> <h3 className="text-center">CONTACTANOS!</h3>
+        <Col sm={6} className="textoFooter py-3"> <h3 className="text-center">¡CONTACTANOS!</h3>
           <div>
             <ul className="py-4 listaContactos">
               <li className="py-1">
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </Col>
         <Col sm={3} className="textoFooter py-3 text-center">
-          <h3 className="Text-center">SEGUINOS!</h3>
+          <h3 className="Text-center">SIGAMOS CONECTADOS</h3>
           <div>
             <ul className="py-5 iconosFooter">
               <FontAwesomeIcon

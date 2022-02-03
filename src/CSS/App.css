@@ -1,10 +1,20 @@
 
 * {
     font-family: 'Righteous', Helvetica, sans-serif;
+    
+
+}
+main{
+    background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .navbarBg{
-    background-color: #02be9d;
+    background: -webkit-radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
+    background: radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
 }
     
 
@@ -14,8 +24,10 @@
     color: #f7fff7;
 }
 .footerContainer{
-    background-color:#02be9d;
+    background: -webkit-radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
+    background: radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
 }
+
 .iconosFooter{
     display: flex;
     justify-content: space-evenly;
@@ -72,6 +84,10 @@
 
  .fondoGeneral{
     background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .botonEnviar{
@@ -94,3 +110,8 @@
 .botonModal{
     margin-left: 1rem;
 }
+
+.movimiento:hover {-webkit-transform:scale(1.02);transform:scale(1.02);
+    z-index: 1;
+    transition: 300ms;
+    }

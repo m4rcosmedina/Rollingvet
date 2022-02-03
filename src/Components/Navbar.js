@@ -28,7 +28,7 @@ const Navegador = () => {
               <Nav.Link href="/" className="navbarInicio">
                 Inicio
               </Nav.Link>
-              <Nav.Link href="" className="navbarQuienes">
+              <Nav.Link href="/QuienesSomos" className="navbarQuienes">
                 Quiénes Somos
               </Nav.Link>
               <Nav.Link href="/Contacto" className="navbarContacto">

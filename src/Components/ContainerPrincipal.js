@@ -16,58 +16,50 @@ import "../CSS/App.css";
 
 const ContainerPrincipal = () => {
   return (
-    <div>
+    <div className="">
       <Container>
         <h1 className="text-center py-2">NUESTROS SERVICIOS</h1>
         <hr />
-        <CardGroup className="fondoGeneral my-4">
+        <CardGroup className=" my-4">
           <Card className="mx-4">
             <Card.Body className="text-center">
-              <Carousel>
-                <Card.Title className="py-3">
+                <Card.Title className="py-5">
                   CONOCÉ A NUESTROS ESPECIALISTAS
                 </Card.Title>
+              <Carousel>
                 <Carousel.Item>
                   <img
-                    src={doctor1}
+                    src="https://i.ibb.co/vkkZJjf/doctor1-01.jpg"
                     alt="First slide"
                     className="d-block w-100"
                   />
-                  <Carousel.Caption></Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    src={doctor2}
+                    src="https://i.ibb.co/1K4pNpN/doctora2-01.jpg"
                     alt="Second slide"
                     className="d-block w-100"
                   />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    src={doctor3}
-                    alt="Third slide"
-                    className="d-block w-100"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
             </Card.Body>
           </Card>
           <Card className="mx-4">
-            <Card.Title className="py-4 text-center">
-              CONOCÉ NUESTROS PLANES{" "}
+            <Card.Title className="py-5 text-center">
+            CONOCÉ NUESTROS PLANES
             </Card.Title>
-            <Card.Img variant="top" src={perrito} />
-            <Card.Body className="text-center">
-              <Card.Text></Card.Text>
-              <Button
-                type="submit"
-                variant="outline-primary"
-                className="botonEnviar"
-              >
-                QUIERO SABER MAS!
-              </Button>
+
+            <Card.Img variant="top" src="https://i.ibb.co/j3CW9g6/Sin-t-tulo-2-Mesa-de-trabajo-1-copia-01.jpg" />
+            <Card.Body className="text-center py-4">
+              <Nav.Link href="/ListaTurnos" className="navbarInicio">
+                <Button
+                  type="submit"
+                  variant="outline-primary"
+                  className="botonEnviar"
+                >
+                  QUIERO SABER MÁS
+                </Button>
+              </Nav.Link>
             </Card.Body>
           </Card>
           <Card className="mx-4">
@@ -75,7 +67,7 @@ const ContainerPrincipal = () => {
               SOLICITÁ TU TURNO AQUÍ
             </Card.Title>
 
-            <Card.Img variant="top" src={perrito} />
+            <Card.Img variant="top" src="https://i.ibb.co/j3CW9g6/Sin-t-tulo-2-Mesa-de-trabajo-1-copia-01.jpg" />
             <Card.Body className="text-center py-4">
               <Nav.Link href="/ListaTurnos" className="navbarInicio">
                 <Button
