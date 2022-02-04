@@ -9,23 +9,8 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
-import { useState } from "react";
 
 function App() {
-  //state
-  const [turnos, setTurnos] = useState([])
-  // variable de entorno
-  const URL = process.env.REACT_APP_API_ROLLINGVET;
-  console.log(URL);
-
-  const getApi = async () => {
-    try {
-      const respuesta = await fetch(URL);
-    } catch (error) {
-      console.log(error);
-      
-    }
-  }
 
   return (
     <div>
@@ -37,8 +22,6 @@ function App() {
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
-          <Route exact path="turnos/CrearTurnos"></Route>
-          <Route exact path="turnos/EditarTurnos"></Route>
         </Routes>
       </Router>
       <Footer></Footer>

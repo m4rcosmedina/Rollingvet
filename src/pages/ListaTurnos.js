@@ -17,7 +17,7 @@ const ListaTurnos = () => {
                 <Row>
                     <Col sm={6}>
                         <Form>
-                            <Form.Group className="mb-3">
+                            <Form.Group className="mb-3" >
                                 <Form.Label>Seleccione un profesional</Form.Label>
                                 <Form.Select required>
                                     <option>Dr. Milagro</option>
