@@ -29,9 +29,7 @@ const OpinionesPrincipal = () => {
 
   return (
     <div className="py-4 text-center fondoGeneral ">
-      <Button variant="outline-primary" onClick={handleShow}>
-        Dejanos aqui tus comentarios!
-      </Button>
+     
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Dejanos tus comentarios</Modal.Title>
@@ -69,9 +67,11 @@ const OpinionesPrincipal = () => {
         <Modal.Footer></Modal.Footer>
       </Modal>
       <Card className="container mt-3">
-        <Card.Header>Comentarios</Card.Header>
+        <Card.Header> <Button variant="outline-primary" onClick={handleShow}>
+        Dejanos aqui tus comentarios!
+      </Button></Card.Header>
         <Card.Body>
-          <Card.Text>
+          <Card.Text className="text-muted">
             <ListaComentarios
               arregloComentarios={listaComentarios}
             ></ListaComentarios>
