@@ -1,0 +1,20 @@
+{
+  "turnos": [
+    {
+      "id": 1,
+      "profesional": "Dr. Milagro",
+      "fecha": "fecha",
+      "hora": "hora",
+      "animal": "animal",
+      "consulta": "cualquier cosa"
+    },
+    {
+      "id": 2,
+      "profesional": "Dr. NoMilagro",
+      "fecha": "fecha",
+      "hora": "fecha",
+      "animal": "animal",
+      "consulta": "cualquier cosa"
+    }
+  ]
+}
