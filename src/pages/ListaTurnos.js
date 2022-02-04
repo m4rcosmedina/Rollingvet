@@ -11,17 +11,46 @@ const initialForm = {
     profesional: "",
     opcion1: "",
     opcion2: "",
-    animal1: "",
-    animal2: "",
-    animal3: "",
     consulta: ""
 }
 
+const initialDb = [];
+
 const ListaTurnos = () => {
+    // variable para DatePicker
     const [selectedDate, setSelectedDate] = useState(null)
+    // variables del CRUD
+    const [Db, setDb] = useState([initialDb]);
     const [form, setForm] = useState([initialForm]);
-    const handleChange = (e) => { }
-    const handleSubmit = (e) => { }
+    // variable de estado
+    const [dataParaEditar, setDataParaEditar] = useState([null]);
+
+    // funciones del CRUD
+    const createData = (data) => { };
+    const updateData = (data) => { };
+    const deleteData = (data) => { };
+
+    const handleChange = (e) => {
+        setForm({
+            ...form,
+            [e.target.profesional]: e.target.value,
+            [e.target.opcion1]: e.target.value,
+            [e.target.opcion2]: e.target.value,
+            [e.target.consulta]: e.target.value
+        });
+     }
+    const handleSubmit = (e) => { 
+        e.preventDefault();
+
+        if(!form.profesional){
+            alert("Debe seleccionar una opcion");
+            return;
+        }; 
+        if (form.id === null){
+            createData(form)
+        }
+
+    }
     const handleReset = (e) => { }
 
     return (
@@ -30,7 +59,7 @@ const ListaTurnos = () => {
             <Container>
                 <Row>
                     <Col sm={6}>
-                        <Form onSubmit={handleSubmit}>
+                        <Form createData={createData} updateData={updateData} dataParaEditar={dataParaEditar} setDataParaEditar={setDataParaEditar} onSubmit={handleSubmit}>
                             <Form.Select className="mb-3">
                                 <option onChange={handleChange} value={form.profesional}>Seleccione un profesional</option>
                                 <option onChange={handleChange} value={form.opcion1}> Dr. Milagro</option>
@@ -38,12 +67,11 @@ const ListaTurnos = () => {
                             </Form.Select>
                             <Form.Group className="mb-3">
                                 <Form.Label>Fecha</Form.Label>
-                                <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} dateFormat="dd/MM/yyyy" placeholderText='25/01/2022' minDate={new Date()} filterDate={date => date.getDay() !== 6 && date.getDay() !== 0} showYearDropdown scrollableMonthYearDropdown locale={es} required
-                                />
+                                <DatePicker selected={selectedDate} onChange={date => setSelectedDate(date)} dateFormat="dd/MM/yyyy" placeholderText='25/01/2022' minDate={new Date()} filterDate={date => date.getDay() !== 6 && date.getDay() !== 0} showYearDropdown scrollableYearDropdown locale={es} isClearable                               />
                             </Form.Group>
                             <Form.Group className='mb-3'>
                                 <Form.Label>Hora</Form.Label>
-                                <TimePicker className="ms-2" hourPlaceholder='02' minutePlaceholder='50' required />
+                                <TimePicker className="ms-2" hourPlaceholder='02' minutePlaceholder='50' />
                             </Form.Group>
                             <Form>Seleccione un animal
                                 <Form.Check
