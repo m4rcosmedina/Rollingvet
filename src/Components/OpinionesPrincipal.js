@@ -28,11 +28,10 @@ const OpinionesPrincipal = () => {
   };
 
   return (
-    <div className="py-4 text-center ">
+    <div className="py-4 text-center fondoGeneral ">
       <Button variant="outline-primary" onClick={handleShow}>
         Dejanos aqui tus comentarios!
       </Button>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Dejanos tus comentarios</Modal.Title>
@@ -41,19 +40,25 @@ const OpinionesPrincipal = () => {
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
               <Form.Label>Tus comentarios</Form.Label>
-              <Form.Control className="py-2"
+              <Form.Control
+                className="py-2"
                 type="text"
                 placeholder="ingrese un texto"
                 onChange={(e) => setComentario(e.target.value.trimStart())}
                 value={comentario}
               />
               <hr></hr>
-              <Button variant="outline-danger" className="text-center " onClick={handleClose} >
+              <Button
+                variant="outline-danger"
+                className="text-center "
+                onClick={handleClose}
+              >
                 Cerrar
               </Button>
               <Button
                 variant="outline-primary"
-                type="submit" className="text-center botonModal"
+                type="submit"
+                className="text-center botonModal"
                 onClick={handleClose}
               >
                 Enviar
@@ -64,17 +69,15 @@ const OpinionesPrincipal = () => {
         <Modal.Footer></Modal.Footer>
       </Modal>
       <Card className="container mt-3">
-  <Card.Header>Comentarios</Card.Header>
-  <Card.Body>
-    <Card.Text>
-      <ListaComentarios
-        arregloComentarios={listaComentarios}
-      ></ListaComentarios>
-      
-    </Card.Text>
-    
-  </Card.Body>
-</Card>
+        <Card.Header>Comentarios</Card.Header>
+        <Card.Body>
+          <Card.Text>
+            <ListaComentarios
+              arregloComentarios={listaComentarios}
+            ></ListaComentarios>
+          </Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 };

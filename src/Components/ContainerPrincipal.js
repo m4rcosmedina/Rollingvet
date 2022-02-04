@@ -16,23 +16,31 @@ import "../CSS/App.css";
 
 const ContainerPrincipal = () => {
   return (
-    <div className="">
+    <div className="fondoGeneral">
       <Container>
         <h1 className="text-center py-2">NUESTROS SERVICIOS</h1>
         <hr />
-        <CardGroup className=" my-4">
-          <Card className="mx-4">
-            <Card.Body className="text-center">
-                <Card.Title className="py-5">
-                  CONOCÉ A NUESTROS ESPECIALISTAS
-                </Card.Title>
-              <Carousel>
+        <CardGroup className=" ">
+        <Card className="">
+            <Card.Title className="py-5 text-center">
+            CONOCÉ NUESTROS ESPECIALISTAS
+            </Card.Title>
+
+                  <Card.Body className="text-center ">
+            <Carousel>
                 <Carousel.Item>
                   <img
                     src="https://i.ibb.co/vkkZJjf/doctor1-01.jpg"
                     alt="First slide"
                     className="d-block w-100"
                   />
+                  <Button
+                  type="submit"
+                  variant="outline-primary"
+                  className="botonEnviar mt-4"
+                >
+                  Marcos
+                </Button>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -40,11 +48,19 @@ const ContainerPrincipal = () => {
                     alt="Second slide"
                     className="d-block w-100"
                   />
+                  <Button
+                  type="submit"
+                  variant="outline-primary"
+                  className="botonEnviar mt-4"
+                >
+                  Natalia
+                </Button>
                 </Carousel.Item>
               </Carousel>
+      
             </Card.Body>
           </Card>
-          <Card className="mx-4">
+          <Card className="">
             <Card.Title className="py-5 text-center">
             CONOCÉ NUESTROS PLANES
             </Card.Title>
@@ -62,7 +78,7 @@ const ContainerPrincipal = () => {
               </Nav.Link>
             </Card.Body>
           </Card>
-          <Card className="mx-4">
+          <Card className="">
             <Card.Title className="py-5 text-center">
               SOLICITÁ TU TURNO AQUÍ
             </Card.Title>
