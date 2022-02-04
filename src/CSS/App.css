@@ -76,7 +76,7 @@
     color: #02be9d;
  }
 
- .fondoGeneral{
+ body{
     background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -109,3 +109,7 @@
     z-index: 1;
     transition: 300ms;
     }
+
+.bordecarrousel{
+    border-radius: 55px;
+}

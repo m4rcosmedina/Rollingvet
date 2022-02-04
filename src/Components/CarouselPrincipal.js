@@ -6,18 +6,18 @@ import slider3 from "../assets/img/slider3.jpg";
 
 const CarouselPrincipal = () => {
   return (
-    <div className="fondoGeneral py-1">
-      <Carousel>
+    <div className="fondoGeneral  py-1 ">
+      <Carousel className="container">
         <Carousel.Item>
-          <img className="d-block w-100" src={slider1} alt="First slide" />
+          <img className="d-block w-100 bordecarrousel" src={slider1} alt="First slide" />
           <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slider2} alt="Second slide" />
+          <img className="d-block w-100 bordecarrousel" src={slider2} alt="Second slide" />
           <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slider3} alt="Third slide" />
+          <img className="d-block w-100 bordecarrousel" src={slider3} alt="Third slide" />
           <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
       </Carousel>
