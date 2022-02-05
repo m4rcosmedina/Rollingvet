@@ -14,6 +14,10 @@ import Planes from './pages/Planes';
 function App() {
   // state
   const [turnos, setTurnos] = useState ([])
+   
+  // variable de entorno
+  const URL = process.env.REACT_APP_TURNOS;
+  
 
   // funcion que trae los datos
   const getApi = async () => {
