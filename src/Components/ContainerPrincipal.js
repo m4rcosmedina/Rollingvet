@@ -24,7 +24,7 @@ const ContainerPrincipal = () => {
   return (
     <div className="fondoGeneral">
       <Container>
-        <h1 className="text-center py-2">NUESTROS SERVICIOS</h1>
+        <h1 className="text-center mt-3 py-2 text-primary ">NUESTROS SERVICIOS</h1>
         <hr />
         <CardGroup className=" ">
           <Card className="">
@@ -138,7 +138,17 @@ const ContainerPrincipal = () => {
             </Card.Title>
             <Card.Img
               variant="top"
-              src="https://i.ibb.co/qYGTwqF/asdvff-01.png"
+              src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61feba7956ce0520b0cb4c9f/previews/61feba7956ce0520b0cb4ca6/download/promo1-01.png"
+              className="movimiento "
+            />
+            <Card.Img
+              variant="top"
+              src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61feba7aeb1f718730b8575e/previews/61feba7beb1f718730b85778/download/promo2-01.png"
+              className="movimiento "
+            />
+            <Card.Img
+              variant="top"
+              src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61feba7c8ef2097dc6e8f167/previews/61feba7d8ef2097dc6e8f17a/download/promo3-01.png"
               className="movimiento "
             />
             <Card.Body className="text-center py-4">
