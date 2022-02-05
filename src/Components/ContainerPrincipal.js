@@ -1,3 +1,6 @@
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faHashtag, fas } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import {
   Card,
@@ -49,14 +52,25 @@ const ContainerPrincipal = () => {
                         Marcos
                       </Offcanvas.Title>
                     </Offcanvas.Header>
-                    <Offcanvas.Body>
+                    <Offcanvas.Body className="text-muted">
                       <img
                         src="https://i.ibb.co/vkkZJjf/doctor1-01.jpg"
                         alt="First slide"
                         className="d-block w-100"
                       />
-                      Some text as placeholder. In real life you can have the
-                      elements you have chosen. Like, text, images, lists, etc.
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="1x"
+                        className="text-danger"
+                      />
+                      Some text as placeholder. In real life you can 
+                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
+                      className="text-info" />
+                      elements you have chosen. Like, text,  etc.
+                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
+                      className="text-warning" />
+                      elements you have chosen. Like, text,  etc.
+
                     </Offcanvas.Body>
                   </Offcanvas>
                 </Carousel.Item>
@@ -85,8 +99,19 @@ const ContainerPrincipal = () => {
                         alt="Second slide"
                         className="d-block w-100"
                       />
-                      Some text as placeholder. In real life you can have the
-                      elements you have chosen. Like, text, images, lists, etc.
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="1x"
+                        className="text-danger"
+                      />
+                      Some text as placeholder. In real life you can 
+                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
+                      className="text-info" />
+                      elements you have chosen. Like, text,  etc.
+                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
+                      className="text-warning" />
+                      elements you have chosen. Like, text,  etc.
+
                     </Offcanvas.Body>
                   </Offcanvas>
                 </Carousel.Item>
