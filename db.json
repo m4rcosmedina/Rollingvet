@@ -1,13 +1,15 @@
 {
   "turnos": [
     {
-      "id": 1,
-      "profesional1": "Dr.Milagro",
-      "profesional2": "Dr. Robazan",
+      "id": "1",
+      "profesional1": "Dr. Milagro",
+      "profesional2": "Dr. Robazan"
+    },
+    {
+      "id": "2",
       "animal1": "Perro",
-      "animal2":"Gato",
-      "animal3": "Otro",
-      "consulta":"consulta"
+      "animal2": "Gato",
+      "animal3": "Otro"
     }
   ]
 }

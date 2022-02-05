@@ -5,34 +5,23 @@ import Error404 from "./pages/Error404";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
-import FormTurnos from "./pages/ListaTurnos";
+import FormTurnos from "./pages/FormTurnos";
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 
 function App() {
   // state
   const [turnos, setTurnos] = useState ([])
-   
-  // variable de entorno
-  const URL = process.env.REACT_APP_TURNOS;
 
-  // llamamos a la API
-  useEffect(() => { getApi()}, [])
-
-
-  // funcion que trae los datos
   const getApi = async () => {
-  try {
-    const respuesta = await fetch(URL);
-    const turnosApi = await respuesta.json()
-    setTurnos(turnosApi)
-  } catch (error) {
-console.log(error)    ;
-  }
-
+    try {
+      const respuesta = await fetch("http://localhost:3001/turnos")
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
