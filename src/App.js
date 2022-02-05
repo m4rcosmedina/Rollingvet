@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
+import {useEffect, useState} from 'react'
 
 function App() {
   // state
@@ -17,15 +18,20 @@ function App() {
    
   // variable de entorno
   const URL = process.env.REACT_APP_TURNOS;
-  
+
+  // llamamos a la API
+  useEffect(() => { getApi()}, [])
+
 
   // funcion que trae los datos
   const getApi = async () => {
-    try {
-      const respuesta = await fetch(http://localhost:3001/turnos)
-    } catch (error) {
-      console.log(error);
-    }
+  try {
+    const respuesta = await fetch(URL);
+    const turnosApi = await respuesta.json()
+    setTurnos(turnosApi)
+  } catch (error) {
+console.log(error)    ;
+  }
 
   }
 
