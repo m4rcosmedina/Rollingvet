@@ -25,23 +25,22 @@ const Navegador = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto textoNavbar text-center">
-              <Nav.Link href="/" className="navbarInicio">
+              <Nav.Link href="/" className="navbarInicio text-white">
                 Inicio
               </Nav.Link>
-              <Nav.Link href="/QuienesSomos" className="navbarQuienes">
+              <Nav.Link href="/QuienesSomos" className="navbarQuienes text-white">
                 Quiénes Somos
               </Nav.Link>
-              <Nav.Link href="/Contacto" className="navbarContacto">
+              <Nav.Link href="/Contacto" className="navbarContacto text-white">
                 Contactanos
               </Nav.Link>
-              <Nav.Link className="navbarLogin" onClick={handleShow}>
+              <Nav.Link className="navbarLogin text-white" onClick={handleShow}>
                 Login
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Iniciar Sesión</Modal.Title>

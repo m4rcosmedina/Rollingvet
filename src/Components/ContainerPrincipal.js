@@ -28,7 +28,7 @@ const ContainerPrincipal = () => {
         <hr />
         <CardGroup className=" ">
           <Card className="">
-            <Card.Title className="py-5 text-center">
+            <Card.Title className="py-5 text-center text-muted">
               CONOCÉ NUESTROS ESPECIALISTAS
             </Card.Title>
             <Card.Body className="text-center ">
@@ -63,14 +63,21 @@ const ContainerPrincipal = () => {
                         size="1x"
                         className="text-danger"
                       />
-                      Some text as placeholder. In real life you can 
-                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
-                      className="text-info" />
-                      elements you have chosen. Like, text,  etc.
-                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
-                      className="text-warning" />
-                      elements you have chosen. Like, text,  etc.
-
+                      Some text as placeholder. In real life you can
+                      <br />{" "}
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="1x"
+                        className="text-info"
+                      />
+                      elements you have chosen. Like, text, etc.
+                      <br />{" "}
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="1x"
+                        className="text-warning"
+                      />
+                      elements you have chosen. Like, text, etc.
                     </Offcanvas.Body>
                   </Offcanvas>
                 </Carousel.Item>
@@ -104,14 +111,21 @@ const ContainerPrincipal = () => {
                         size="1x"
                         className="text-danger"
                       />
-                      Some text as placeholder. In real life you can 
-                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
-                      className="text-info" />
-                      elements you have chosen. Like, text,  etc.
-                      <br /> <FontAwesomeIcon icon={faTwitter} size="1x"
-                      className="text-warning" />
-                      elements you have chosen. Like, text,  etc.
-
+                      Some text as placeholder. In real life you can
+                      <br />{" "}
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="1x"
+                        className="text-info"
+                      />
+                      elements you have chosen. Like, text, etc.
+                      <br />{" "}
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        size="1x"
+                        className="text-warning"
+                      />
+                      elements you have chosen. Like, text, etc.
                     </Offcanvas.Body>
                   </Offcanvas>
                 </Carousel.Item>
@@ -119,12 +133,13 @@ const ContainerPrincipal = () => {
             </Card.Body>
           </Card>
           <Card className="">
-            <Card.Title className="py-5 text-center">
+            <Card.Title className="py-5 text-center text-muted">
               CONOCÉ NUESTROS PLANES
             </Card.Title>
             <Card.Img
               variant="top"
-              src="https://i.ibb.co/j3CW9g6/Sin-t-tulo-2-Mesa-de-trabajo-1-copia-01.jpg"
+              src="https://i.ibb.co/qYGTwqF/asdvff-01.png"
+              className="movimiento "
             />
             <Card.Body className="text-center py-4">
               <Nav.Link href="/ListaTurnos" className="navbarInicio">
@@ -139,7 +154,7 @@ const ContainerPrincipal = () => {
             </Card.Body>
           </Card>
           <Card className="">
-            <Card.Title className="py-5 text-center">
+            <Card.Title className="py-5 text-center text-muted">
               SOLICITÁ TU TURNO AQUÍ
             </Card.Title>
             <Card.Img
