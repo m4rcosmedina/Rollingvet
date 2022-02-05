@@ -6,7 +6,7 @@ import slider3 from "../assets/img/slider3.jpg";
 
 const CarouselPrincipal = () => {
   return (
-    <div className="fondoGeneral  py-1 ">
+    <div className="fondoGeneral  py-3 ">
       <Carousel className="container">
         <Carousel.Item>
           <img className="d-block w-100 bordecarrousel" src={slider1} alt="First slide" />

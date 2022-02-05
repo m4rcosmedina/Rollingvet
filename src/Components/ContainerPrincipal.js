@@ -138,7 +138,7 @@ const ContainerPrincipal = () => {
             </Card.Title>
             <Card.Img
               variant="top"
-              src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61feba7956ce0520b0cb4c9f/previews/61feba7956ce0520b0cb4ca6/download/promo1-01.png"
+              src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61fec42abb43ab8aee460b6e/download/especialistas-01.png"
               className="movimiento "
             />
             <Card.Img
