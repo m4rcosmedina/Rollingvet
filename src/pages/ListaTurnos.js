@@ -8,16 +8,9 @@ import "react-datepicker/dist/react-datepicker.css";
 import "react-time-picker/dist/TimePicker.css";
 import "react-clock/dist/Clock.css";
 
-const FormTurnos = () => {
+const ListaTurnos = () => {
     // variable para DatePicker
     const [selectedDate, setSelectedDate] = useState(null)
-
-    // funciones para CRUD
-    const handleChange = (e) => { }
-    const handleSubmit = (e) => {
-
-    }
-    const handleReset = (e) => { }
 
     return (
         <div className="fondoGeneral">
@@ -27,7 +20,7 @@ const FormTurnos = () => {
                     <Container>
                         <Row>
                             <Col sm={6}>
-                                <Form onSubmit={handleSubmit}>
+                                <Form>
                                     <Form.Select className="mb-3">
                                         <option >Seleccione un profesional</option>
                                         <option > Dr. Milagro</option>
@@ -71,14 +64,13 @@ const FormTurnos = () => {
                     </Container>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button className='botonEnviar'>Agendar</Button>
+                    <Button className='botonEnviar'>Reservar</Button>
                     <Button className='botonEnviar'>Modificar</Button>
                     <Button className='botonEnviar'>Eliminar</Button>
                 </Modal.Footer>
             </Modal.Dialog>
-
         </div>
     );
 };
 
-export default FormTurnos;
+export default ListaTurnos;

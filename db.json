@@ -1,23 +1,13 @@
 {
-  "profesional": [
+  "turnos": [
     {
       "id": 1,
-      "opcion1": "Dr.Milagro",
-      "opcion2": "Dr. Robazan"
-    }
-  ],
-  "animal": [
-    {
-      "id": 2,
+      "profesional1": "Dr.Milagro",
+      "profesional2": "Dr. Robazan",
       "animal1": "Perro",
-      "animal2": "Gato",
-      "animal3": "Otro"
-    }
-  ],
-  "consulta": [
-    {
-      "id": 3,
-      "motivoConsulta": "consulta"
+      "animal2":"Gato",
+      "animal3": "Otro",
+      "consulta":"consulta"
     }
   ]
 }

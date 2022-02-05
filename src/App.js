@@ -12,6 +12,18 @@ import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
 
 function App() {
+  // state
+  const [turnos, setTurnos] = useState ([])
+
+  // funcion que trae los datos
+  const getApi = async () => {
+    try {
+      const respuesta = await fetch(http://localhost:3001/turnos)
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
 
   return (
     <div>
