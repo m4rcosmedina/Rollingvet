@@ -25,16 +25,16 @@ const Navegador = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto textoNavbar text-center">
-              <Nav.Link href="/" className="navbarInicio text-white">
+              <Nav.Link href="/" className="navbarInicio text-white fs-5">
                 Inicio
               </Nav.Link>
-              <Nav.Link href="/QuienesSomos" className="navbarQuienes text-white">
+              <Nav.Link href="/QuienesSomos" className="navbarQuienes text-white fs-5">
                 Quiénes Somos
               </Nav.Link>
-              <Nav.Link href="/Contacto" className="navbarContacto text-white">
+              <Nav.Link href="/Contacto" className="navbarContacto text-white fs-5">
                 Contactanos
               </Nav.Link>
-              <Nav.Link className="navbarLogin text-white" onClick={handleShow}>
+              <Nav.Link className="navbarLogin text-white fs-5" onClick={handleShow}>
                 Login
               </Nav.Link>
             </Nav>
