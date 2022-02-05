@@ -10,19 +10,24 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
-import {useState} from 'react'
+import { useState, useEffect } from 'react';
 
 function App() {
   // state
-  const [turnos, setTurnos] = useState ([])
+  const [turnos, setTurnos] = useState([])
 
   // variable de entorno
   const URL = process.env.REACT_APP_TURNOS;
-  console.log(URL)
+
+  useEffect(() => {
+    getApi();
+  }, []);
 
   const getApi = async () => {
     try {
       const respuesta = await fetch(URL);
+      const turnosApi = await respuesta.json()
+      setTurnos(turnosApi)
     } catch (error) {
       console.log(error);
     }
