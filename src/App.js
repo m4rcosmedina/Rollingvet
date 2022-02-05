@@ -16,9 +16,13 @@ function App() {
   // state
   const [turnos, setTurnos] = useState ([])
 
+  // variable de entorno
+  const URL = process.env.REACT_APP_TURNOS;
+  console.log(URL)
+
   const getApi = async () => {
     try {
-      const respuesta = await fetch("http://localhost:3001/turnos")
+      const respuesta = await fetch(URL);
     } catch (error) {
       console.log(error);
     }
