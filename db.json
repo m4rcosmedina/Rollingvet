@@ -10,7 +10,14 @@
     {
       "id": 2,
       "animal1": "Perro",
-      "animal2": "Gato"
+      "animal2": "Gato",
+      "animal3": "Otro"
+    }
+  ],
+  "consulta": [
+    {
+      "id": 3,
+      "motivoConsulta": "consulta"
     }
   ]
 }
