@@ -5,6 +5,7 @@ import Error404 from "./pages/Error404";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
+import FormTurnos from "./pages/ListaTurnos";
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
+          <Route exact path="/FormTurnos" element={<FormTurnos></FormTurnos>}></Route>
         </Routes>
       </Router>
       <Footer></Footer>
