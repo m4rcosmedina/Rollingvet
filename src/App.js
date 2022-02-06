@@ -5,33 +5,13 @@ import Error404 from "./pages/Error404";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
-import FormTurnos from "./pages/FormTurnos";
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
-import { useState, useEffect } from 'react';
+
 
 function App() {
-  // state
-  const [turnos, setTurnos] = useState([])
-
-  // variable de entorno
-  const URL = process.env.REACT_APP_TURNOS;
-
-  useEffect(() => {
-    getApi();
-  }, []);
-
-  const getApi = async () => {
-    try {
-      const respuesta = await fetch(URL);
-      const turnosApi = await respuesta.json()
-      setTurnos(turnosApi)
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   return (
     <div>
@@ -43,7 +23,6 @@ function App() {
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
-          <Route exact path="/FormTurnos" element={<FormTurnos></FormTurnos>}></Route>
         </Routes>
       </Router>
       <Footer></Footer>
