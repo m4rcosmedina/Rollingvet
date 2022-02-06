@@ -24,7 +24,7 @@ const ContainerPrincipal = () => {
   return (
     <div className="fondoGeneral">
       <Container>
-        <h1 className="text-center mt-3 py-2 text-white fondotitulo ">NUESTROS SERVICIOS</h1>
+        <h1 className="text-center mt-3 py-2 text-white fondotitulo movimiento ">NUESTROS SERVICIOS</h1>
         <hr />
         <CardGroup className=" ">
           <Card className="">
