@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../CSS/App.css";
 import {
   Form,
+
   InputGroup,
   FormControl,
   Button,
   Container,
   Row,
   Col,
-  Dropdown,
 } from "react-bootstrap";
-import{ init } from '@emailjs/browser';
-init("user_omZYswHoCCoMtPCirUyVj");
-
+import emailjs from "@emailjs/browser";
 
 const Planes = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "vet_rolling",
+        "template_vtx6zyn",
+        form.current,
+        "user_Hiy1gJ7qKOh9XjvEmgoUe"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div className="fondoGeneral">
@@ -23,7 +42,7 @@ const Planes = () => {
         <Container>
           <Row>
             <Col sm={6}>
-              <Form>
+              <Form ref={form} onSubmit={sendEmail}>
                 {" "}
                 <Form.Label>Ingrese su nombre y apellido</Form.Label>
                 <InputGroup className="mb-3">
@@ -32,13 +51,14 @@ const Planes = () => {
                     aria-label="Nombre y Apellido"
                     type="text"
                     required
-                    minlength="3"
-                    maxlength="35"
+                    minLength={3}
+                    maxLength={35}
                   />
                 </InputGroup>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3">
                   <Form.Label>Ingrese su correo electronico</Form.Label>
                   <Form.Control
+                    name="email"
                     type="email"
                     placeholder="ejemplo@ejemplo.com"
                   />
@@ -53,10 +73,9 @@ const Planes = () => {
                     aria-label="Nombre y Apellido"
                     type="number"
                     required
-                    minlength="6"
-                    maxlength="10"
+                    minLength={6}
+                    maxLength={10}
                   />
-                  
                 </InputGroup>
                 <Form.Group
                   className="mb-3"
@@ -67,28 +86,11 @@ const Planes = () => {
                   </Form.Label>
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                      Dropdown Button
-                    </Dropdown.Toggle>
-
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">
-                        Another action
-                      </Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">
-                        Something else
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                  <Form.Check
-                    type="checkbox"
-                    label="Estoy de acuerdo con los términos y condiciones"
-                  />
-                </Form.Group>
-                <Button type="submit" className="botonEnviar" variant="info" >
+                <Form.Group
+                  className="mb-3"
+                  controlId="formBasicCheckbox"
+                ></Form.Group>
+                <Button type="submit" className="botonEnviar" value="Send">
                   Enviar
                 </Button>
               </Form>
