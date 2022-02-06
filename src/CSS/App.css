@@ -78,8 +78,6 @@
  body{
     background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg) ;
     background-size:contain; 
-background-size:cover;
-   
 }
 
 .botonEnviar{

@@ -67,7 +67,7 @@ const OpinionesPrincipal = () => {
         <Modal.Footer></Modal.Footer>
       </Modal>
       <Card className="container mt-3 px-0">
-        <Card.Header className=" fondotitulo"> <Button variant="outline-info  text-white px-auto" onClick={handleShow}>
+        <Card.Header> <Button variant="outline-primary " onClick={handleShow}>
         Dejanos aqui tus comentarios!
       </Button></Card.Header>
         <Card.Body>
