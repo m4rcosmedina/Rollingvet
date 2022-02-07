@@ -7,8 +7,7 @@
 
 
 .navbarBg{
-    background: -webkit-radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
-    background: radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
+    background-image:url("https://i.ibb.co/Zz1Q6CX/slider-Mesa-de-trabajo-1.jpg");
 }
     
 
@@ -18,8 +17,8 @@
     color: #f7fff7;
 }
 .footerContainer{
-    background: -webkit-radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
-    background: radial-gradient(rgb(22, 135, 237), rgb(9, 65, 122));
+    background-image:url("https://i.ibb.co/Zz1Q6CX/slider-Mesa-de-trabajo-1.jpg");
+    background-size: 50% 100%; 
 }
 
 .iconosFooter{
@@ -77,11 +76,8 @@
  }
 
  body{
-    background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg);
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image:url(../assets/img/fondo_alternativo_2_Mesa_de_trabajo_1.jpg) ;
+    background-size:contain; 
 }
 
 .botonEnviar{
