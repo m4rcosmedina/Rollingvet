@@ -109,3 +109,7 @@
 .bordecarrousel{
     border-radius: 55px;
 }
+.fondotitulo{
+    border-radius: 25px;
+    background-image:url("https://i.ibb.co/Zz1Q6CX/slider-Mesa-de-trabajo-1.jpg");
+}
