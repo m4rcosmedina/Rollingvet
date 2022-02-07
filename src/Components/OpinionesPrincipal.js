@@ -66,8 +66,8 @@ const OpinionesPrincipal = () => {
         </Modal.Body>
         <Modal.Footer></Modal.Footer>
       </Modal>
-      <Card className="container mt-3">
-        <Card.Header> <Button variant="outline-primary" onClick={handleShow}>
+      <Card className="container mt-3 px-0">
+        <Card.Header> <Button variant="outline-primary " onClick={handleShow}>
         Dejanos aqui tus comentarios!
       </Button></Card.Header>
         <Card.Body>
