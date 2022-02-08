@@ -1,3 +1,4 @@
+import React from "react";
 import "./CSS/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Error404 from "./pages/Error404";
