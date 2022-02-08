@@ -1,5 +1,4 @@
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faHashtag, fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import {
@@ -152,7 +151,7 @@ const ContainerPrincipal = () => {
               className="movimiento "
             />
             <Card.Body className="text-center py-4">
-              <Nav.Link href="/ListaTurnos" className="navbarInicio">
+              <Nav.Link href="/Planes" className="navbarInicio">
                 <Button
                   type="submit"
                   variant="outline-primary"

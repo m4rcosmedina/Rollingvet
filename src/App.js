@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from "react";
 import "./CSS/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Error404 from "./pages/Error404";
@@ -15,6 +14,7 @@ import QuienesSomos from './pages/QuienesSomos';
 
 
 function App() {
+
   return (
     <div>
       <Navbar />

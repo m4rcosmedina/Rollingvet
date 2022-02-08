@@ -1,7 +1,6 @@
 import React from "react";
 import "../CSS/App.css";
 import { Card, CardGroup, Carousel, Container } from "react-bootstrap";
-import perrito from "../assets/img/perrito.jpg";
 
 const PromosPrincipal = () => {
   return (

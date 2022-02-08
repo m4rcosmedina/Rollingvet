@@ -1,5 +1,3 @@
-# COMPLETAR CON LOS DATOS DE ROLLINGVET
-
 # RollingVet
 ## El objetivo de este proyecto es administrar la gestión de pacientes y la reserva de turnos de  una  veterinaria.  
 
