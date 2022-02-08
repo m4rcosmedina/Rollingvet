@@ -151,7 +151,7 @@ const ContainerPrincipal = () => {
             className="movimiento "
           />
           <Card.Body className="text-center py-4">
-            <Nav.Link href="/ListaTurnos" className="navbarInicio">
+            <Nav.Link href="/Planes" className="navbarInicio">
               <Button
                 type="submit"
                 variant="outline-primary"
