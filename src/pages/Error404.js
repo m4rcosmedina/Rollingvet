@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/App.css";
-import { Container, Row, Col,Nav,Button } from "react-bootstrap";
+import { Nav,Button } from "react-bootstrap";
 
 const Error404 = () => {
   return (

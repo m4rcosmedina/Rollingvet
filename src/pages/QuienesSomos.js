@@ -1,6 +1,5 @@
 import React from "react";
 import "../CSS/App.css";
-import doctor1 from "../assets/img/doctor1.jpg";
 import {
   Card,
   CardGroup,
