@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/App.css";
-import logoNavbar from '../assets/img/logoNavbar.png';
 import { Container, Row, Col,Nav,Button } from "react-bootstrap";
 
 const Error404 = () => {

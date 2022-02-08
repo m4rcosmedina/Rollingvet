@@ -117,6 +117,9 @@
     .footerContainer{
         background-size:cover; 
     }
+    .navbarBg{
+        background-size:cover; 
+    }
     .media{
         width: 100%;
     }
