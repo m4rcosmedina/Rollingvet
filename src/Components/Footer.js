@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 
+
 const Footer = () => {
   return (
     <Container fluid className="footerContainer">
@@ -86,7 +87,7 @@ const Footer = () => {
         </Col>
       </Row>
     </Container>
-  );
+  ); 
 };
 
 export default Footer;

@@ -71,7 +71,7 @@ const OpinionesPrincipal = () => {
         Dejanos aqui tus comentarios!
       </Button></Card.Header>
         <Card.Body>
-          <Card.Text className="text-muted">
+          <Card.Text>
             <ListaComentarios
               arregloComentarios={listaComentarios}
             ></ListaComentarios>
