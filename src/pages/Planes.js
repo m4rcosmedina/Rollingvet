@@ -95,6 +95,11 @@ const Planes = () => {
                 </Button>
               </Form>
             </Col>
+            <Col sm={6} className="pb-4">
+             <img className="img-fluid movimiento" src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61fec42abb43ab8aee460b6e/download/especialistas-01.png" alt="" />
+             <img className="img-fluid movimiento" src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61feba7aeb1f718730b8575e/previews/61feba7beb1f718730b85778/download/promo2-01.png" alt="" />
+             <img className="img-fluid movimiento" src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/61feba7c8ef2097dc6e8f167/previews/61feba7d8ef2097dc6e8f17a/download/promo3-01.png" alt="" />
+            </Col>
           </Row>
         </Container>
       </div>
