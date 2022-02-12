@@ -6,19 +6,28 @@ import Error404 from "./pages/Error404";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar';
-import Contacto from './pages/Contacto';
-import Planes from './pages/Planes';
-import QuienesSomos from './pages/QuienesSomos';
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Contacto from "./pages/Contacto";
+import Planes from "./pages/Planes";
+import QuienesSomos from "./pages/QuienesSomos";
 import ListadoPacientes from "./pages/ListadoPacientes";
 import CrearPaciente from "./pages/Pacientes/CrearPaciente";
 import EditarPaciente from "./pages/Pacientes/EditarPaciente";
-
-
-
+import { useState } from "react";
 
 function App() {
+  const [pacientes, setPacientes] = useState([]);
+  const URL = process.env.REACT_APP_API_ROLLINGVET;
+  console.log(URL)
+
+  const getApi = async () => {
+    try {
+      const res = await fetch(URL);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div>
@@ -28,14 +37,32 @@ function App() {
           <Route exact path="/" element={<Inicio></Inicio>}></Route>
           <Route exact path="*" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
-          <Route exact path="/QuienesSomos" element={<QuienesSomos></QuienesSomos>}></Route>
+          <Route
+            exact
+            path="/QuienesSomos"
+            element={<QuienesSomos></QuienesSomos>}
+          ></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
-          <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
-          <Route exact path="/ListadoPacientes" element={<ListadoPacientes></ListadoPacientes>}></Route>
-          <Route exact path="/CrearPaciente" element={<CrearPaciente></CrearPaciente>}></Route>
-          <Route exact path="/EditarPaciente" element={<EditarPaciente></EditarPaciente>}></Route>
-
-
+          <Route
+            exact
+            path="/ListaTurnos"
+            element={<ListaTurnos></ListaTurnos>}
+          ></Route>
+          <Route
+            exact
+            path="/ListadoPacientes"
+            element={<ListadoPacientes></ListadoPacientes>}
+          ></Route>
+          <Route
+            exact
+            path="/CrearPaciente"
+            element={<CrearPaciente></CrearPaciente>}
+          ></Route>
+          <Route
+            exact
+            path="/EditarPaciente"
+            element={<EditarPaciente></EditarPaciente>}
+          ></Route>
         </Routes>
       </Router>
       <Footer></Footer>
@@ -44,7 +71,6 @@ function App() {
         url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&family=VT323&display=swap');
       </style>
     </div>
-
   );
 }
 
