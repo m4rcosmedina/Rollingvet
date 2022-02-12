@@ -1,0 +1,25 @@
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "Nombre y Apellido": "Sofia Acevedo",
+      "Email": "sofiacvedo@gmail.com",
+      "tel":"444-555",
+      "Nombre":"Negro",
+      "Especie":"Perro",
+      "Raza":"Purisimo",
+      "Edad":3
+    },
+    {
+      "id": 2,
+      "Nombre y Apellido": "Raquel Acevedo",
+      "Email": "seniora@gmail.com",
+      "tel":"444-555",
+      "Nombre":"Elsa",
+      "Especie":"Perro",
+      "Raza":"Salchiche",
+      "Edad":4
+    }
+  ]
+ 
+}

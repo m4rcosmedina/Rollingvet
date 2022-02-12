@@ -11,6 +11,9 @@ import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
 import QuienesSomos from './pages/QuienesSomos';
+import ListadoPacientes from "./pages/ListadoPacientes";
+import CrearPaciente from "./pages/Pacientes/CrearPaciente";
+import EditarPaciente from "./pages/Pacientes/EditarPaciente";
 
 
 
@@ -28,6 +31,11 @@ function App() {
           <Route exact path="/QuienesSomos" element={<QuienesSomos></QuienesSomos>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
+          <Route exact path="/ListadoPacientes" element={<ListadoPacientes></ListadoPacientes>}></Route>
+          <Route exact path="/CrearPaciente" element={<CrearPaciente></CrearPaciente>}></Route>
+          <Route exact path="/EditarPaciente" element={<EditarPaciente></EditarPaciente>}></Route>
+
+
         </Routes>
       </Router>
       <Footer></Footer>

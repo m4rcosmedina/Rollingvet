@@ -37,7 +37,7 @@ const OpinionesPrincipal = () => {
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Tus comentarios</Form.Label>
+              <Form.Label>Los comentarios están sujetos a moderacion, por favor, sea respetuoso.</Form.Label>
               <Form.Control
                 className="py-2"
                 type="text"
