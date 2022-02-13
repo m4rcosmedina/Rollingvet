@@ -11,6 +11,8 @@ import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
 import QuienesSomos from './pages/QuienesSomos';
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
 
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route exact path="/QuienesSomos" element={<QuienesSomos></QuienesSomos>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
+          <Route exact path="/Login" element={<Login></Login>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
+          <Route exact path="/Admin" element={<Admin></Admin>}></Route>
         </Routes>
       </Router>
       <Footer></Footer>
