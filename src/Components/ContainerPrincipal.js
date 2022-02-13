@@ -1,5 +1,4 @@
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faAward, faCalendarCheck, faGraduationCap, faUserGraduate, faUserNurse } from "@fortawesome/free-solid-svg-icons";
+import {  faCalendarCheck, faGraduationCap,  faUserNurse } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import {

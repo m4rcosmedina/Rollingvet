@@ -2,34 +2,73 @@
   "pacientes": [
     {
       "id": 1,
-      "NombreHum": "Sofia Acevedo",
-      "Email": "sofiacvedo@gmail.com",
-      "Tel":"444-555",
-      "Nombre":"Negro",
-      "Especie":"Perro",
-      "Raza":"Purisimo",
-      "Edad":3
+      "nombreHum": "Sofia Acevedo",
+      "email": "sofiacvedo@gmail.com",
+      "tel": "444-555",
+      "nombre": "Negro",
+      "especie": "Perro",
+      "raza": "Purisimo",
+      "edad": 3
     },
     {
-      "id": 2,
-      "NombreHum": "Raquel Acevedo",
-      "Email": "seniora@gmail.com",
-      "Tel":"333-444",
-      "Nombre":"Elsa",
-      "Especie":"Perro",
-      "Raza":"Salchiche",
-      "Edad":4
+      "nombreHum": "marcos medina",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "444",
+      "nombre": "negro",
+      "especie": "perro",
+      "raza": "mestizo",
+      "edad": "1",
+      "id": 2
     },
     {
-      "id": 3,
-      "NombreHum": "Marcos",
-      "Email": "seniora@gmail.com",
-      "Tel":"333-444",
-      "Nombre":"Elsa",
-      "Especie":"Perro",
-      "Raza":"Salchiche",
-      "Edad":4
+      "nombreHum": "marcos medina",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "333",
+      "nombre": "negro",
+      "especie": "perrito",
+      "raza": "mestizo",
+      "edad": "1",
+      "id": 3
+    },
+    {
+      "nombreHum": "maxi",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "333",
+      "nombre": "u",
+      "especie": "t",
+      "raza": "t",
+      "edad": "2",
+      "id": 4
+    },
+    {
+      "nombreHum": "analicita",
+      "email": "natyacvedo@gmail.com",
+      "tel": "333",
+      "nombre": "lolita",
+      "especie": "perro",
+      "raza": "blanquita",
+      "edad": "3",
+      "id": 5
+    },
+    {
+      "nombreHum": "marcosjmedina",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "03816855455",
+      "nombre": "negro",
+      "especie": "gatito",
+      "raza": "mesitzo",
+      "edad": "4",
+      "id": 6
+    },
+    {
+      "nombreHum": "medina",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "3333",
+      "nombre": "gatite",
+      "especie": "gato",
+      "raza": "rubia",
+      "edad": "3",
+      "id": 7
     }
   ]
- 
 }

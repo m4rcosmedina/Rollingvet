@@ -4,13 +4,13 @@ const Paciente = ({ paciente}) => {
   return (
       <tr>
         <td>{paciente.id}</td>
-        <td>{paciente.NombreHum}</td>
-        <td>{paciente.Email}</td>
-        <td>{paciente.Tel}</td>
-        <td>{paciente.Nombre}</td>
-        <td>{paciente.Especie}</td>
-        <td>{paciente.Raza}</td>
-        <td>{paciente.Edad}</td>
+        <td>{paciente.nombreHum}</td>
+        <td>{paciente.email}</td>
+        <td>{paciente.tel}</td>
+        <td>{paciente.nombre}</td>
+        <td>{paciente.especie}</td>
+        <td>{paciente.raza}</td>
+        <td>{paciente.edad}</td>
         </tr>
   );
 };

@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     getApi();
-  }, []);
+   },[]);
 
   const getApi = async () => {
     try {
@@ -63,7 +63,7 @@ function App() {
           <Route
             exact
             path="/CrearPaciente"
-            element={<CrearPaciente></CrearPaciente>}
+            element={<CrearPaciente URL={URL} getApi ={getApi}></CrearPaciente>}
           ></Route>
           <Route
             exact
