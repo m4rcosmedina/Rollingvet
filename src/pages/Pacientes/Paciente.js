@@ -6,7 +6,7 @@ const Paciente = ({ paciente}) => {
         <td>{paciente.id}</td>
         <td>{paciente.NombreHum}</td>
         <td>{paciente.Email}</td>
-        <td>{paciente.tel}</td>
+        <td>{paciente.Tel}</td>
         <td>{paciente.Nombre}</td>
         <td>{paciente.Especie}</td>
         <td>{paciente.Raza}</td>
