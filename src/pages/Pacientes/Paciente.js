@@ -1,22 +1,18 @@
-import React from 'react';
-import ListadoPacientes from '../ListadoPacientes';
+import React from "react";
 
-const Paciente = ({pacientes}) => {
-    return (
-        <div>
-            <tr>
-                <td>{pacientes.id}</td>
-                <td>{pacientes.nombreH}</td>
-                <td>{pacientes.email}</td>
-                <td>{pacientes.tel}</td>
-                <td>{pacientes.nombre}</td>
-                <td>{pacientes.especie}</td>
-                <td>{pacientes.raza}</td>
-                <td>{pacientes.edad}</td>
-            </tr>
-            
-        </div>
-    );
+const Paciente = ({ paciente}) => {
+  return (
+      <tr>
+        <td>{paciente.id}</td>
+        <td>{paciente.NombreHum}</td>
+        <td>{paciente.Email}</td>
+        <td>{paciente.tel}</td>
+        <td>{paciente.Nombre}</td>
+        <td>{paciente.Especie}</td>
+        <td>{paciente.Raza}</td>
+        <td>{paciente.Edad}</td>
+        </tr>
+  );
 };
 
 export default Paciente;

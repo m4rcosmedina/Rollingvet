@@ -14,7 +14,17 @@
       "id": 2,
       "NombreHum": "Raquel Acevedo",
       "Email": "seniora@gmail.com",
-      "tel":"444-555",
+      "tel":"333-444",
+      "Nombre":"Elsa",
+      "Especie":"Perro",
+      "Raza":"Salchiche",
+      "Edad":4
+    },
+    {
+      "id": 2,
+      "NombreHum": "Marcos",
+      "Email": "seniora@gmail.com",
+      "tel":"333-444",
       "Nombre":"Elsa",
       "Especie":"Perro",
       "Raza":"Salchiche",

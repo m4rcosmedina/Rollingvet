@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Table, Nav, Button } from "react-bootstrap";
 import Paciente from "./Pacientes/Paciente";
+import { Container, Table, Nav, Button } from "react-bootstrap";
 
-const ListadoPacientes = ({ pacientes }) => {
+const ListadoPacientes = ({ pacientes, getApi, URL }) => {
   return (
     <div>
       <Container className="py-5">
@@ -23,6 +23,7 @@ const ListadoPacientes = ({ pacientes }) => {
         <Table bordered hover responsive className="align-middle mt-3">
           <thead>
             <tr>
+              <th>ID</th>
               <th>NOMBRE Y APELLIDO</th>
               <th>EMAIL</th>
               <th>TELEFONO</th>
@@ -32,9 +33,17 @@ const ListadoPacientes = ({ pacientes }) => {
               <th>EDAD</th>
             </tr>
           </thead>
-          <tbody>{pacientes.map(() => {
-              <Paciente/>
-          })} </tbody>
+          <tbody>
+            {pacientes.map((paciente,
+            ) => (
+              <Paciente
+              key={paciente.id}
+              paciente={paciente}
+              getApi={getApi}
+              URL={URL} />
+            ))}{" "}
+          </tbody>
+
         </Table>
       </Container>
     </div>
