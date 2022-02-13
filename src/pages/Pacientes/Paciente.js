@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Paciente = ({ paciente}) => {
   return (
@@ -11,6 +12,18 @@ const Paciente = ({ paciente}) => {
         <td>{paciente.especie}</td>
         <td>{paciente.raza}</td>
         <td>{paciente.edad}</td>
+        <Link
+            to={`/EditarPaciente/${paciente.id}`}
+            className="btn-orange mx-1 text-decoration-none text-center"
+          >
+            EDITAR
+          </Link>
+          <button
+            className="btn-red mx-1"
+           // onClick={() => handleDelete(paciente.id)}
+          >
+            BORRAR
+          </button>
         </tr>
   );
 };

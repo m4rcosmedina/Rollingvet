@@ -67,8 +67,8 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/EditarPaciente"
-            element={<EditarPaciente></EditarPaciente>}
+            path="/EditarPaciente/:id"
+            element={<EditarPaciente URL={URL}></EditarPaciente>}
           ></Route>
         </Routes>
       </Router>

@@ -69,6 +69,46 @@
       "raza": "rubia",
       "edad": "3",
       "id": 7
+    },
+    {
+      "nombreHum": "edu romano",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "3333",
+      "nombre": "peter",
+      "especie": "perrito gay",
+      "raza": "blnco",
+      "edad": "3",
+      "id": 8
+    },
+    {
+      "nombreHum": "roba",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "03816855455",
+      "nombre": "hhh",
+      "especie": "jjj",
+      "raza": "hhhh",
+      "edad": "2",
+      "id": 9
+    },
+    {
+      "nombreHum": "giuliano",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "777",
+      "nombre": "u",
+      "especie": "u",
+      "raza": "u",
+      "edad": "3",
+      "id": 10
+    },
+    {
+      "nombreHum": "sofia acevedo",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "03816855455",
+      "nombre": "uma",
+      "especie": "perro",
+      "raza": "ovejero",
+      "edad": "8",
+      "id": 11
     }
   ]
 }

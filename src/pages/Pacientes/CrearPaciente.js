@@ -149,6 +149,7 @@ const CrearPaciente = ({ URL, getApi }) => {
           <div className="text-end">
             <button className="btn-yellow">Save</button>
           </div>
+          
         </Form>
       </Container>
     </div>
