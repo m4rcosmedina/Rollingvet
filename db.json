@@ -1,0 +1,18 @@
+{
+    "usuarios":[
+        {
+            "id": 1,
+            "apellido_paterno": "Bazán",
+            "nombre:":"Rodrigo",
+            "username:":"rbazan",
+            "password":"827ccb0eea8a706c4c34a16891f84e7b"
+        },
+        {
+            "id": 2,
+            "apellido_paterno": "Acevedo",
+            "nombre:":"Natalia",
+            "username:":"nacevedo",
+            "password":"75429bf707c8b0b5952ba1bcd4b39378"
+        }
+    ]
+}
