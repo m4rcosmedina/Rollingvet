@@ -14,20 +14,27 @@ import QuienesSomos from "./pages/QuienesSomos";
 import ListadoPacientes from "./pages/ListadoPacientes";
 import CrearPaciente from "./pages/Pacientes/CrearPaciente";
 import EditarPaciente from "./pages/Pacientes/EditarPaciente";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [pacientes, setPacientes] = useState([]);
   const URL = process.env.REACT_APP_API_ROLLINGVET;
-  console.log(URL)
+  console.log(URL);
+
+  useEffect(() => {
+    getApi();
+  }, []);
 
   const getApi = async () => {
     try {
       const res = await fetch(URL);
+      const pacientesApi = await res.json();
+      console.log(pacientesApi);
+      setPacientes(pacientesApi);
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   return (
     <div>
@@ -51,7 +58,7 @@ function App() {
           <Route
             exact
             path="/ListadoPacientes"
-            element={<ListadoPacientes></ListadoPacientes>}
+            element={<ListadoPacientes pacientes={pacientes}></ListadoPacientes>}
           ></Route>
           <Route
             exact

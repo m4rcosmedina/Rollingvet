@@ -2,7 +2,7 @@
   "pacientes": [
     {
       "id": 1,
-      "Nombre y Apellido": "Sofia Acevedo",
+      "NombreHum": "Sofia Acevedo",
       "Email": "sofiacvedo@gmail.com",
       "tel":"444-555",
       "Nombre":"Negro",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "Nombre y Apellido": "Raquel Acevedo",
+      "NombreHum": "Raquel Acevedo",
       "Email": "seniora@gmail.com",
       "tel":"444-555",
       "Nombre":"Elsa",
