@@ -13,6 +13,27 @@
             "nombre:":"Natalia",
             "username:":"nacevedo",
             "password":"75429bf707c8b0b5952ba1bcd4b39378"
+        },
+        {
+            "id": 3,
+            "apellido_paterno": "Hurtado",
+            "nombre:":"Julieta",
+            "username:":"jhurtado",
+            "password":"75429bf707c8b0b5952ba1bcd4b39378"
+        },
+        {
+            "id": 4,
+            "apellido_paterno": "Carbone",
+            "nombre:":"Giuliano",
+            "username:":"gcarbone",
+            "password":"75429bf707c8b0b5952ba1bcd4b39378"
+        },
+        {
+            "id": 5,
+            "apellido_paterno": "Medina",
+            "nombre:":"Marcos",
+            "username:":"mmedina",
+            "password":"75429bf707c8b0b5952ba1bcd4b39378"
         }
     ]
 }
