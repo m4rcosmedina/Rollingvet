@@ -6,11 +6,11 @@ import Error404 from "./pages/Error404";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar';
-import Contacto from './pages/Contacto';
-import Planes from './pages/Planes';
-import QuienesSomos from './pages/QuienesSomos';
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Contacto from "./pages/Contacto";
+import Planes from "./pages/Planes";
+import QuienesSomos from "./pages/QuienesSomos";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import ListadoPacientes from "./pages/ListadoPacientes";
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     getApi();
-   },[]);
+  }, []);
 
   const getApi = async () => {
     try {
@@ -53,8 +53,13 @@ function App() {
           ></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/Login" element={<Login></Login>}></Route>
-          <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
+          <Route
+            exact
+            path="/ListaTurnos"
+            element={<ListaTurnos></ListaTurnos>}
+          ></Route>
           <Route exact path="/Admin" element={<Admin></Admin>}></Route>
+          
           <Route
             exact
             path="/ListaTurnos"
@@ -63,17 +68,25 @@ function App() {
           <Route
             exact
             path="/ListadoPacientes"
-            element={<ListadoPacientes pacientes={pacientes} URL={URL} getApi={getApi}></ListadoPacientes>}
+            element={
+              <ListadoPacientes
+                pacientes={pacientes}
+                URL={URL}
+                getApi={getApi}
+              ></ListadoPacientes>
+            }
           ></Route>
           <Route
             exact
             path="/CrearPaciente"
-            element={<CrearPaciente URL={URL} getApi ={getApi}></CrearPaciente>}
+            element={<CrearPaciente URL={URL} getApi={getApi}></CrearPaciente>}
           ></Route>
           <Route
             exact
             path="/EditarPaciente/:id"
-            element={<EditarPaciente URL={URL} getApi ={getApi}></EditarPaciente>}
+            element={
+              <EditarPaciente URL={URL} getApi={getApi}></EditarPaciente>
+            }
           ></Route>
         </Routes>
       </Router>

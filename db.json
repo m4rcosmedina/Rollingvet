@@ -37,7 +37,8 @@
     }
   ],
 
-  "pacientes": [{
+  "pacientes": [
+      {
       "nombreHum": "marcos",
       "email": "marcosjmedina@gmail.com",
       "tel": "333",
