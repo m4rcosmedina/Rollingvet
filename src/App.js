@@ -58,7 +58,7 @@ function App() {
           <Route
             exact
             path="/ListadoPacientes"
-            element={<ListadoPacientes pacientes={pacientes}></ListadoPacientes>}
+            element={<ListadoPacientes pacientes={pacientes} URL={URL} getApi={getApi}></ListadoPacientes>}
           ></Route>
           <Route
             exact
