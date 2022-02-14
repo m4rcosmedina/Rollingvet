@@ -1,11 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Button, Container, Form } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Container, Form } from "react-bootstrap";
+import { useNavigate, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+import {
+  validarEdad,
+  validarEmail,
+  validarEspecie,
+  validarNombre,
+  validarNombreHum,
+  validarRaza,
+  validarTel,
+} from "../../Components/helpers/ValidacionesPacientes";
 
-const EditarPaciente = ({ URL }) => {
+const EditarPaciente = ({ URL, getApi }) => {
   const [paciente, setPaciente] = useState({});
 
-  const {id} = useParams();
+  const { id } = useParams();
 
   const nombreHumRef = useRef("");
   const emailRef = useRef("");
@@ -15,9 +25,11 @@ const EditarPaciente = ({ URL }) => {
   const razaRef = useRef("");
   const edadRef = useRef("");
 
+  const navigate = useNavigate();
+
   useEffect(async () => {
     try {
-      const res = await fetch( `${URL}/${id}` );
+      const res = await fetch(`${URL}/${id}`);
       const pacienteApi = await res.json();
       setPaciente(pacienteApi);
     } catch (error) {
@@ -27,9 +39,56 @@ const EditarPaciente = ({ URL }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-        console.log(nombreHumRef.current.value);
 
+    if (
+      !validarNombreHum(nombreHumRef.current.value) ||
+      !validarEmail(emailRef.current.value) ||
+      !validarTel(telRef.current.value) ||
+      !validarNombre(nombreRef.current.value) ||
+      !validarEspecie(especieRef.current.value) ||
+      !validarRaza(razaRef.current.value) ||
+      !validarEdad(edadRef.current.value)
+    ) {
+      Swal.fire("Error", "Algún dato es erroneo", "error");
+      return;
+    }
+
+    const pacienteEditado = {
+      nombreHum: nombreHumRef.current.value,
+      email: emailRef.current.value,
+      tel: telRef.current.value,
+      nombre: nombreRef.current.value,
+      especie: especieRef.current.value,
+      raza: razaRef.current.value,
+      edad: edadRef.current.value,
     };
+    Swal.fire({
+      title: "Estas seguro?",
+      text: "No se podrá revertir esta acción.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Si, Editar",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          const res = await fetch(`${URL}/${id}`, {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(pacienteEditado),
+          });
+          if (res.status === 200) {
+            Swal.fire("Listo!", "El paciente fue editado!", "success");
+            getApi();
+            navigate("/ListadoPacientes");
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    });
+  };
 
   return (
     <div>
@@ -90,8 +149,8 @@ const EditarPaciente = ({ URL }) => {
               ref={edadRef}
             ></Form.Control>
           </Form.Group>
-          <div className="text-end py-3" variant="outline-primary">
-            <Button>Guardar</Button>
+          <div className="text-end">
+            <button className="btn-yellow">Save</button>
           </div>
         </Form>
       </Container>

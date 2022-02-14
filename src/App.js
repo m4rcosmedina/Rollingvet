@@ -68,7 +68,7 @@ function App() {
           <Route
             exact
             path="/EditarPaciente/:id"
-            element={<EditarPaciente URL={URL}></EditarPaciente>}
+            element={<EditarPaciente URL={URL} getApi ={getApi}></EditarPaciente>}
           ></Route>
         </Routes>
       </Router>
