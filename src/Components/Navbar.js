@@ -9,6 +9,7 @@ const Navegador = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const inLogin=()=>{window.location.href="/login"}
   return (
     <>
       <Navbar className="navbarBg" expand="lg">
@@ -34,7 +35,7 @@ const Navegador = () => {
               <Nav.Link href="/Contacto" className="navbarContacto text-white fs-5">
                 Contactanos
               </Nav.Link>
-              <Nav.Link className="navbarLogin text-white fs-5" onClick={handleShow}>
+              <Nav.Link className="navbarLogin text-white fs-5" onClick={inLogin}>
                 Login
               </Nav.Link>
             </Nav>
