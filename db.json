@@ -1,4 +1,16 @@
 {
+    "pacientes": [
+        {
+        "nombreHum": "marcos",
+        "email": "marcosjmedina@gmail.com",
+        "tel": "333",
+        "nombre": "negro",
+        "especie": "perro",
+        "raza": "mestizo",
+        "edad":2
+  
+    }],
+
   "usuarios": [
     {
       "id": 1,
@@ -35,18 +47,6 @@
       "username:": "mmedina",
       "password": "75429bf707c8b0b5952ba1bcd4b39378"
     }
-  ],
-
-  "pacientes": [
-      {
-      "nombreHum": "marcos",
-      "email": "marcosjmedina@gmail.com",
-      "tel": "333",
-      "nombre": "negro",
-      "especie": "perro",
-      "raza": "mestizo",
-      "edad":2
-
-  }]
+  ]
 }
 

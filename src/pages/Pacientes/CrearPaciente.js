@@ -147,9 +147,8 @@ const CrearPaciente = ({ URL, getApi }) => {
             ></Form.Control>
           </Form.Group>
           <div className="text-end">
-            <button className="btn-yellow">Save</button>
+            <button className="btn-yellow">Guardar</button>
           </div>
-          
         </Form>
       </Container>
     </div>

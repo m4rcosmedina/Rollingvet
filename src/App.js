@@ -52,14 +52,8 @@ function App() {
             element={<QuienesSomos></QuienesSomos>}
           ></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
-          <Route exact path="/Login" element={<Login></Login>}></Route>
-          <Route
-            exact
-            path="/ListaTurnos"
-            element={<ListaTurnos></ListaTurnos>}
-          ></Route>
+          <Route exact path="/Login" element={<Login ></Login>}></Route>
           <Route exact path="/Admin" element={<Admin></Admin>}></Route>
-          
           <Route
             exact
             path="/ListaTurnos"
