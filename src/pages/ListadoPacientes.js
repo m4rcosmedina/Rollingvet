@@ -43,8 +43,6 @@ const ListadoPacientes = ({ pacientes, getApi, URL }) => {
               URL={URL} />
             ))}{" "}
           </tbody>
-   
-
         </Table>
       </Container>
     </div>

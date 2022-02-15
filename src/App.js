@@ -1,13 +1,12 @@
 import React from "react";
 import "./CSS/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Error404 from "./pages/Error404";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import Error404 from "./pages/Error404";
 import Contacto from "./pages/Contacto";
 import Planes from "./pages/Planes";
 import QuienesSomos from "./pages/QuienesSomos";
