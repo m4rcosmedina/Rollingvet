@@ -11,7 +11,6 @@ import Contacto from "./pages/Contacto";
 import Planes from "./pages/Planes";
 import QuienesSomos from "./pages/QuienesSomos";
 import Login from "./pages/Login";
-import Admin from "./pages/Admin";
 import ListadoPacientes from "./pages/ListadoPacientes";
 import CrearPaciente from "./pages/Pacientes/CrearPaciente";
 import EditarPaciente from "./pages/Pacientes/EditarPaciente";
@@ -52,7 +51,6 @@ function App() {
           ></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/Login" element={<Login ></Login>}></Route>
-          <Route exact path="/Admin" element={<Admin></Admin>}></Route>
           <Route
             exact
             path="/ListaTurnos"

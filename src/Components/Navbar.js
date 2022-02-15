@@ -38,6 +38,8 @@ const Navegador = () => {
               <Nav.Link className="navbarLogin text-white fs-5" onClick={inLogin}>
                 Login
               </Nav.Link>
+
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -54,7 +54,7 @@ class Login extends Component {
             showConfirmButton: false,
             timer: 10000,
           });
-          window.location.href = "/admin";
+          window.location.href = "/";
         } else {
           alert("El usuario o la contraseña no son correctos");
         }
