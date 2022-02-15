@@ -43,12 +43,12 @@ const ContainerPrincipal = () => {
                   className="botonEnviar mt-4"
                   onClick={handleShow}
                 >
-                  Marcos
+                  Dr.Nick Riviera
                 </Button>
                 <Offcanvas show={show} onHide={handleClose}>
                   <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
-                      Marcos Medina
+                    Dr.Nick Riviera
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body className="text-muted">
@@ -91,12 +91,12 @@ const ContainerPrincipal = () => {
                   className="botonEnviar mt-4"
                   onClick={handleShow2}
                 >
-                  Natalia
+                  Dra. Natalia Primera de Obanta
                 </Button>
                 <Offcanvas show={show2} onHide={handleClose2}>
                   <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
-                      Natalia
+                    Dra. Natalia Primera de Obanta
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>

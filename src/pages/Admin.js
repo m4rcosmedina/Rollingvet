@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cookies from "universal-cookie";
+import { Container } from "react-bootstrap";
 
 const coockies = new Cookies();
 
@@ -17,12 +18,12 @@ class Admin extends Component {
         console.log ("nombre " + coockies.get("nombre"));
         console.log ("username " + coockies.get("username"));
         return(
-            <div>
+            <Container className="text-center py-5">
                 Pagina Administrador
 
                 <br/>
-                <button onClick={()=>this.cerrarSesion()}>Cerrar Sesión</button>
-            </div>
+                <button className="btn btn-outline-primary my-5" onClick={()=>this.cerrarSesion()}>Cerrar Sesión</button>
+                </Container>
         );
     }
 }

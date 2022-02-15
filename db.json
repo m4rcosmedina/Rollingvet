@@ -25,37 +25,37 @@
     {
       "id": 1,
       "apellido_paterno": "Bazán",
-      "nombre:": "Rodrigo",
-      "username:": "rbazan",
+      "nombre": "Rodrigo",
+      "username": "rbazan",
       "password": "827ccb0eea8a706c4c34a16891f84e7b"
     },
     {
       "id": 2,
       "apellido_paterno": "Acevedo",
-      "nombre:": "Natalia",
-      "username:": "nacevedo",
+      "nombre": "Natalia",
+      "username": "nacevedo",
       "password": "75429bf707c8b0b5952ba1bcd4b39378"
     },
     {
       "id": 3,
       "apellido_paterno": "Hurtado",
-      "nombre:": "Julieta",
-      "username:": "jhurtado",
+      "nombre": "Julieta",
+      "username": "jhurtado",
       "password": "75429bf707c8b0b5952ba1bcd4b39378"
     },
     {
       "id": 4,
       "apellido_paterno": "Carbone",
-      "nombre:": "Giuliano",
-      "username:": "gcarbone",
+      "nombre": "Giuliano",
+      "username": "gcarbone",
       "password": "75429bf707c8b0b5952ba1bcd4b39378"
     },
     {
       "id": 5,
       "apellido_paterno": "Medina",
-      "nombre:": "Marcos",
-      "username:": "mmedina",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
+      "nombre": "Marcos",
+      "username": "mmedina",
+      "password": "11d0e6287202fced83f79975ec59a3a6"
     }
   ]
 }

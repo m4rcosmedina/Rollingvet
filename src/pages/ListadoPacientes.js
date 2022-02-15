@@ -16,21 +16,22 @@ const ListadoPacientes = ({ pacientes, getApi, URL }) => {
             variant="outline-primary"
             className="botonEnviar"
           >
-            Agregar nuevo paciente
+          Agregar nuevo paciente
           </Button>
         </Nav.Link>
 
         <Table bordered hover responsive className="align-middle mt-3">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>NOMBRE Y APELLIDO</th>
-              <th>EMAIL</th>
-              <th>TELEFONO</th>
-              <th>NOMBRE</th>
-              <th>ESPECIE</th>
-              <th>RAZA</th>
-              <th>EDAD</th>
+              <th className="text-center">ID</th>
+              <th className="text-center">NOMBRE Y APELLIDO</th>
+              <th className="text-center">EMAIL</th>
+              <th className="text-center">TELEFONO</th>
+              <th className="text-center">NOMBRE</th>
+              <th className="text-center">ESPECIE</th>
+              <th className="text-center">RAZA</th>
+              <th className="text-center">EDAD</th>
+              <th className="text-center">OPCIONES</th>
             </tr>
           </thead>
           <tbody>

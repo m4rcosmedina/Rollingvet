@@ -47,12 +47,12 @@ const Paciente = ({ paciente, URL, getApi }) => {
       <td>{paciente.edad}</td>
       <Link
         to={`/EditarPaciente/${paciente.id}`}
-        className="btn-orange mx-1 text-decoration-none text-center"
+        className="btn btn-outline-warning mx-1 text-center"
       >
         EDITAR
       </Link>
       <button
-        className="btn-red mx-1"
+        className="btn btn-outline-danger mx-1 text-center"
         onClick={() => handleDelete(paciente.id)}
       >
         BORRAR
