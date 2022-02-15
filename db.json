@@ -1,15 +1,5 @@
 {
-  "pacientes": [
-    {
-      "nombreHum": "marcos",
-      "email": "marcosjmedina@gmail.com",
-      "tel": "333",
-      "nombre": "negro",
-      "especie": "perro",
-      "raza": "mestizo",
-      "edad": 2
-    }
-  ],
+  "pacientes": [],
   "usuarios": [
     {
       "id": 1,
