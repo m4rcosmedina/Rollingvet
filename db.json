@@ -1,5 +1,26 @@
 {
-  "pacientes": [],
+  "pacientes": [
+    {
+      "nombreHum": "sofia acevedo",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "44",
+      "nombre": "holss",
+      "especie": "rrr",
+      "raza": "rrrr",
+      "edad": "2",
+      "id": 1
+    },
+    {
+      "nombreHum": "rodrigo bazan",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "333",
+      "nombre": "hola",
+      "especie": "gato",
+      "raza": "mestizo",
+      "edad": "2",
+      "id": 2
+    }
+  ],
   "usuarios": [
     {
       "id": 1,
