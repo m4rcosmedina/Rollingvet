@@ -10,8 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 
-
 const Footer = () => {
+
   return (
     <Container fluid className="footerContainer">
       <Row>
@@ -67,15 +67,18 @@ const Footer = () => {
           <h3 className="Text-center">SIGAMOS CONECTADOS</h3>
           <div>
             <ul className="py-5 iconosFooter">
-              <FontAwesomeIcon
+            <FontAwesomeIcon
                 icon={faFacebook}
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
+                
               />
-              <FontAwesomeIcon
+              
+              <FontAwesomeIcon 
                 icon={faInstagram}
                 className="iconoRedes"
-                style={{ fontSize: "4em" }}
+                style={{ fontSize: "4em" }} 
+               
               />
               <FontAwesomeIcon
                 icon={faTwitter}

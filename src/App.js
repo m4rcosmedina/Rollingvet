@@ -16,6 +16,13 @@ import ListadoPacientes from "./pages/ListadoPacientes";
 import CrearPaciente from "./pages/Pacientes/CrearPaciente";
 import EditarPaciente from "./pages/Pacientes/EditarPaciente";
 import { useState, useEffect } from "react";
+import {
+  faWhatsapp,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [pacientes, setPacientes] = useState([]);
@@ -43,7 +50,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Inicio></Inicio>}></Route>
-          <Route exact path="*" element={<Error404></Error404>}></Route>
+          <Route exact path="/" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route
             exact

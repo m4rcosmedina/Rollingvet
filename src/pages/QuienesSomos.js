@@ -53,17 +53,6 @@ const QuienesSomos = () => {
   </Card>
   <Card className="movimiento">
     <Card.Img variant="top" src="https://i.ibb.co/pfkWfHQ/especialistas-01.jpg" />
-    
-    <Card.Footer className="text-center">
-      <small className="text-muted">Diego</small>
-    </Card.Footer>
-  </Card>
-  <Card className="movimiento">
-    <Card.Img variant="top" src="https://i.ibb.co/pfkWfHQ/especialistas-01.jpg" />
-    
-    <Card.Footer className="text-center">
-      <small className="text-muted">Alfredo</small>
-    </Card.Footer>
   </Card>
   <Card>
   </Card>
