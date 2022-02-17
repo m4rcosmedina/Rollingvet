@@ -1,7 +1,7 @@
 import React from "react";
 import "./CSS/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import ListaTurnos from "./pages/ListaTurnos";
 import Footer from "./Components/Footer";
@@ -50,7 +50,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Inicio></Inicio>}></Route>
-          <Route exact path="/" element={<Error404></Error404>}></Route>
+          <Route exact path="/Error404" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route
             exact

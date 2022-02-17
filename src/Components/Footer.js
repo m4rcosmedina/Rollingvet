@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 import logoRollingvet from "../assets/img/logoRollingvet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,10 +11,6 @@ import {
 import { faPhone, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-
-  const handleClick = () => {
-    console.log('Holis')
-  }
 
   return (
     <Container fluid className="footerContainer">
@@ -71,25 +67,31 @@ const Footer = () => {
           <h3 className="Text-center">SIGAMOS CONECTADOS</h3>
           <div>
             <ul className="py-5 iconosFooter">
-              <Button><FontAwesomeIcon
-                icon={faFacebook}
-                className="iconoRedes"
-                style={{ fontSize: "4em" }}
-                onClick={handleClick}
+              <Nav.Link href="/Error404">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="iconoRedes"
+                  style={{ fontSize: "4em" }}
+                  type="submit"
+                />
+              </Nav.Link>
+              <Nav.Link href="https://www.instagram.com/rollingvet/?hl=es-la">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="iconoRedes"
+                  style={{ fontSize: "4em" }}
+                  type="submit"
 
-              /></Button>
-
-              <Button><FontAwesomeIcon
-                icon={faInstagram}
-                className="iconoRedes"
-                style={{ fontSize: "4em" }}
-
-              /></Button>
-              <Button><FontAwesomeIcon
-                icon={faTwitter}
-                className="iconoRedes"
-                style={{ fontSize: "4em" }}
-              /></Button>
+                />
+              </Nav.Link>
+              <Nav.Link href="/Error404">
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="iconoRedes"
+                  style={{ fontSize: "4em" }}
+                  type="submit"
+                />
+              </Nav.Link>
             </ul>
           </div>
         </Col>
