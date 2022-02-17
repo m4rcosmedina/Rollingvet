@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import logoRollingvet from "../assets/img/logoRollingvet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,6 +11,10 @@ import {
 import { faPhone, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+
+  const handleClick = () => {
+    console.log('Holis')
+  }
 
   return (
     <Container fluid className="footerContainer">
@@ -67,30 +71,31 @@ const Footer = () => {
           <h3 className="Text-center">SIGAMOS CONECTADOS</h3>
           <div>
             <ul className="py-5 iconosFooter">
-            <FontAwesomeIcon
+              <Button><FontAwesomeIcon
                 icon={faFacebook}
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
-                
-              />
-              
-              <FontAwesomeIcon 
+                onClick={handleClick}
+
+              /></Button>
+
+              <Button><FontAwesomeIcon
                 icon={faInstagram}
                 className="iconoRedes"
-                style={{ fontSize: "4em" }} 
-               
-              />
-              <FontAwesomeIcon
+                style={{ fontSize: "4em" }}
+
+              /></Button>
+              <Button><FontAwesomeIcon
                 icon={faTwitter}
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
-              />
+              /></Button>
             </ul>
           </div>
         </Col>
       </Row>
     </Container>
-  ); 
-};
+  );
+}
 
 export default Footer;
