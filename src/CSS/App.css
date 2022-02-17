@@ -26,9 +26,9 @@
     justify-content: space-evenly;
 }
 
-
 .iconoRedes:hover{
     transform: scale(1.2);
+    color: #f7fff7;
 }
 .logoRollingvet{
     max-width: 20em;
