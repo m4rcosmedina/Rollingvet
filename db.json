@@ -11,14 +11,24 @@
       "id": 1
     },
     {
-      "nombreHum": "rodrigo bazan",
-      "email": "marcosjmedina@gmail.com",
+      "nombreHum": "Julieta Hurtado con microfono",
+      "email": "juli@juli.com",
       "tel": "333",
-      "nombre": "hola",
+      "nombre": "robix",
+      "especie": "perrito",
+      "raza": "mas puro",
+      "edad": "3",
+      "id": 3
+    },
+    {
+      "nombreHum": "marcos medina",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "33",
+      "nombre": "Negro",
       "especie": "gato",
       "raza": "mestizo",
-      "edad": "2",
-      "id": 2
+      "edad": "1",
+      "id": 4
     }
   ],
   "usuarios": [

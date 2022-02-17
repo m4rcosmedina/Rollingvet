@@ -54,6 +54,7 @@ class Login extends Component {
             showConfirmButton: false,
             timer: 10000,
           });
+          
           window.location.href = "/";
         } else {
           alert("El usuario o la contraseña no son correctos");
@@ -63,13 +64,11 @@ class Login extends Component {
         console.log(error);
       });
   };
-
   componentDidMount() {
     if (cookies.get("username")) {
       window.location.href = "/";
     }
   }
-
   render() {
     return (
       <div className="containerPrincipal">
