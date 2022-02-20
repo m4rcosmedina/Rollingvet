@@ -16,15 +16,21 @@ import ListadoPacientes from "./pages/ListadoPacientes";
 import CrearPaciente from "./pages/Pacientes/CrearPaciente";
 import EditarPaciente from "./pages/Pacientes/EditarPaciente";
 import { useState, useEffect } from "react";
+import Weather from "./Components/ApiClima";
 
 function App() {
   const [pacientes, setPacientes] = useState([]);
+  const [weather, setWeather] = useState({})
   const URL = process.env.REACT_APP_API_ROLLINGVET;
+  const key = process.env.REACT_APP_KEY;
   console.log(URL);
 
   useEffect(() => {
     getApi();
   }, []);
+  useEffect(()=>{
+    getWeather();
+  },[]);
 
   const getApi = async () => {
     try {
@@ -37,12 +43,36 @@ function App() {
     }
   };
 
+  //weather
+  const getWeather = async ()=>{
+    try{
+      const ipify = require ("ipify2");
+      const resIp = await ipify.ipv4();
+      const location = await fetch(`http://ip-api.com/json/${resIp}`);
+      const locJson = await location.json();
+      const openWeather = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${locJson.lat}&lon=${locJson.lon}&lang=es&units=metric&appid=${key}`);
+      const openWthJson = await openWeather.json();
+      const weather={
+        city: `${openWthJson.name}`,
+        temp: `${openWthJson.main.temp}`,
+        sky: `${openWthJson.weather[0].description}`,
+        wind: `${openWthJson.wind.speed}`
+      };
+      setWeather(weather);
+      console.log(weather.city);
+      console.log(weather.temp);
+    }catch(error){
+      console.log(error)
+    }
+  };
+  window.setInterval(getWeather, 300000);
+
   return (
     <div>
       <Navbar />
       <Router>
         <Routes>
-          <Route exact path="/" element={<Inicio></Inicio>}></Route>
+          <Route exact path="/" element={<Inicio weather={weather}></Inicio>}></Route>
           <Route exact path="*" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route
