@@ -31,6 +31,15 @@
       "id": 4
     }
   ],
+  "user": [
+    {
+      "userName":"mmedina",
+      "pass":"12345",
+      "id":1
+    }
+  ],
+
+
   "usuarios": [
     {
       "id": 1,

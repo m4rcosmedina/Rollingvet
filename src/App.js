@@ -19,7 +19,10 @@ import { useState, useEffect } from "react";
 function App() {
   const [pacientes, setPacientes] = useState([]);
   const URL = process.env.REACT_APP_API_ROLLINGVET;
-  console.log(URL);
+  const [user,setUser] = useState([]);
+  const URLUser= process.env.REACT_APP_API_USER;
+
+  console.log(URLUser);
 
   useEffect(() => {
     getApi();
@@ -31,6 +34,16 @@ function App() {
       const pacientesApi = await res.json();
       console.log(pacientesApi);
       setPacientes(pacientesApi);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getApiUser=async()=>{
+    try {
+      const res=await fetch(URLUser);      
+      const userApi=await res.json();      
+      setUser(userApi);      
     } catch (error) {
       console.log(error);
     }
@@ -50,7 +63,7 @@ function App() {
             element={<QuienesSomos></QuienesSomos>}
           ></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
-          <Route exact path="/Login" element={<Login ></Login>}></Route>
+          <Route exact path="/Login" element={<Login user={user} ></Login>}></Route>
           <Route
             exact
             path="/ListaTurnos"
