@@ -28,6 +28,10 @@ function App() {
     getApi();
   }, []);
 
+  useEffect(()=>{
+    getApiUser();
+  }, []);
+
   const getApi = async () => {
     try {
       const res = await fetch(URL);
