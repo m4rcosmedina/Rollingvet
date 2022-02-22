@@ -27,6 +27,12 @@ const OpinionesPrincipal = () => {
     setComentario("");
   };
 
+  const borrarOpinion =(nombre) => {
+    let arregloModificado = listaComentarios.filter((valor)=> valor !== nombre );
+    setListaComentarios(arregloModificado);
+    
+  }
+
   return (
     <div className="py-4 text-center fondoGeneral ">
      
@@ -73,7 +79,7 @@ const OpinionesPrincipal = () => {
         <Card.Body>
           <Card.Text>
             <ListaComentarios
-              arregloComentarios={listaComentarios}
+              arregloComentarios={listaComentarios} borrarOpinion={borrarOpinion}
             ></ListaComentarios>
           </Card.Text>
         </Card.Body>
