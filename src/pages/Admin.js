@@ -1,32 +1,33 @@
-import React, { Component } from "react";
-import Cookies from "universal-cookie";
-import { Container} from "react-bootstrap";
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 
-const coockies = new Cookies();
+const Admin = () => {
+  const sesionUsuario =
+    JSON.parse(sessionStorage.getItem("stateSession")) || false;
+  console.log(sesionUsuario);
 
-class Admin extends Component {
-    cerrarSesion =()=>{
-        coockies.remove("id", {path: "/login"});
-        coockies.remove("apellido_paterno", {path: "/login"});
-        coockies.remove("nombre", {path: "/login"});
-        coockies.remove("username", {path: "/login"});
-        window.location.href="./";
-    }
-    render = ()=>{
-        console.log ("id " + coockies.get("id"));
-        console.log ("apellido_paterno " + coockies.get("apellido_paterno"));
-        console.log ("nombre " + coockies.get("nombre"));
-        console.log ("username " + coockies.get("username"));
-        return(
-            <Container fluid className="text-end my-2">
-                Bienvenido Administrador
-                
-                <button className="btn btn-outline-primary mx-2" onClick={()=>this.cerrarSesion()}>Cerrar Sesión</button>
-                </Container>
+  const [click,setCLick ] = useState(false)
 
-                
-        );
-    }
-}
+  const handleClick = () => {
+      setCLick(true)
+
+  }
+
+  return (
+      <div>
+
+    <button
+        className="btn btn-outline-primary mx-2"
+        onClick={handleClick}
+      >
+        Cerrar Sesión
+      </button>
+
+      {click ? <h2>BIENVENIDO Admin</h2> : undefined}
+
+    
+    </div>
+  );
+};
 
 export default Admin;

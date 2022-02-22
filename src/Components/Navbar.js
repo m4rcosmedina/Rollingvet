@@ -1,15 +1,29 @@
 import React from "react";
 import "../CSS/styleNavbar.css";
-import { Navbar, Container, Nav, Modal, Button,Form } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoNavbar from "../assets/img/logoNavbar.png";
 import { useState } from "react";
 
 const Navegador = () => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const inLogin=()=>{window.location.href="/login"}
+  let sesionUsuario = JSON.parse(sessionStorage.getItem("stateSession")) || false;
+  console.log(sesionUsuario)
+  
+  const [mostrarLog, setMostrarLog] = useState(sesionUsuario)
+
+
+  const inLogin=() => {window.location.href="/login"}
+
+  const handleClose = () => {
+    if (sesionUsuario) {
+      sesionUsuario = false;
+      sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
+    }
+  };
+
+  console.log (sesionUsuario)
+
   return (
     <>
       <Navbar className="navbarBg" expand="lg">
@@ -35,42 +49,14 @@ const Navegador = () => {
               <Nav.Link href="/Contacto" className="navbarContacto text-white fs-5">
                 Contactanos
               </Nav.Link>
-              <Nav.Link className="navbarLogin text-white fs-5" onClick={inLogin}>
+              {mostrarLog ? <Nav.Link className="navbarLogin text-white fs-5" onClick={handleClose}> LogOut</Nav.Link> : <Nav.Link className="navbarLogin text-white fs-5" onClick={inLogin}>
                 Login
-              </Nav.Link>
-
-              
+              </Nav.Link>}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Modal show={show} onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Iniciar Sesión</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Correo electronico</Form.Label>
-              <Form.Control type="email" placeholder="Ingrese su email" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Contraseña</Form.Label>
-              <Form.Control type="password" placeholder="Ingrese su contraseña" />
-            </Form.Group>
-           
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="outline-danger"onClick={handleClose}>
-            Atrás
-          </Button>
-          <Button variant="outline-primary" onClick={handleClose}>
-            Ingresar
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      
     </>
   );
 };
