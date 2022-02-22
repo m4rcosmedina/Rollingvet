@@ -4,11 +4,16 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import bcrypt from "bcryptjs/dist/bcrypt";
 
+
+
+
 const Login = ({ user }) => {
   const [logUser, setLogUser] = useState("");
   const [logPass, setLogPass] = useState("");
 
-  let session = false;
+
+
+  let sesionUsuario = false;
 
   const navigate = useNavigate();
   const handleSubmit = (e) => {
@@ -17,9 +22,9 @@ const Login = ({ user }) => {
       bcrypt.compareSync(logUser, user[0].userName) &&
       bcrypt.compareSync(logPass, user[0].pass)
     ) {
-      session = true;
-      sessionStorage.setItem("stateSession", JSON.stringify(session));
-      Swal.fire("Correctamente logueado!", "", "success");
+      sesionUsuario = true;
+      sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
+      Swal.fire("Bienvenido!", "", "success");
       setTimeout(() => {
         navigate("/");
       }, 2000);
@@ -30,7 +35,12 @@ const Login = ({ user }) => {
         "error"
       );
     }
+ 
   };
+ 
+
+  
+  
 
   return (
       <Container className="py-5 text-center">

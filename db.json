@@ -23,23 +23,31 @@
     {
       "nombreHum": "marcos medina",
       "email": "marcosjmedina@gmail.com",
-      "tel": "33",
-      "nombre": "Negro",
-      "especie": "gato",
-      "raza": "mestizo",
-      "edad": "1",
+      "tel": "333333",
+      "nombre": "perro",
+      "especie": "perrow",
+      "raza": "ww",
+      "edad": "3",
       "id": 4
     }
   ],
   "user": [
     {
-      "userName":"mmedina",
-      "pass":"12345",
-      "id":1
+      "userName": "$2a$12$p6m4F79sDOsKvHOLb.sfrukx7uZNv8XwG8FK0kCr6ym9aqpZE/d4q",
+      "pass": "$2a$12$O3PHiEwIYzEOSM/KqMBmW.UcZ/Zg56UgLIAzKuRmckPJNwVtqz6lK",
+      "apellido_paterno": "Medina",
+      "nombre": "Marcos",
+      "id": 1
+    },
+    {
+      "userName":"$2a$12$HxpuKU0Xy8QbnUwe3sfuPOlPjPkq4P7nuAKGdVkRmmF6V1Mh5O72S",
+      "pass":"$2a$12$4bkz8uC3Kb4PkA88bmuqYOmtEGhMG6QTj2btTYhR5TxXK3Z3zjvtq",
+      "id":2
+
     }
+
+    
   ],
-
-
   "usuarios": [
     {
       "id": 1,
