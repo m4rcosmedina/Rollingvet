@@ -26,7 +26,7 @@ const Login = ({ user }) => {
       sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
       Swal.fire("Bienvenido!", "", "success");
       setTimeout(() => {
-        navigate("/");
+      navigate("/");
       }, 2000);
     } else {
       Swal.fire(
@@ -43,20 +43,19 @@ const Login = ({ user }) => {
   
 
   return (
-      <Container className="py-5 text-center">
+      <Container className="py-5">
         <h1 className="font-celeste-crud ">INICIE SESION</h1>
         <hr />
         <div className="my-5">
-          <Form className="my-5" onSubmit={handleSubmit}>
-            <Row>
-              <Col xs={12} md={6} className="my-2">
+          <Form className="my-5 text-center" onSubmit={handleSubmit}>
+              <Col xs={12} md={6} className="my-2 text-center">
                 <Form.Group className="mb-3" controlId="formBasicUser">
                   <Form.Label >
                     USUARIO
                   </Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="USUARIO"
+                    placeholder="ej:rbazan"
                     onChange={({ target }) => {
                       setLogUser(target.value.trimStart());
                     }}
@@ -64,22 +63,21 @@ const Login = ({ user }) => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPass">
                   <Form.Label className="font-celeste-crud">
-                    Contraseña
+                    CONTRASEÑA
                   </Form.Label>
                   <Form.Control
                     type="password"
-                    placeholder="PASSWORD"
+                    placeholder="**********"
                     onChange={({ target }) =>
                       setLogPass(target.value.trimStart())
                     }
                   ></Form.Control>
                 </Form.Group>
                 <div className="text-end">
-                  <button className="btn-btn" >ENTRAR</button>
+                  <button className="btn btn-outline-primary" >ENTRAR</button>
                 </div>
               </Col>
               <Col xs={12} md={6} className="my-2"></Col>
-            </Row>
           </Form>
         </div>
       </Container>
