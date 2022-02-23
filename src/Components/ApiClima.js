@@ -17,7 +17,7 @@ const Weather = ({weather})=> {
     }
 
     return(
-        <div className='bg-dark text-white container-fluid d-flex justify-content-evenly'>
+        <div className='navbarBg py-2 text-light container-fluid d-flex justify-content-evenly'>
             <div>
                 {weather.city}
             </div>
