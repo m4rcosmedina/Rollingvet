@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 import logoRollingvet from "../assets/img/logoRollingvet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -64,24 +64,29 @@ const Footer = () => {
           </div>
         </Col>
         <Col sm={3} className="textoFooter py-3 text-center">
-          <h3 className="Text-center">SIGAMOS CONECTADOS</h3>
+          <h3 className="Text-center">SEGUINOS!</h3>
           <div>
             <ul className="py-5 iconosFooter">
+              <Nav.Link href="/*">
               <FontAwesomeIcon
                 icon={faFacebook}
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
-              />
+              /></Nav.Link>
+                            <Nav.Link href="/*">
+
               <FontAwesomeIcon
                 icon={faInstagram}
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
-              />
+              /></Nav.Link>
+                            <Nav.Link href="/*">
+
               <FontAwesomeIcon
                 icon={faTwitter}
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
-              />
+              /></Nav.Link>
             </ul>
           </div>
         </Col>

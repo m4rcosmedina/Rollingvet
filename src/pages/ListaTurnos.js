@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
     Form,
     Container,
+    Nav,
     Button,
     Row,
     Col,
@@ -47,8 +48,8 @@ const ListaTurnos = () => {
                                         required
                                     >
                                         <option value="0">Seleccione profesional</option>
-                                        <option value="Dr. Milagro">Dr. Milagro</option>
-                                        <option value="Dr. Robazan">Dr. Robazan</option>
+                                        <option value="Dr. Milagro">Dr.Pablito</option>
+                                        <option value="Dr. Robazan">Dra.Emilse</option>
                                     </Form.Select>
                                     <Form.Group >
                                         <Form.Label>Seleccione fecha y hora</Form.Label>
@@ -101,11 +102,13 @@ const ListaTurnos = () => {
                         </Container>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button className="botonEnviar" type="submit">
+
+                    <Nav.Link href="/*" >
+                        <Button variant="outline-primary">
                             Reservar
-                        </Button>
-                        <Button className="botonEnviar">Modificar</Button>
-                        <Button className="botonEnviar">Eliminar</Button>
+                        </Button></Nav.Link>
+                        <Nav.Link href="/*"><Button variant="outline-warning" >Modificar</Button></Nav.Link>
+                        <Nav.Link href="/*"><Button  variant="outline-danger">Eliminar</Button></Nav.Link>
                     </Modal.Footer>
                 </Modal.Dialog>
             </Form>
