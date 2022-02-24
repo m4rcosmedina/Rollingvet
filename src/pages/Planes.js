@@ -44,7 +44,9 @@ const Planes = () => {
             <Col sm={6}>
               <Form ref={form} onSubmit={sendEmail}>
                 {" "}
-                <Form.Label className="py-3"><h4>Ingrese su nombre y apellido </h4></Form.Label>
+                <Form.Label className="py-3">
+                  <h4>Ingrese su nombre y apellido </h4>
+                </Form.Label>
                 <InputGroup className="mb-3">
                   <FormControl
                     placeholder="Ej:Cosme Fulanito"
@@ -56,7 +58,9 @@ const Planes = () => {
                   />
                 </InputGroup>
                 <Form.Group className="mb-3">
-                  <Form.Label className="py-3"><h4>Ingrese su correo electronico </h4></Form.Label>
+                  <Form.Label className="py-3">
+                    <h4>Ingrese su correo electronico </h4>
+                  </Form.Label>
                   <Form.Control
                     name="email"
                     type="email"
@@ -66,7 +70,10 @@ const Planes = () => {
                     Jamás compartiremos su correo con nadie mas.
                   </Form.Text>
                 </Form.Group>
-                <Form.Label className="py-3"> <h4>Teléfono</h4></Form.Label>
+                <Form.Label className="py-3">
+                  {" "}
+                  <h4>Teléfono</h4>
+                </Form.Label>
                 <InputGroup className="mb-3">
                   <FormControl
                     placeholder="Ej:(381)6719988"
@@ -82,7 +89,7 @@ const Planes = () => {
                   controlId="exampleForm.ControlTextarea1"
                 >
                   <Form.Label className="py-3">
-                   <h4> Indique el plan sobre el cual desea información.</h4>
+                    <h4> Indique el plan sobre el cual desea información.</h4>
                   </Form.Label>
                   <Form.Control as="textarea" rows={7} />
                 </Form.Group>
@@ -90,7 +97,12 @@ const Planes = () => {
                   className="mb-3 py-3"
                   controlId="formBasicCheckbox"
                 ></Form.Group>
-                <Button type="submit" variant="outline-primary"className="botonEnviar" value="Send">
+                <Button
+                  type="submit"
+                  variant="outline-primary"
+                  className="botonEnviar"
+                  value="Send"
+                >
                   Enviar
                 </Button>
               </Form>

@@ -12,8 +12,6 @@ const QuienesSomos = () => {
       <div className="fondoGeneral">
       <h1 className="text-center pt-3">Nosotros</h1> <hr></hr>
       <Container className="my-5">
-      <Carousel>
-  <Carousel.Item>
       <CardGroup>
   <Card className="movimiento" >
     <Card.Img variant="top" src="https://trello.com/1/cards/620407c0afe9a532f3054122/attachments/620408500bdc781bffb94ee6/previews/620408510bdc781bffb94f36/download/Naty-01-01.jpg" />
@@ -34,42 +32,21 @@ const QuienesSomos = () => {
     </Card.Footer>
   </Card>
   <Card className="movimiento">
-    <Card.Img variant="top" src="https://i.ibb.co/pfkWfHQ/especialistas-01.jpg" />
+    <Card.Img variant="top" src="https://trello.com/1/cards/620407c0afe9a532f3054122/attachments/620eaeea79c9780ddc205353/previews/620eaeeb79c9780ddc2053be/download/especialistas-01.jpg" />
     
     <Card.Footer className="text-center">
       <small className="text-muted">Julieta</small>
+      
     </Card.Footer>
   </Card>
-</CardGroup>
-</Carousel.Item>   
-<Carousel.Item>
-      <CardGroup>
   <Card  className="movimiento"> 
-    <Card.Img variant="top" src="https://i.ibb.co/pfkWfHQ/especialistas-01.jpg" />
+    <Card.Img variant="top" src="https://trello.com/1/cards/620407c0afe9a532f3054122/attachments/620eae37da0ddf2ddd6d2b48/previews/620eae38da0ddf2ddd6d2b9e/download/especialistas-01.jpg" />
     
     <Card.Footer className="text-center">
       <small className="text-muted">Rodrigo</small>
     </Card.Footer>
   </Card>
-  <Card className="movimiento">
-    <Card.Img variant="top" src="https://i.ibb.co/pfkWfHQ/especialistas-01.jpg" />
-    
-    <Card.Footer className="text-center">
-      <small className="text-muted">Diego</small>
-    </Card.Footer>
-  </Card>
-  <Card className="movimiento">
-    <Card.Img variant="top" src="https://i.ibb.co/pfkWfHQ/especialistas-01.jpg" />
-    
-    <Card.Footer className="text-center">
-      <small className="text-muted">Alfredo</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-  </Card>
 </CardGroup>
-</Carousel.Item>
-</Carousel>
 </Container>
     </div>
       );
