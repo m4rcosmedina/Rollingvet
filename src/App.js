@@ -11,6 +11,7 @@ import Navbar from './Components/Navbar';
 import Contacto from './pages/Contacto';
 import Planes from './pages/Planes';
 import QuienesSomos from './pages/QuienesSomos';
+import TablaTurnos from "./pages/TablaTurnos";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/QuienesSomos" element={<QuienesSomos></QuienesSomos>}></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
           <Route exact path="/ListaTurnos" element={<ListaTurnos></ListaTurnos>}></Route>
+          <Route exact path="/TablaTurnos" element={<TablaTurnos></TablaTurnos>}></Route>
         </Routes>
       </Router>
       <Footer></Footer>
