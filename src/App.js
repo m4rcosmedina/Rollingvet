@@ -14,15 +14,18 @@ import Login from "./pages/Login";
 import ListadoPacientes from "./pages/ListadoPacientes";
 import CrearPaciente from "./pages/Pacientes/CrearPaciente";
 import EditarPaciente from "./pages/Pacientes/EditarPaciente";
+import CrearTurno from "./pages/Turnos/CrearTurno";
+import EditarTurno from "./pages/Turnos/EditarTurno";
+import ListadoTurnos from "./pages/ListadoTurnos";
 import { useState, useEffect } from "react";
 import Weather from "./Components/ApiClima";
 
 function App() {
   const [pacientes, setPacientes] = useState([]);
-  const [weather, setWeather] = useState({})
+  const [weather, setWeather] = useState({});
   const URL = process.env.REACT_APP_API_ROLLINGVET;
-  const [user,setUser] = useState([]);
-  const URLUser= process.env.REACT_APP_API_USER;
+  const [user, setUser] = useState([]);
+  const URLUser = process.env.REACT_APP_API_USER;
 
   console.log(URLUser);
   const key = process.env.REACT_APP_KEY;
@@ -31,11 +34,11 @@ function App() {
   useEffect(() => {
     getApi();
   }, []);
-  useEffect(()=>{
+  useEffect(() => {
     getWeather();
-  },[]);
+  }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     getApiUser();
   }, []);
 
@@ -50,35 +53,37 @@ function App() {
     }
   };
 
-  const getApiUser=async()=>{
+  const getApiUser = async () => {
     try {
-      const res=await fetch(URLUser);      
-      const userApi=await res.json();      
-      setUser(userApi);      
+      const res = await fetch(URLUser);
+      const userApi = await res.json();
+      setUser(userApi);
     } catch (error) {
       console.log(error);
     }
   };
   //weather
-  const getWeather = async ()=>{
-    try{
-      const ipify = require ("ipify2");
+  const getWeather = async () => {
+    try {
+      const ipify = require("ipify2");
       const resIp = await ipify.ipv4();
       const location = await fetch(`http://ip-api.com/json/${resIp}`);
       const locJson = await location.json();
-      const openWeather = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${locJson.lat}&lon=${locJson.lon}&lang=es&units=metric&appid=${key}`);
+      const openWeather = await fetch(
+        `http://api.openweathermap.org/data/2.5/weather?lat=${locJson.lat}&lon=${locJson.lon}&lang=es&units=metric&appid=${key}`
+      );
       const openWthJson = await openWeather.json();
-      const weather={
+      const weather = {
         city: `${openWthJson.name}`,
         temp: `${openWthJson.main.temp}`,
         sky: `${openWthJson.weather[0].description}`,
-        wind: `${openWthJson.wind.speed}`
+        wind: `${openWthJson.wind.speed}`,
       };
       setWeather(weather);
       console.log(weather.city);
       console.log(weather.temp);
-    }catch(error){
-      console.log(error)
+    } catch (error) {
+      console.log(error);
     }
   };
   window.setInterval(getWeather, 300000);
@@ -88,7 +93,11 @@ function App() {
       <Navbar />
       <Router>
         <Routes>
-          <Route exact path="/" element={<Inicio weather={weather}></Inicio>}></Route>
+          <Route
+            exact
+            path="/"
+            element={<Inicio weather={weather}></Inicio>}
+          ></Route>
           <Route exact path="*" element={<Error404></Error404>}></Route>
           <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
           <Route
@@ -97,7 +106,11 @@ function App() {
             element={<QuienesSomos></QuienesSomos>}
           ></Route>
           <Route exact path="/Planes" element={<Planes></Planes>}></Route>
-          <Route exact path="/Login" element={<Login user={user} ></Login>}></Route>
+          <Route
+            exact
+            path="/Login"
+            element={<Login user={user}></Login>}
+          ></Route>
           <Route
             exact
             path="/ListaTurnos"
@@ -125,6 +138,26 @@ function App() {
             element={
               <EditarPaciente URL={URL} getApi={getApi}></EditarPaciente>
             }
+          ></Route>
+          <Route
+            exact
+            path="/CrearTurno"
+            element={<CrearTurno></CrearTurno>}
+          ></Route>
+          <Route
+            exact
+            path="/EditarTurno"
+            element={<EditarTurno></EditarTurno>}
+          ></Route>
+          {/* <Route
+            exact
+            path="/TablaTurnos"
+            element={<TablaTurnos></TablaTurnos>}
+          ></Route> */}
+          <Route
+            exact
+            path="/ListadoTurnos"
+            element={<ListadoTurnos></ListadoTurnos>}
           ></Route>
         </Routes>
       </Router>

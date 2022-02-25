@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../CSS/App.css";
+import "../../CSS/App.css";
 import {
   Form,
   Button,
@@ -13,7 +13,7 @@ import es from "date-fns/locale/es";
 import "react-datepicker/dist/react-datepicker.css";
 import { setHours, setMinutes } from "date-fns";
 
-const TablaTurnos = () => {
+const CrearTurno = () => {
   const [startDate, setStartDate] = useState(
     setHours(setMinutes(new Date(), 0), 8)
   );
@@ -88,11 +88,11 @@ const TablaTurnos = () => {
           className="botonEnviar text-center"
           variant="outline-primary"
         >
-          Agregar Cita
+          Agregar Turno
         </Button>
       </Form>
     </div>
   );
 };
 
-export default TablaTurnos;
+export default CrearTurno;
