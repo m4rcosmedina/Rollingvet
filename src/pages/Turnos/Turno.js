@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Turno = () => {
   return (
@@ -7,9 +8,9 @@ const Turno = () => {
       <td>Nombre Mascota</td>
       <td>Motivo Consulta</td>
       <div className="d-flex justify-content-center">
-        <button className="btn btn-outline-primary mx-1 text-center">
+        <Link to= "/EditarTurno" className="btn btn-outline-primary mx-1 text-center text-decoration-none">
           Modificar
-        </button>
+        </Link>
         <button className="btn btn-outline-danger mx-1 text-center">
           Eliminar
         </button>

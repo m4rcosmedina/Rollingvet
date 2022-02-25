@@ -31,7 +31,7 @@ const EditarTurno = () => {
 
   return (
     <div className="container-fluid p-5">
-      <h1 className="text-center my-3">GESTION DE TURNOS Y PACIENTES</h1>
+      <h1 className="text-center my-3">EDITAR TURNOS Y PACIENTES</h1>
       <hr />
       <Form className="my-5">
         {handleSubmit}
