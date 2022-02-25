@@ -45,20 +45,13 @@ const TablaTurnos = () => {
           <option value="Dra. Emilse Arias">Dra. Emilse Arias</option>
         </Form.Select>
         <Form.Group>
-          <Form.Label>Seleccione fecha</Form.Label>
+          <Form.Label>Seleccione fecha y hora</Form.Label>
           <DatePicker
             locale={es}
             selected={startDate}
             onChange={(date) => setStartDate(date)}
             minDate={new Date()}
             filterDate={(date) => date.getDay() !== 6 && date.getDay() !== 0}
-            dateFormat="dd/MM/yyyy"
-            required
-          ></DatePicker>
-        </Form.Group>
-        {/* <Form.Group>
-          <Form.Label>Seleccione hora</Form.Label>
-          <DatePicker
             showTimeSelect
             filterTime={(date) =>
               (date.getHours() >= 8 && date.getHours() <= 12) ||
@@ -66,10 +59,9 @@ const TablaTurnos = () => {
             }
             minTime={setHours(setMinutes(new Date(), 0), 8)}
             maxTime={setHours(setMinutes(new Date(), 0), 21)}
-            dateFormat="hh:mm"
-            required
+            dateFormat="dd/MM/yyyy  hh:mm"
           ></DatePicker>
-        </Form.Group> */}
+        </Form.Group>
         <Form.Label>Nombre de Mascota</Form.Label>
         <InputGroup className="mb-3">
           <FormControl
