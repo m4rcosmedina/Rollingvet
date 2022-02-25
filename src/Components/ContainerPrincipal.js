@@ -1,4 +1,4 @@
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {  faCalendarCheck, faGraduationCap,  faUserNurse } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import {
@@ -43,12 +43,12 @@ const ContainerPrincipal = () => {
                   className="botonEnviar mt-4"
                   onClick={handleShow}
                 >
-                  Marcos
+                  Dr.Pablito Gonzales
                 </Button>
                 <Offcanvas show={show} onHide={handleClose}>
                   <Offcanvas.Header closeButton>
-                    <Offcanvas.Title className="d-flex justify-content-center">
-                      Marcos
+                    <Offcanvas.Title>
+                    Dr.Pablito Gonzales
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body className="text-muted">
@@ -58,25 +58,25 @@ const ContainerPrincipal = () => {
                       className="d-block w-100"
                     />
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faUserNurse}
                       size="1x"
                       className="text-danger"
                     />
-                    Some text as placeholder. In real life you can
+                     Esp. en Anestesiología, Cardiología y Cirugía
                     <br />{" "}
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faGraduationCap}
                       size="1x"
                       className="text-info"
                     />
-                    elements you have chosen. Like, text, etc.
+                    Universidad de Buenos Aires
                     <br />{" "}
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faCalendarCheck}
                       size="1x"
-                      className="text-warning"
+                      className="text-success"
                     />
-                    elements you have chosen. Like, text, etc.
+                     Atención de Lunes a Sábados
                   </Offcanvas.Body>
                 </Offcanvas>
               </Carousel.Item>
@@ -91,12 +91,12 @@ const ContainerPrincipal = () => {
                   className="botonEnviar mt-4"
                   onClick={handleShow2}
                 >
-                  Natalia
+                  Dra. Emilse Arias
                 </Button>
                 <Offcanvas show={show2} onHide={handleClose2}>
                   <Offcanvas.Header closeButton>
-                    <Offcanvas.Title className="d-flex justify-content-center">
-                      Natalia
+                    <Offcanvas.Title>
+                    Dra. Emilse Arias
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
@@ -105,26 +105,26 @@ const ContainerPrincipal = () => {
                       alt="Second slide"
                       className="d-block w-100"
                     />
-                    <FontAwesomeIcon
-                      icon={faTwitter}
+                     <FontAwesomeIcon
+                      icon={faUserNurse}
                       size="1x"
                       className="text-danger"
                     />
-                    Some text as placeholder. In real life you can
+                     Esp. en Fisioterapia, Oftalmología y Neurología
                     <br />{" "}
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faGraduationCap}
                       size="1x"
                       className="text-info"
                     />
-                    elements you have chosen. Like, text, etc.
+                    Universidad de La Plata
                     <br />{" "}
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faCalendarCheck}
                       size="1x"
-                      className="text-warning"
+                      className="text-success"
                     />
-                    elements you have chosen. Like, text, etc.
+                     Atención de Martes a Domingos
                   </Offcanvas.Body>
                 </Offcanvas>
               </Carousel.Item>

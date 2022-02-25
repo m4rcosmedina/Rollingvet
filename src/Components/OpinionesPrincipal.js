@@ -27,6 +27,12 @@ const OpinionesPrincipal = () => {
     setComentario("");
   };
 
+  const borrarOpinion =(nombre) => {
+    let arregloModificado = listaComentarios.filter((valor)=> valor !== nombre );
+    setListaComentarios(arregloModificado);
+    
+  }
+
   return (
     <div className="py-4 text-center fondoGeneral ">
      
@@ -37,7 +43,7 @@ const OpinionesPrincipal = () => {
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Tus comentarios</Form.Label>
+              <Form.Label>Los comentarios están sujetos a moderacion, por favor, sea respetuoso.</Form.Label>
               <Form.Control
                 className="py-2"
                 type="text"
@@ -71,9 +77,9 @@ const OpinionesPrincipal = () => {
         Dejanos aqui tus comentarios!
       </Button></Card.Header>
         <Card.Body>
-          <Card.Text className="text-muted">
+          <Card.Text>
             <ListaComentarios
-              arregloComentarios={listaComentarios}
+              arregloComentarios={listaComentarios} borrarOpinion={borrarOpinion}
             ></ListaComentarios>
           </Card.Text>
         </Card.Body>
