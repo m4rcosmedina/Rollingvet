@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Table } from "react-bootstrap";
 import Turno from "./Turnos/Turno";
 
-const TurnosTable = () => {
+const TurnosTable = ({turnos}) => {
   return (
     <div>
       <Container className="py-5">
         <div className="d-flex align-items-center justify-content-between">
-          <h1>Listado Turnos Dr. Pablito Gonzalez</h1>
+          <h1>Listado Turnos Dr. Pablito Dominguez</h1>
         </div>
         <hr />
         <Table bordered hover responsive className="align-middle mt-3">

@@ -12,6 +12,7 @@ import DatePicker from "react-datepicker";
 import es from "date-fns/locale/es";
 import "react-datepicker/dist/react-datepicker.css";
 import { setHours, setMinutes } from "date-fns";
+import { Link } from "react-router-dom";
 
 const CrearTurno = () => {
   const [startDate, setStartDate] = useState(
@@ -83,13 +84,12 @@ const CrearTurno = () => {
             maxLength="100"
           />
         </Form.Group>
-        <Button
-          type="submit"
-          className="botonEnviar text-center"
-          variant="outline-primary"
+        <Link to="/ListadoTurnos"
+          className="botonEnviar btn btn-outline-primary mx-1 text-center text-decoration-none"
+         
         >
           Agregar Turno
-        </Button>
+        </Link>
       </Form>
     </div>
   );

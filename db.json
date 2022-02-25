@@ -84,5 +84,19 @@
       "username": "mmedina",
       "password": "11d0e6287202fced83f79975ec59a3a6"
     }
+  ],
+  "crudTurnos": [
+    {
+      "fechaYhora": 1,
+      "nombreMascota": "Bazán",
+      "motivoConsulta": "Rodrigo"
+    
+    },
+    {
+      "fechaYhora": 2,
+      "nombreMascota": "naty",
+      "motivoConsulta": "acevedo"
+    
+    }
   ]
 }

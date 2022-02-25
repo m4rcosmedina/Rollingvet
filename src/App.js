@@ -26,6 +26,8 @@ function App() {
   const URL = process.env.REACT_APP_API_ROLLINGVET;
   const [user, setUser] = useState([]);
   const URLUser = process.env.REACT_APP_API_USER;
+  const [turnos, setTurnos] = useState([]);
+  const URLTurnos = process.env.REACT_APP_API_CRUDTURNOS;
 
   console.log(URLUser);
   const key = process.env.REACT_APP_KEY;
@@ -34,12 +36,17 @@ function App() {
   useEffect(() => {
     getApi();
   }, []);
+
   useEffect(() => {
     getWeather();
   }, []);
 
   useEffect(() => {
     getApiUser();
+  }, []);
+
+  useEffect(() => {
+    getTurnos();
   }, []);
 
   const getApi = async () => {
@@ -58,6 +65,16 @@ function App() {
       const res = await fetch(URLUser);
       const userApi = await res.json();
       setUser(userApi);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  //crudTurnos
+  const getTurnos = async () => {
+    try {
+      const res = await fetch(URLTurnos);
+      const turnosApi = await res.json();
+      setTurnos(turnosApi);
     } catch (error) {
       console.log(error);
     }
@@ -157,7 +174,7 @@ function App() {
           <Route
             exact
             path="/ListadoTurnos"
-            element={<ListadoTurnos></ListadoTurnos>}
+            element={<ListadoTurnos turnos={turnos}></ListadoTurnos>}
           ></Route>
         </Routes>
       </Router>
