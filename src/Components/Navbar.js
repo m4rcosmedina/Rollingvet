@@ -48,6 +48,7 @@ const Navegador = () => {
               {mostrarLog ? <Nav.Link className="navbarLogin text-warning fs-5" onClick={handleClose}> LogOut</Nav.Link> : <Nav.Link className="navbarLogin text-white fs-5" onClick={inLogin}>
                 Login
               </Nav.Link>}
+              {mostrarLog ? <Nav.Link href="/Admin" className="navbarContacto text-white fs-5"> Administración </Nav.Link> : undefined}
               {mostrarLog ? <Nav.Link className="navbarContacto text-white fs-5"> Sesión iniciada! </Nav.Link> : undefined}
             </Nav>
           </Navbar.Collapse>

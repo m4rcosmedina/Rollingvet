@@ -73,7 +73,7 @@ const Footer = () => {
                 className="iconoRedes"
                 style={{ fontSize: "4em" }}
               /></Nav.Link>
-                            <Nav.Link href="/*">
+                            <Nav.Link href="https://www.instagram.com/rollingvet/">
 
               <FontAwesomeIcon
                 icon={faInstagram}

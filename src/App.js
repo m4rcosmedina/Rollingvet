@@ -17,6 +17,7 @@ import EditarPaciente from "./pages/Pacientes/EditarPaciente";
 import CrearTurno from "./pages/Turnos/CrearTurno";
 import EditarTurno from "./pages/Turnos/EditarTurno";
 import ListadoTurnos from "./pages/ListadoTurnos";
+import Admin from "./pages/Admin"
 import { useState, useEffect } from "react";
 import Weather from "./Components/ApiClima";
 
@@ -176,6 +177,7 @@ function App() {
             path="/ListadoTurnos"
             element={<ListadoTurnos turnos={turnos}></ListadoTurnos>}
           ></Route>
+          <Route exact path="/admin" element={<Admin></Admin>}></Route>
         </Routes>
       </Router>
       <Footer></Footer>

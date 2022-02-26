@@ -128,3 +128,11 @@
         width: 100%;
     }
 }
+
+.fondoPacientes{
+ height: 24vw;
+}
+
+.botonesPacientes{
+    margin-top: 3vw;
+}
