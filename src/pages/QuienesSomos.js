@@ -5,7 +5,7 @@ import { Card, CardGroup, Container, Carousel } from "react-bootstrap";
 const QuienesSomos = () => {
   return (
     <div className="fondoGeneral">
-      <h1 className="text-center pt-3">Nosotros</h1> <hr></hr>
+      <h1 className="text-center pt-3">NOSOTROS</h1> <hr></hr>
       <Container className="my-5 py-5">
         <h4 className="text-center py-3">ESTO SOMOS.</h4>
         <h5 className="text-center py-2">
