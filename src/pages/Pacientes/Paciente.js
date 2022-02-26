@@ -25,9 +25,9 @@ const Paciente = ({ paciente, URL, getApi }) => {
             Swal.fire(
               "Eliminado!",
               "Su base de datos ha sido actualizada.",
-              "success");
-              getApi();
-            
+              "success"
+            );
+            getApi();
           }
         } catch (error) {
           console.log(error);

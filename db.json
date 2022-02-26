@@ -85,7 +85,7 @@
       "password": "11d0e6287202fced83f79975ec59a3a6"
     }
   ],
-  "crudTurnos": [
+  "Turnos": [
     {
       "fechaYhora": 1,
       "nombreMascota": "Bazán",

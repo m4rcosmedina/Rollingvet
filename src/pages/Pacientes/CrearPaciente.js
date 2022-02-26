@@ -156,4 +156,3 @@ const CrearPaciente = ({ URL, getApi }) => {
 };
 
 export default CrearPaciente;
-

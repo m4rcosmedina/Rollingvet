@@ -9,7 +9,7 @@ const Admin = () => {
         <h1 className="text-center py-3">ADMINISTRACIÓN</h1>
         <hr />
         <Container className="fondoPacientes">
-          <Row>
+          <Row sm={12} m={6}>
             <Col>
               <h2 className="text-center py-3">CONSOLA PACIENTES</h2>
               <Nav.Link

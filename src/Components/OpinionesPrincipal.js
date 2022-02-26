@@ -5,7 +5,6 @@ import ListaComentarios from "./ListaComentarios";
 
 const OpinionesPrincipal = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -20,22 +19,20 @@ const OpinionesPrincipal = () => {
     console.log("esto es una prueba");
     localStorage.setItem("comentarios", JSON.stringify(listaComentarios));
   }, [listaComentarios]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setListaComentarios([...listaComentarios, comentario]);
     setComentario("");
   };
-
-  const borrarOpinion =(nombre) => {
-    let arregloModificado = listaComentarios.filter((valor)=> valor !== nombre );
+  const borrarOpinion = (nombre) => {
+    let arregloModificado = listaComentarios.filter(
+      (valor) => valor !== nombre
+    );
     setListaComentarios(arregloModificado);
-    
-  }
+  };
 
   return (
     <div className="py-4 text-center fondoGeneral ">
-     
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Dejanos tus comentarios</Modal.Title>
@@ -43,7 +40,10 @@ const OpinionesPrincipal = () => {
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Los comentarios están sujetos a moderacion, por favor, sea respetuoso.</Form.Label>
+              <Form.Label className="text-center">
+                Los comentarios están sujetos a moderacion. Por favor, sea
+                respetuoso.
+              </Form.Label>
               <Form.Control
                 className="py-2"
                 type="text"
@@ -73,13 +73,17 @@ const OpinionesPrincipal = () => {
         <Modal.Footer></Modal.Footer>
       </Modal>
       <Card className="container mt-3 px-0">
-        <Card.Header> <Button variant="outline-primary " onClick={handleShow}>
-        Dejanos aqui tus comentarios!
-      </Button></Card.Header>
+        <Card.Header>
+          {" "}
+          <Button variant="outline-primary " onClick={handleShow}>
+            Dejanos aqui tus comentarios!
+          </Button>
+        </Card.Header>
         <Card.Body>
           <Card.Text>
             <ListaComentarios
-              arregloComentarios={listaComentarios} borrarOpinion={borrarOpinion}
+              arregloComentarios={listaComentarios}
+              borrarOpinion={borrarOpinion}
             ></ListaComentarios>
           </Card.Text>
         </Card.Body>

@@ -107,7 +107,6 @@ const Planes = () => {
                 </Button>
               </Form>
             </Col>
-
             <Col sm={6}>
               <Card>
                 <Card.Img

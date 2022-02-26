@@ -3,7 +3,6 @@ import "./CSS/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
-import ListaTurnos from "./pages/ListaTurnos";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Error404 from "./pages/Error404";
@@ -17,7 +16,7 @@ import EditarPaciente from "./pages/Pacientes/EditarPaciente";
 import CrearTurno from "./pages/Turnos/CrearTurno";
 import EditarTurno from "./pages/Turnos/EditarTurno";
 import ListadoTurnos from "./pages/ListadoTurnos";
-import Admin from "./pages/Admin"
+import Admin from "./pages/Admin";
 import { useState, useEffect } from "react";
 import Weather from "./Components/ApiClima";
 
@@ -29,10 +28,7 @@ function App() {
   const URLUser = process.env.REACT_APP_API_USER;
   const [turnos, setTurnos] = useState([]);
   const URLTurnos = process.env.REACT_APP_API_CRUDTURNOS;
-
-  console.log(URLUser);
   const key = process.env.REACT_APP_KEY;
-  console.log(URL);
 
   useEffect(() => {
     getApi();
@@ -131,11 +127,6 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/ListaTurnos"
-            element={<ListaTurnos></ListaTurnos>}
-          ></Route>
-          <Route
-            exact
             path="/ListadoPacientes"
             element={
               <ListadoPacientes
@@ -171,7 +162,7 @@ function App() {
             exact
             path="/TablaTurnos"
             element={<TablaTurnos></TablaTurnos>}
-          ></Route> */}
+          ></Route>  */}
           <Route
             exact
             path="/ListadoTurnos"

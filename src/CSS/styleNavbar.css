@@ -1,22 +1,21 @@
 .imgLogoNavbar {
-   max-width: 14em;
-   margin-left: 40px;
-   
+  max-width: 14em;
+  margin-left: 40px;
 }
 
-
-.textoNavbar{
-    color: #f7fff7;
-    font-family: 'Righteous', cursive;
-    font-size: 1.5em;
-    margin-left: auto;
+.textoNavbar {
+  color: #f7fff7;
+  font-family: "Righteous", cursive;
+  font-size: 1.5em;
+  margin-left: auto;
 }
 
-
-.navbarContacto:hover,.navbarInicio:hover,.navbarQuienes:hover,.navbarLogin:hover {
-    transform: scale(1.03) ;
+.navbarContacto:hover,
+.navbarInicio:hover,
+.navbarQuienes:hover,
+.navbarLogin:hover {
+  transform: scale(1.03);
 }
-.navbarContainer{
-    background-color:#02be9d;
+.navbarContainer {
+  background-color: #02be9d;
 }
-

@@ -1,5 +1,3 @@
-//import {FontAwesomelcon} from '@fortawesome/react-fontawesome';
-//import {faMapMarkerAlt, faThermometerHalf, faWind, faCloudSun} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
 const Weather = ({weather})=> {
@@ -31,7 +29,6 @@ const Weather = ({weather})=> {
                 {Math.round(weather.wind)} km/h 
             </div>
         </div>
-    
     );
 };
 

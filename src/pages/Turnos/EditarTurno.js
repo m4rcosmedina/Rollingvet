@@ -84,8 +84,9 @@ const EditarTurno = () => {
             maxLength="100"
           />
         </Form.Group>
-        <Link to="/ListadoTurnos"
-        className="botonEnviar btn btn-outline-primary mx-1 text-center text-decoration-none"
+        <Link
+          to="/ListadoTurnos"
+          className="botonEnviar btn btn-outline-primary mx-1 text-center text-decoration-none"
         >
           Editar Turno
         </Link>

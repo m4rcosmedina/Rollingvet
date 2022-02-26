@@ -84,9 +84,9 @@ const CrearTurno = () => {
             maxLength="100"
           />
         </Form.Group>
-        <Link to="/ListadoTurnos"
+        <Link
+          to="/ListadoTurnos"
           className="botonEnviar btn btn-outline-primary mx-1 text-center text-decoration-none"
-         
         >
           Agregar Turno
         </Link>

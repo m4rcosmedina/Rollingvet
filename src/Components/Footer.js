@@ -10,7 +10,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 
-
 const Footer = () => {
   return (
     <Container fluid className="footerContainer">
@@ -23,7 +22,9 @@ const Footer = () => {
             className="logoRollingvet"
           />{" "}
         </Col>
-        <Col sm={6} className="textoFooter py-3"> <h3 className="text-center">¡CONTACTANOS!</h3>
+        <Col sm={6} className="textoFooter py-3">
+          {" "}
+          <h3 className="text-center">¡CONTACTANOS!</h3>
           <div>
             <ul className="py-4 listaContactos">
               <li className="py-1">
@@ -68,31 +69,32 @@ const Footer = () => {
           <div>
             <ul className="py-5 iconosFooter">
               <Nav.Link href="/*">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="iconoRedes"
-                style={{ fontSize: "4em" }}
-              /></Nav.Link>
-                            <Nav.Link href="https://www.instagram.com/rollingvet/">
-
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="iconoRedes"
-                style={{ fontSize: "4em" }}
-              /></Nav.Link>
-                            <Nav.Link href="/*">
-
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="iconoRedes"
-                style={{ fontSize: "4em" }}
-              /></Nav.Link>
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="iconoRedes"
+                  style={{ fontSize: "4em" }}
+                />
+              </Nav.Link>
+              <Nav.Link href="https://www.instagram.com/rollingvet/">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="iconoRedes"
+                  style={{ fontSize: "4em" }}
+                />
+              </Nav.Link>
+              <Nav.Link href="/*">
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="iconoRedes"
+                  style={{ fontSize: "4em" }}
+                />
+              </Nav.Link>
             </ul>
           </div>
         </Col>
       </Row>
     </Container>
-  ); 
+  );
 };
 
 export default Footer;
