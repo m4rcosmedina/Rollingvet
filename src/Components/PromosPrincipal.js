@@ -1,6 +1,13 @@
 import React from "react";
 import "../CSS/App.css";
-import { Card, CardGroup, Carousel, Container } from "react-bootstrap";
+import {
+  Card,
+  CardGroup,
+  Carousel,
+  Container,
+  Nav,
+  Button,
+} from "react-bootstrap";
 
 const PromosPrincipal = () => {
   return (
@@ -112,6 +119,16 @@ const PromosPrincipal = () => {
             </CardGroup>
           </Carousel.Item>
         </Carousel>
+        <Nav.Link href="/*" className="text-center my-5">
+          {" "}
+          <Button
+            type="submit"
+            variant="outline-primary"
+            className="botonEnviar"
+          >
+            IR A LA TIENDA!
+          </Button>
+        </Nav.Link>
       </Container>
     </div>
   );
