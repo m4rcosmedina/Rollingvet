@@ -102,7 +102,7 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
             }
             minTime={setHours(setMinutes(new Date(), 0), 8)}
             maxTime={setHours(setMinutes(new Date(), 0), 21)}
-            dateFormat="dd/MM/yyyy  hh:mm"
+           dateFormat="dd/MM/yyyy  hh:mm"
           ></DatePicker>
         </Form.Group>
         <Form.Label>Nombre de Mascota</Form.Label>
