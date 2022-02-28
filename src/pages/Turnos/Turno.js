@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Turno = ({turno, getTurnos, URLTurnos}) => {
+
+  const date = new Date(turno.startDate)
+  const fecha = date.toLocaleString();
   return (
     <tr>
       {/* <td>{turno.profesional}</td> */}
-      <td>{turno.startDate}</td>
+      <td>{fecha}</td>
       <td>{turno.nombreMascota}</td>
       <td>{turno.motivoConsulta}</td>
       <div className="d-flex justify-content-center">
