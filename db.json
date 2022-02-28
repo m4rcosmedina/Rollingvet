@@ -11,16 +11,6 @@
       "id": 1
     },
     {
-      "nombreHum": "Julieta Hurtado con microfono",
-      "email": "juli@juli.com",
-      "tel": "333",
-      "nombre": "robix",
-      "especie": "perrito",
-      "raza": "mas puro",
-      "edad": "3",
-      "id": 3
-    },
-    {
       "nombreHum": "marcos medina",
       "email": "marcosjmedina@gmail.com",
       "tel": "333333",
@@ -31,6 +21,7 @@
       "id": 4
     },
     {
+<<<<<<< HEAD
       "nombreHum": "nnnnnbbbb",
       "email": "natyacvedo@gmail.com",
       "tel": "4278218",
@@ -49,15 +40,24 @@
       "raza": "ggggg",
       "edad": "1",
       "id": 6
+=======
+      "nombreHum": "natali",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "3333",
+      "nombre": "uma",
+      "especie": "iii",
+      "raza": "iii",
+      "edad": "2",
+      "id": 5
+>>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     }
   ],
   "user": [
     {
-      "userName": "$2a$12$p6m4F79sDOsKvHOLb.sfrukx7uZNv8XwG8FK0kCr6ym9aqpZE/d4q",
+      "userName": "$2a$12$fyWNTc8d7rPiROR0cVhes.NV7fBM3pRZ0JgPc8U76PyFbBKkWls9u",
       "pass": "$2a$12$O3PHiEwIYzEOSM/KqMBmW.UcZ/Zg56UgLIAzKuRmckPJNwVtqz6lK",
-      "apellido_paterno": "Medina",
-      "nombre": "Marcos",
       "id": 1
+<<<<<<< HEAD
     },
     {
       "userName": "$2a$12$HxpuKU0Xy8QbnUwe3sfuPOlPjPkq4P7nuAKGdVkRmmF6V1Mh5O72S",
@@ -100,18 +100,25 @@
       "nombre": "Marcos",
       "username": "mmedina",
       "password": "11d0e6287202fced83f79975ec59a3a6"
+=======
+>>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     }
   ],
   "ListadoTurnos": [
     {
       "startDate": 1,
       "nombreMascota": "Bazán",
+<<<<<<< HEAD
       "motivoConsulta": "Rodrigo",
       "id": 1
+=======
+      "motivoConsulta": "Rodrigo"
+>>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     },
     {
       "startDate": 2,
       "nombreMascota": "naty",
+<<<<<<< HEAD
       "motivoConsulta": "acevedo",
       "id": 2
     },
@@ -168,6 +175,21 @@
       "nombreMascota": "hhhh",
       "motivoConsulta": "hhhhhh",
       "id": 10
+=======
+      "motivoConsulta": "acevedo"
+    }
+  ],
+  "Comentarios": [
+    {
+      "texto": "PRUEBA",
+      "nombreCom": "MARCOS",
+      "id": 1
+    },
+    {
+      "texto": "FSDFSDFSDF",
+      "nombreCom": "PRUEBA PRUEBA",
+      "id": 2
+>>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     }
   ]
 }

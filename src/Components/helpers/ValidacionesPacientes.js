@@ -5,6 +5,7 @@ const regExpNombre = /^[A-Za-z\s?]+$/;
 const regExpEspecie = /^[A-Za-z\s?]+$/;
 const regExpRaza = /^[A-Za-z\s?]+$/;
 const regExpEdad = /[0-9]+$/;
+const regExpTexto = /^[A-Za-z\s?]+$/;
 
 export const validarNombreHum = (field) => {
     if (regExpNombreHum.test(field) && field.trim() !== "") {
@@ -60,6 +61,14 @@ export const validarEdad = (field) => {
     field.trim() > 0 &&
     field.trim() < 100
   ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export const validarTexto = (field) => {
+  if (regExpTexto.test(field) && field.trim() !== "") {
     return true;
   } else {
     return false;
