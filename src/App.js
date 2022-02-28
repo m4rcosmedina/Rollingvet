@@ -18,7 +18,6 @@ import EditarTurno from "./pages/Turnos/EditarTurno";
 import ListadoTurnos from "./pages/ListadoTurnos";
 import Admin from "./pages/Admin";
 import { useState, useEffect } from "react";
-import Weather from "./Components/ApiClima";
 import OpinionesBD from "./Components/OpinionesBD";
 
 function App() {
@@ -34,23 +33,23 @@ function App() {
   const URLComent = process.env.REACT_APP_API_COMENTARIOS;
 
   useEffect(() => {
-    getApi();
+    getApi();// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    getWeather();
+    getWeather();// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    getApiUser();
+    getApiUser();// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    getTurnos();
+    getTurnos();// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    getComentarios();
+    getComentarios();// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getApi = async () => {
@@ -140,7 +139,7 @@ function App() {
           <Route
             exact
             path="/Login"
-            element={<Login user={user}></Login>}
+            element={<Login user={user} sessionStorage={sessionStorage}></Login>}
           ></Route>
           <Route
             exact

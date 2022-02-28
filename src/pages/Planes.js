@@ -37,7 +37,6 @@ const Planes = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           e.target.reset();
           {
             Swal.fire(

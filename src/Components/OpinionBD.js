@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ListGroup, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -10,8 +11,7 @@ const OpinionBD = ({comentario, getComentarios,URLComent}) => {
     let sesionUsuario =
     JSON.parse(sessionStorage.getItem("stateSession")) || false;
   const [mostrarBoton, setMostrarBoton] = useState(sesionUsuario);
-  console.log(sesionUsuario);
-
+  const navigate = useNavigate()
 const handleDelete = (id) => {
     Swal.fire({
         title: "¿Está seguro?",
@@ -31,6 +31,7 @@ const handleDelete = (id) => {
             if (res.status === 200) {
               Swal.fire("Eliminado", "El comentario ha sido borrado", "success");
               getComentarios();
+              navigate("/comentarios");
             }
           } catch (error) {
             console.log(error);

@@ -41,7 +41,7 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
             Swal.fire("Su comentario ha sido enviado", "Muchas gracias!");
             getComentarios();
             e.target.reset();
-            navigate("/Comentarios");
+            navigate("/comentarios");
           }
         } catch (error) {
           console.log(error);
