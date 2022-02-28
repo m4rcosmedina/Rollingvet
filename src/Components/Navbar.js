@@ -40,6 +40,12 @@ const Navegador = () => {
                 Quiénes Somos
               </Nav.Link>
               <Nav.Link
+                href="/Comentarios"
+                className="navbarContacto text-white fs-5"
+              >
+                Opiniones
+              </Nav.Link>
+              <Nav.Link
                 href="/Contacto"
                 className="navbarContacto text-white fs-5"
               >

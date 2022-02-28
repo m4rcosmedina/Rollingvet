@@ -11,9 +11,14 @@ import {
   Card,
 } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 
 const Planes = () => {
   const form = useRef();
+  const navigate = useNavigate();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,9 +29,16 @@ const Planes = () => {
         form.current,
         "user_Hiy1gJ7qKOh9XjvEmgoUe"
       )
+      
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();{
+            Swal.fire("Su consulta ha sido enviada", "Recibirá un correo.Muchas gracias!");
+            setTimeout(() => {
+              navigate("/");
+            }, 3000);
+          }
         },
         (error) => {
           console.log(error.text);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import {Container, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import bcrypt from "bcryptjs/dist/bcrypt";
@@ -37,11 +37,7 @@ const Login = ({ user }) => {
       <h1 className="text-center">INICIE SESION</h1>
       <hr />
       <div className="my-5">
-        <Form
-          s={12}
-          className="my-5  formulario"
-          onSubmit={handleSubmit}
-        >
+        <Form s={12} className="my-5  formulario" onSubmit={handleSubmit}>
           <Form.Group className="mb-3 " controlId="formBasicUser">
             <Form.Label>USUARIO</Form.Label>
             <Form.Control

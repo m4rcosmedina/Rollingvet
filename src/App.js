@@ -19,6 +19,7 @@ import ListadoTurnos from "./pages/ListadoTurnos";
 import Admin from "./pages/Admin";
 import { useState, useEffect } from "react";
 import Weather from "./Components/ApiClima";
+import OpinionesBD from "./Components/OpinionesBD";
 
 function App() {
   const [pacientes, setPacientes] = useState([]);
@@ -29,6 +30,8 @@ function App() {
   const [turnos, setTurnos] = useState([]);
   const URLTurnos = process.env.REACT_APP_API_CRUDTURNOS;
   const key = process.env.REACT_APP_KEY;
+  const [comentarios, setComentarios] = useState([]);
+  const URLComent = process.env.REACT_APP_API_COMENTARIOS;
 
   useEffect(() => {
     getApi();
@@ -44,6 +47,10 @@ function App() {
 
   useEffect(() => {
     getTurnos();
+  }, []);
+
+  useEffect(() => {
+    getComentarios();
   }, []);
 
   const getApi = async () => {
@@ -101,6 +108,16 @@ function App() {
     }
   };
   window.setInterval(getWeather, 300000);
+
+  const getComentarios = async () => {
+    try {
+      const res = await fetch(URLComent);
+      const comentariosApi = await res.json();
+      setComentarios(comentariosApi);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div>
@@ -169,6 +186,17 @@ function App() {
             element={<ListadoTurnos turnos={turnos}></ListadoTurnos>}
           ></Route>
           <Route exact path="/admin" element={<Admin></Admin>}></Route>
+          <Route
+            exact
+            path="/Comentarios"
+            element={
+              <OpinionesBD
+                comentarios={comentarios}
+                URLComent={URLComent}
+                getComentarios={getComentarios}
+              ></OpinionesBD>
+            }
+          ></Route>
         </Routes>
       </Router>
       <Footer></Footer>
