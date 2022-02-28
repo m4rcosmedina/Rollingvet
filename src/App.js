@@ -27,22 +27,15 @@ function App() {
   const [user, setUser] = useState([]);
   const URLUser = process.env.REACT_APP_API_USER;
   const [turnos, setTurnos] = useState([]);
+  console.log(turnos, "turnos");
   const URLTurnos = process.env.REACT_APP_API_CRUDTURNOS;
+  console.log(URLTurnos, "url Turnos");
   const key = process.env.REACT_APP_KEY;
 
   useEffect(() => {
     getApi();
-  }, []);
-
-  useEffect(() => {
     getWeather();
-  }, []);
-
-  useEffect(() => {
     getApiUser();
-  }, []);
-
-  useEffect(() => {
     getTurnos();
   }, []);
 
@@ -70,7 +63,9 @@ function App() {
   const getTurnos = async () => {
     try {
       const res = await fetch(URLTurnos);
+      console.log(res, "res");
       const turnosApi = await res.json();
+      console.log(turnosApi, "turnosapi");
       setTurnos(turnosApi);
     } catch (error) {
       console.log(error);
@@ -151,22 +146,33 @@ function App() {
           <Route
             exact
             path="/CrearTurno"
-            element={<CrearTurno></CrearTurno>}
+            element={
+              <CrearTurno
+                URLTurnos={URLTurnos}
+                getTurnos={getTurnos}
+              ></CrearTurno>
+            }
           ></Route>
           <Route
             exact
-            path="/EditarTurno"
-            element={<EditarTurno></EditarTurno>}
+            path="/EditarTurno/:id"
+            element={
+              <EditarTurno
+                URLTurnos={URLTurnos}
+                getTurnos={getTurnos}
+              ></EditarTurno>
+            }
           ></Route>
-          {/* <Route
-            exact
-            path="/TablaTurnos"
-            element={<TablaTurnos></TablaTurnos>}
-          ></Route>  */}
           <Route
             exact
             path="/ListadoTurnos"
-            element={<ListadoTurnos turnos={turnos}></ListadoTurnos>}
+            element={
+              <ListadoTurnos
+                turnos={turnos}
+                URLTurnos={URLTurnos}
+                getTurnos={getTurnos}
+              ></ListadoTurnos>
+            }
           ></Route>
           <Route exact path="/admin" element={<Admin></Admin>}></Route>
         </Routes>
