@@ -21,26 +21,6 @@
       "id": 4
     },
     {
-<<<<<<< HEAD
-      "nombreHum": "nnnnnbbbb",
-      "email": "natyacvedo@gmail.com",
-      "tel": "4278218",
-      "nombre": "nnnnn",
-      "especie": "nnnnn",
-      "raza": "nnnnn",
-      "edad": "3",
-      "id": 5
-    },
-    {
-      "nombreHum": "nhysvhjas",
-      "email": "natyacvedo@gmail.com",
-      "tel": "4271885",
-      "nombre": "naty",
-      "especie": "gggg",
-      "raza": "ggggg",
-      "edad": "1",
-      "id": 6
-=======
       "nombreHum": "natali",
       "email": "marcosjmedina@gmail.com",
       "tel": "3333",
@@ -49,7 +29,6 @@
       "raza": "iii",
       "edad": "2",
       "id": 5
->>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     }
   ],
   "user": [
@@ -57,125 +36,17 @@
       "userName": "$2a$12$fyWNTc8d7rPiROR0cVhes.NV7fBM3pRZ0JgPc8U76PyFbBKkWls9u",
       "pass": "$2a$12$O3PHiEwIYzEOSM/KqMBmW.UcZ/Zg56UgLIAzKuRmckPJNwVtqz6lK",
       "id": 1
-<<<<<<< HEAD
-    },
-    {
-      "userName": "$2a$12$HxpuKU0Xy8QbnUwe3sfuPOlPjPkq4P7nuAKGdVkRmmF6V1Mh5O72S",
-      "pass": "$2a$12$4bkz8uC3Kb4PkA88bmuqYOmtEGhMG6QTj2btTYhR5TxXK3Z3zjvtq",
-      "id": 2
-    }
-  ],
-  "usuarios": [
-    {
-      "id": 1,
-      "apellido_paterno": "Bazán",
-      "nombre": "Rodrigo",
-      "username": "rbazan",
-      "password": "827ccb0eea8a706c4c34a16891f84e7b"
-    },
-    {
-      "id": 2,
-      "apellido_paterno": "Acevedo",
-      "nombre": "Natalia",
-      "username": "nacevedo",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
-    },
-    {
-      "id": 3,
-      "apellido_paterno": "Hurtado",
-      "nombre": "Julieta",
-      "username": "jhurtado",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
-    },
-    {
-      "id": 4,
-      "apellido_paterno": "Carbone",
-      "nombre": "Giuliano",
-      "username": "gcarbone",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
-    },
-    {
-      "id": 5,
-      "apellido_paterno": "Medina",
-      "nombre": "Marcos",
-      "username": "mmedina",
-      "password": "11d0e6287202fced83f79975ec59a3a6"
-=======
->>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     }
   ],
   "ListadoTurnos": [
     {
       "startDate": 1,
       "nombreMascota": "Bazán",
-<<<<<<< HEAD
-      "motivoConsulta": "Rodrigo",
-      "id": 1
-=======
       "motivoConsulta": "Rodrigo"
->>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     },
     {
       "startDate": 2,
       "nombreMascota": "naty",
-<<<<<<< HEAD
-      "motivoConsulta": "acevedo",
-      "id": 2
-    },
-    {
-      "startDate": 3,
-      "nombreMascota": "naty",
-      "motivoConsulta": "acevedo",
-      "id": 3
-    },
-    {
-      "startDate": 4,
-      "nombreMascota": "naty",
-      "motivoConsulta": "acevedo",
-      "id": 4
-    },
-    {
-      "profesional": "Dr. Pablo Dominguez",
-      "startDate": "2022-03-04T12:30:00.000Z",
-      "nombreMascota": "ggggg",
-      "motivoConsulta": "gggggg",
-      "id": 5
-    },
-    {
-      "profesional": "Dra. Emilse Arias",
-      "startDate": "2022-03-02T12:00:00.000Z",
-      "nombreMascota": "hola",
-      "motivoConsulta": "chau",
-      "id": 6
-    },
-    {
-      "profesional": "Dra. Emilse Arias",
-      "startDate": "2022-02-27T11:00:42.215Z",
-      "nombreMascota": "gggg",
-      "motivoConsulta": "hhh",
-      "id": 7
-    },
-    {
-      "profesional": "Dr. Pablo Dominguez",
-      "startDate": "2022-03-03T12:00:00.000Z",
-      "nombreMascota": "hhh",
-      "motivoConsulta": "hhhhh",
-      "id": 8
-    },
-    {
-      "profesional": "Dr. Pablo Dominguez",
-      "startDate": "2022-03-01T12:00:00.000Z",
-      "nombreMascota": "perro",
-      "motivoConsulta": "tos",
-      "id": 9
-    },
-    {
-      "profesional": "Dra. Emilse Arias",
-      "startDate": "2022-02-28T11:00:47.641Z",
-      "nombreMascota": "hhhh",
-      "motivoConsulta": "hhhhhh",
-      "id": 10
-=======
       "motivoConsulta": "acevedo"
     }
   ],
@@ -189,7 +60,6 @@
       "texto": "FSDFSDFSDF",
       "nombreCom": "PRUEBA PRUEBA",
       "id": 2
->>>>>>> ce86496649684b914d3f989531b987d1c17966e3
     }
   ]
 }
