@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ListGroup } from "react-bootstrap";
+import { ListGroup, Container } from "react-bootstrap";
 import Swal from "sweetalert2";
 
 
@@ -39,9 +39,9 @@ const handleDelete = (id) => {
       });
 }
   return (
-    <div>
+    <Container>
       <ListGroup.Item className="my-1 d-flex justify-content-between ">
-         <h5>  {comentario.nombreCom}</h5>
+         <h5 >  {comentario.nombreCom} : </h5>
          "{comentario.texto}"
           <>
           {" "}
@@ -55,7 +55,7 @@ const handleDelete = (id) => {
           ) : undefined}{" "}
         </>
       </ListGroup.Item>
-    </div>
+    </Container>
   );
 };
 

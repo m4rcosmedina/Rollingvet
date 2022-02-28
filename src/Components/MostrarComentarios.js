@@ -5,10 +5,11 @@ const MostrarComentarios = () => {
   return (
     <div>
       <Container className="text-center py-4 my-4">
-          <h4>¿TE GUSTARIA DEJARNOS TU OPINION?</h4>
+          <h3>TU OPINION NOS AYUDA A MEJORAR</h3>
+          <hr></hr>
 
           <Nav.Link href="/comentarios">
-        <button className="btn btn-outline-primary py-4 my-4">PRESIONÁ AQUI!</button></Nav.Link>
+        <button className="btn btn-outline-primary py-4 my-4">LEER Y AGREGÁR COMENTARIOS </button></Nav.Link>
       </Container>
     </div>
   );

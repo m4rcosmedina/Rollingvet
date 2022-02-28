@@ -13,15 +13,21 @@ import {
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-
+import { validarNombre } from "../Components/helpers/ValidacionesPacientes";
 
 const Planes = () => {
+  const nombre = document.getElementById("nombre");
   const form = useRef();
   const navigate = useNavigate();
 
-
   const sendEmail = (e) => {
     e.preventDefault();
+    nombre.addEventListener("input", function (event) {
+      if (!validarNombre(nombre)) {
+        Swal.fire("Por favor, ingrese un texto valido");
+        return;
+      }
+    });
     emailjs
       .sendForm(
         "vet_rolling",
@@ -29,12 +35,15 @@ const Planes = () => {
         form.current,
         "user_Hiy1gJ7qKOh9XjvEmgoUe"
       )
-      
       .then(
         (result) => {
           console.log(result.text);
-          e.target.reset();{
-            Swal.fire("Su consulta ha sido enviada", "Recibirá un correo.Muchas gracias!");
+          e.target.reset();
+          {
+            Swal.fire(
+              "Su consulta ha sido enviada",
+              "Recibirá un correo.Muchas gracias!"
+            );
             setTimeout(() => {
               navigate("/");
             }, 3000);
@@ -63,6 +72,7 @@ const Planes = () => {
                   <FormControl
                     placeholder="Ej:Cosme Fulanito"
                     aria-label="Nombre y Apellido"
+                    id="nombre"
                     type="text"
                     required
                     minLength={3}
@@ -75,6 +85,7 @@ const Planes = () => {
                   </Form.Label>
                   <Form.Control
                     name="email"
+                    id="email"
                     type="email"
                     placeholder="ejemplo@ejemplo.com"
                   />
@@ -90,6 +101,7 @@ const Planes = () => {
                   <FormControl
                     placeholder="Ej:(381)6719988"
                     aria-label="Nombre y Apellido"
+                    id="tel"
                     type="number"
                     required
                     minLength={6}
@@ -103,7 +115,7 @@ const Planes = () => {
                   <Form.Label className="py-3">
                     <h4> Indique el plan sobre el cual desea información.</h4>
                   </Form.Label>
-                  <Form.Control as="textarea" rows={7} />
+                  <Form.Control as="textarea" rows={7} id="texto" />
                 </Form.Group>
                 <Form.Group
                   className="mb-3 py-3"
