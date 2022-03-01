@@ -15,6 +15,7 @@ const Navegador = () => {
       sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
       Swal.fire("Ha cerrado sesion!", "", "success");
       setTimeout(() => {
+        window.location.href="/login"
       },
        2000);
        setMostrarLog()
