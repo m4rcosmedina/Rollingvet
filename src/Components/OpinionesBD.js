@@ -95,7 +95,7 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
             {comentarios.map((comentario) => (
               <OpinionBD
                 comentario={comentario}
-                key={comentario.id}
+                key={comentario._id}
                 URLComent={URLComent}
                 getComentarios={getComentarios}
                 borrarOpinion={comentario.borrarOpinion}

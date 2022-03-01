@@ -37,7 +37,7 @@ const Paciente = ({ paciente, URL, getApi }) => {
   };
   return (
     <tr>
-      <td>{paciente.id}</td>
+      <td>{paciente._id}</td>
       <td>{paciente.nombreHum}</td>
       <td>{paciente.email}</td>
       <td>{paciente.tel}</td>
@@ -46,14 +46,14 @@ const Paciente = ({ paciente, URL, getApi }) => {
       <td>{paciente.raza}</td>
       <td>{paciente.edad}</td>
       <Link
-        to={`/EditarPaciente/${paciente.id}`}
+        to={`/EditarPaciente/${paciente._id}`}
         className="btn btn-outline-warning mx-1 text-center"
       >
         EDITAR
       </Link>
       <button
         className="btn btn-outline-danger mx-1 text-center"
-        onClick={() => handleDelete(paciente.id)}
+        onClick={() => handleDelete(paciente._id)}
       >
         BORRAR
       </button>

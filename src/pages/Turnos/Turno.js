@@ -46,14 +46,14 @@ const Turno = ({ getTurnos, turno, URLTurnos }) => {
         <td>{turno.motivoConsulta}</td>
         <td className="d-flex justify-content-center">
           <Link
-            to={`/EditarTurno/${turno.id}`}
+            to={`/EditarTurno/${turno._id}`}
             className="btn btn-outline-primary mx-1 text-center text-decoration-none"
           >
             Modificar
           </Link>
           <button
             className="btn btn-outline-danger mx-1 text-center"
-            onClick={() => handleDelete(turno.id)}
+            onClick={() => handleDelete(turno._id)}
           >
             Eliminar
           </button>

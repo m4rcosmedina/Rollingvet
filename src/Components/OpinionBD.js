@@ -49,7 +49,7 @@ const handleDelete = (id) => {
           {mostrarBoton ? (
             <button
               className="btn btn-outline-danger"
-              onClick={() => handleDelete(comentario.id)}
+              onClick={() => handleDelete(comentario._id)}
             >
               BORRAR
             </button>

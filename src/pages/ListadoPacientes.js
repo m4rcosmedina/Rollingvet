@@ -37,7 +37,7 @@ const ListadoPacientes = ({ pacientes, getApi, URL }) => {
           <tbody>
             {pacientes.map((paciente) => (
               <Paciente
-              key={paciente.id}
+              key={paciente._id}
               paciente={paciente}
               getApi={getApi}
               URL={URL} />
