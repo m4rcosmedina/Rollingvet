@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import "../../CSS/App.css";
 import {
@@ -13,16 +13,33 @@ import es from "date-fns/locale/es";
 import "react-datepicker/dist/react-datepicker.css";
 import { setHours, setMinutes } from "date-fns";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-const EditarTurno = () => {
+const EditarTurno = ({ getTurnos, URLTurnos }) => {
+  //State
+  const [turnoEditado, setTurnoEditado] = useState({});
+  //Referencias
   const [startDate, setStartDate] = useState(
     setHours(setMinutes(new Date(), 0), 8)
   );
-
-  // states
   const [profesional, setProfesional] = useState();
-  const [fechahora, setFechaHora] = useState(0);
-  const [consulta, setConsulta] = useState("");
+  const [nombreMascota, setNombreMascota] = useState("");
+  const [motivoConsulta, setMotivoConsulta] = useState("");
+
+  //Parametro
+  const { id } = useParams();
+
+  //useEffect
+  useEffect(async () => {
+    try {
+      const res = await fetch(`${URLTurnos}/${id}`);
+      const turnoEditado = await res.json();
+      setTurnoEditado(turnoEditado);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
   // funciones
   const handleSubmit = (e) => {
@@ -37,7 +54,10 @@ const EditarTurno = () => {
       <Form className="my-5">
         {handleSubmit}
         <Form.Select
-          onChange={(e) => setProfesional(e.target.value)}
+          value={turnoEditado.profesional}
+          onChange={({ target }) =>
+            setTurnoEditado({ ...turnoEditado, profesional: target.value })
+          }
           className="mb-3"
           required
         >
@@ -72,6 +92,7 @@ const EditarTurno = () => {
             required
             minlength="3"
             maxlength="20"
+            defaultValue={turnoEditado.nombreMascota}
           />
         </InputGroup>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
@@ -82,6 +103,8 @@ const EditarTurno = () => {
             required
             minLength="3"
             maxLength="100"
+            defaultValue={turnoEditado.motivoConsulta}
+            
           />
         </Form.Group>
         <Link

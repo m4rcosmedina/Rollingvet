@@ -38,14 +38,14 @@
       "id": 1
     }
   ],
-  "Turnos": [
+  "ListadoTurnos": [
     {
-      "fechaYhora": 1,
+      "startDate": 1,
       "nombreMascota": "Bazán",
       "motivoConsulta": "Rodrigo"
     },
     {
-      "fechaYhora": 2,
+      "startDate": 2,
       "nombreMascota": "naty",
       "motivoConsulta": "acevedo"
     }

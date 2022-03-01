@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Turno = () => {
+const Turno = ({turno, getTurnos, URLTurnos}) => {
   return (
     <tr>
-      <td>Fecha y Hora</td>
-      <td>Nombre Mascota</td>
-      <td>Motivo Consulta</td>
+      {/* <td>{turno.profesional}</td> */}
+      <td>{turno.startDate}</td>
+      <td>{turno.nombreMascota}</td>
+      <td>{turno.motivoConsulta}</td>
       <div className="d-flex justify-content-center">
         <Link
-          to="/EditarTurno"
+          to={`/EditarTurno/${turno.id}`}
           className="btn btn-outline-primary mx-1 text-center text-decoration-none"
         >
           Modificar
