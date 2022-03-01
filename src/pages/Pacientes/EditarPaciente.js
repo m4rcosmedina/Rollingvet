@@ -27,14 +27,14 @@ const EditarPaciente = ({ URL, getApi }) => {
 
   const navigate = useNavigate();
 
-  useEffect(async () => {
+  useEffect( async () => { 
     try {
       const res = await fetch(`${URL}/${id}`);
       const pacienteApi = await res.json();
       setPaciente(pacienteApi);
     } catch (error) {
       console.log(error);
-    }
+    } // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = (e) => {

@@ -11,16 +11,6 @@
       "id": 1
     },
     {
-      "nombreHum": "Julieta Hurtado con microfono",
-      "email": "juli@juli.com",
-      "tel": "333",
-      "nombre": "robix",
-      "especie": "perrito",
-      "raza": "mas puro",
-      "edad": "3",
-      "id": 3
-    },
-    {
       "nombreHum": "marcos medina",
       "email": "marcosjmedina@gmail.com",
       "tel": "333333",
@@ -31,76 +21,47 @@
       "id": 4
     },
     {
-      "nombreHum": "nnnnnbbbb",
-      "email": "natyacvedo@gmail.com",
-      "tel": "4278218",
-      "nombre": "nnnnn",
-      "especie": "nnnnn",
-      "raza": "nnnnn",
-      "edad": "3",
+      "nombreHum": "natali",
+      "email": "marcosjmedina@gmail.com",
+      "tel": "3333",
+      "nombre": "uma",
+      "especie": "iii",
+      "raza": "iii",
+      "edad": "2",
       "id": 5
-    },
-    {
-      "nombreHum": "nhysvhjas",
-      "email": "natyacvedo@gmail.com",
-      "tel": "4271885",
-      "nombre": "naty",
-      "especie": "gggg",
-      "raza": "ggggg",
-      "edad": "1",
-      "id": 6
     }
   ],
   "user": [
     {
-      "userName": "$2a$12$p6m4F79sDOsKvHOLb.sfrukx7uZNv8XwG8FK0kCr6ym9aqpZE/d4q",
+      "userName": "$2a$12$fyWNTc8d7rPiROR0cVhes.NV7fBM3pRZ0JgPc8U76PyFbBKkWls9u",
       "pass": "$2a$12$O3PHiEwIYzEOSM/KqMBmW.UcZ/Zg56UgLIAzKuRmckPJNwVtqz6lK",
-      "apellido_paterno": "Medina",
-      "nombre": "Marcos",
+      "id": 1
+    }
+  ],
+
+  "ListadoTurnos": [
+    {
+      "startDate": 1,
+      "nombreMascota": "Bazán",
+      "motivoConsulta": "Rodrigo"
+    },
+    {
+      "startDate": 2,
+      "nombreMascota": "naty",
+      "motivoConsulta": "acevedo"
+    }
+  ],
+  "Comentarios": [
+    {
+      "texto": "PRUEBA",
+      "nombreCom": "MARCOS",
       "id": 1
     },
     {
-      "userName": "$2a$12$HxpuKU0Xy8QbnUwe3sfuPOlPjPkq4P7nuAKGdVkRmmF6V1Mh5O72S",
-      "pass": "$2a$12$4bkz8uC3Kb4PkA88bmuqYOmtEGhMG6QTj2btTYhR5TxXK3Z3zjvtq",
+      "texto": "FSDFSDFSDF",
+      "nombreCom": "PRUEBA PRUEBA",
       "id": 2
     }
-  ],
-  "usuarios": [
-    {
-      "id": 1,
-      "apellido_paterno": "Bazán",
-      "nombre": "Rodrigo",
-      "username": "rbazan",
-      "password": "827ccb0eea8a706c4c34a16891f84e7b"
-    },
-    {
-      "id": 2,
-      "apellido_paterno": "Acevedo",
-      "nombre": "Natalia",
-      "username": "nacevedo",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
-    },
-    {
-      "id": 3,
-      "apellido_paterno": "Hurtado",
-      "nombre": "Julieta",
-      "username": "jhurtado",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
-    },
-    {
-      "id": 4,
-      "apellido_paterno": "Carbone",
-      "nombre": "Giuliano",
-      "username": "gcarbone",
-      "password": "75429bf707c8b0b5952ba1bcd4b39378"
-    },
-    {
-      "id": 5,
-      "apellido_paterno": "Medina",
-      "nombre": "Marcos",
-      "username": "mmedina",
-      "password": "11d0e6287202fced83f79975ec59a3a6"
-    }
-  ],
-  "ListadoTurnos": []
+  ]
+
 }

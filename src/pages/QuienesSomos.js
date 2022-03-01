@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/App.css";
-import { Card, CardGroup, Container, Carousel } from "react-bootstrap";
+import { Card, CardGroup, Container } from "react-bootstrap";
 
 const QuienesSomos = () => {
   return (
