@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Container, Form } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import bcrypt from "bcryptjs/dist/bcrypt";
 
@@ -10,7 +10,7 @@ const Login = ({ user, sessionStorage }) => {
 
   let sesionUsuario = false;
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -21,7 +21,8 @@ const Login = ({ user, sessionStorage }) => {
       sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
       Swal.fire("Bienvenido!", "", "success");
       setTimeout(() => {
-        navigate("/admin");
+        //navigate("/admin");
+        window.location.href="/admin"
       }, 2000);
     } else {
       Swal.fire(
