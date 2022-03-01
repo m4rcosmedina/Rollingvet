@@ -102,5 +102,13 @@
       "password": "11d0e6287202fced83f79975ec59a3a6"
     }
   ],
-  "ListadoTurnos": []
+  "ListadoTurnos": [
+    {
+      "profesional": "Dr. Pablo Dominguez",
+      "startDate": "2022-03-16T11:00:31.000Z",
+      "nombreMascota": "River",
+      "motivoConsulta": "Madrid",
+      "id": 1
+    }
+  ]
 }
