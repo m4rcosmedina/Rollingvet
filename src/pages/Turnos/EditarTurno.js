@@ -76,7 +76,7 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
 
     Swal.fire({
       title: "Estas seguro?",
-      text: "Estas por editar un turno",
+      text: "Esta por editar un turno",
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Editar",
