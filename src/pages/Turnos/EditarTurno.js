@@ -3,10 +3,8 @@ import { useState } from "react";
 import "../../CSS/App.css";
 import {
   Form,
-  Button,
   FormControl,
-  InputGroup,
-  FormSelect,
+  InputGroup
 } from "react-bootstrap";
 import DatePicker, { registerLocale } from "react-datepicker";
 import es from "date-fns/locale/es";

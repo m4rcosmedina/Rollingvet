@@ -39,18 +39,7 @@
     }
   ],
 
-  "ListadoTurnos": [
-    {
-      "startDate": 1,
-      "nombreMascota": "Bazán",
-      "motivoConsulta": "Rodrigo"
-    },
-    {
-      "startDate": 2,
-      "nombreMascota": "naty",
-      "motivoConsulta": "acevedo"
-    }
-  ],
+ 
   "Comentarios": [
     {
       "texto": "PRUEBA",
