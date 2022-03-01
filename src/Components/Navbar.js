@@ -3,15 +3,22 @@ import "../CSS/styleNavbar.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoNavbar from "../assets/img/logoNavbar.png";
 import { useState } from "react";
+import Swal from "sweetalert2";
+
 
 const Navegador = () => {
-  let sesionUsuario =
-    JSON.parse(sessionStorage.getItem("stateSession")) || false;
+  let sesionUsuario =JSON.parse(sessionStorage.getItem("stateSession")) || false;
   const [mostrarLog, setMostrarLog] = useState(sesionUsuario);
   const handleClose = () => {
     if (sesionUsuario) {
       sesionUsuario = false;
       sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
+      Swal.fire("Ha cerrado sesion!", "", "success");
+      setTimeout(() => {
+        window.location.href="/login"
+      },
+       2000);
+       setMostrarLog()
     }
   };
 
@@ -38,6 +45,12 @@ const Navegador = () => {
                 className="navbarQuienes text-white fs-5"
               >
                 Quiénes Somos
+              </Nav.Link>
+              <Nav.Link
+                href="/Comentarios"
+                className="navbarContacto text-white fs-5"
+              >
+                Opiniones
               </Nav.Link>
               <Nav.Link
                 href="/Contacto"
