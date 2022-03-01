@@ -31,7 +31,7 @@ const ListadoPacientes = ({ pacientes, getApi, URL }) => {
               <th className="text-center">ESPECIE</th>
               <th className="text-center">RAZA</th>
               <th className="text-center">EDAD</th>
-              <th className="text-center">OPCIONES</th>
+              <th className="text-center">OPCIONE</th>
             </tr>
           </thead>
           <tbody>
