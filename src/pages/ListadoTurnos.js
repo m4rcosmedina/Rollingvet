@@ -1,9 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import { Container, Table } from "react-bootstrap";
 import Turno from "./Turnos/Turno";
 
-const TurnosTable = ({ turnos, getTurnos, URLTurnos }) => {
+const TurnosTable = ({ turnos }) => {
    
   return (
     <div>

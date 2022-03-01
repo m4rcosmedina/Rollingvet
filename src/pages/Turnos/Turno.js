@@ -6,6 +6,7 @@ const Turno = ({turno, getTurnos, URLTurnos}) => {
   const date = new Date(turno.startDate)
   const fecha = date.toLocaleString();
   return (
+    <>
     <tr>
       {/* <td>{turno.profesional}</td> */}
       <td>{fecha}</td>
@@ -22,7 +23,8 @@ const Turno = ({turno, getTurnos, URLTurnos}) => {
           Eliminar
         </button>
       </div>
-    </tr>
+    </tr>   
+    </>
   );
 };
 
