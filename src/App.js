@@ -36,6 +36,7 @@ function App() {
     getApi();
     getWeather();
     getApiUser();
+    getComentarios();
     getTurnos();
   }, []);
 

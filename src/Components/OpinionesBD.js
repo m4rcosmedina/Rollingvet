@@ -3,7 +3,10 @@ import { Form, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "../CSS/App.css";
-import { validarNombreHum,validarTexto } from "./helpers/ValidacionesPacientes";
+import {
+  validarNombreHum,
+  validarTexto,
+} from "./helpers/ValidacionesPacientes";
 import OpinionBD from "./OpinionBD";
 
 const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
@@ -13,7 +16,7 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if ( !validarNombreHum(nombreCom) || !validarTexto(texto) ) {
+    if (!validarNombreHum(nombreCom) || !validarTexto(texto)) {
       Swal.fire("Por favor, ingrese un texto valido");
       return;
     }
@@ -51,9 +54,9 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
   };
 
   return (
-    <div >
+    <div>
       <Container className="py-5 fondoPacientes">
-      <div>
+        <div>
           <h1 className="text-center">¡AYUDANOS A MEJORAR!</h1>
           <hr></hr>
         </div>
@@ -61,8 +64,10 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
         <Form className="my-5" onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label className="text-center">
-             <h5>Los comentarios están sujetos a moderacion.
-               Por favor, sea respetuoso.</h5> 
+              <h5>
+                Los comentarios están sujetos a moderacion. Por favor, sea
+                respetuoso.
+              </h5>
             </Form.Label>
             <Form.Control
               className="py-2 my-2"
@@ -80,7 +85,9 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
           </Form.Group>
           <button className="btn btn-outline-primary">Enviar</button>
         </Form>
-        <h4 className="text-center">OPINIONES,RECOMENDACIONES Y SUGERENCIAS DE NUESTROS CLIENTES</h4>
+        <h4 className="text-center">
+          OPINIONES,RECOMENDACIONES Y SUGERENCIAS DE NUESTROS CLIENTES
+        </h4>
         <hr></hr>
 
         <div>
@@ -102,4 +109,3 @@ const OpinionesBD = ({ comentarios, URLComent, getComentarios }) => {
 };
 
 export default OpinionesBD;
-
