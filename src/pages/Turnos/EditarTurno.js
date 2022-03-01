@@ -57,14 +57,14 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
   // funciones
   const handleSubmit = (e) => {
     e.preventDefault();
-    // validar los campos
-    // if (
-    //   !validarNombreMascota(nombreMascotaRef.current.value) ||
-    //   !validarMotivoConsulta(motivoConsultaRef.current.value)
-    // ) {
-    //   Swal.fire("Ingresa nuevamente los datos");
-    //   return;
-    // }
+    //validar los campos
+    if (
+      !validarNombreMascota(nombreMascotaRef.current.value) ||
+      !validarMotivoConsulta(motivoConsultaRef.current.value)
+    ) {
+      Swal.fire("Ingresa nuevamente los datos");
+      return;
+    }
 
     //guardo el objeto
     const turnoGuardado = {
@@ -76,7 +76,7 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
 
     Swal.fire({
       title: "Estas seguro?",
-      text: "Esta por editar un turno",
+      text: "Estas por editar un turno",
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Editar",
