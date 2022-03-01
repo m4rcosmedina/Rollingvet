@@ -62,6 +62,16 @@
       "nombreCom": "PRUEBA PRUEBA",
       "id": 2
     }
+
+  ],
+  "ListadoTurnos": [
+    {
+      "profesional": "Dr. Pablo Dominguez",
+      "startDate": "2022-03-16T11:00:31.000Z",
+      "nombreMascota": "River",
+      "motivoConsulta": "Madrid",
+      "id": 1
+    }
   ]
 
 }
