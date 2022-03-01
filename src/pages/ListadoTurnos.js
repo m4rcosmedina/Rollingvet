@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Table } from "react-bootstrap";
 import Turno from "./Turnos/Turno";
 
-const TurnosTable = ({ turnos }) => {
-   
+const TurnosTable = ({ turnos, URLTurnos, getTurnos }) => {
   return (
     <div>
       <Container className="py-5">
@@ -21,7 +20,7 @@ const TurnosTable = ({ turnos }) => {
           </thead>
           <tbody>
             {turnos.map((turno) => (
-              <Turno key={turno.id} turno={turno} />
+              <Turno key={turno.id} turno={turno} URLTurnos={URLTurnos} />
             ))}
           </tbody>
         </Table>
@@ -34,7 +33,6 @@ const TurnosTable = ({ turnos }) => {
         <Table bordered hover responsive className="align-middle mt-3">
           <thead>
             <tr>
-
               <th className="text-center">Fecha y Hora</th>
               <th className="text-center">Nombre Mascota</th>
               <th className="text-center">Motivo Consulta</th>
@@ -42,7 +40,12 @@ const TurnosTable = ({ turnos }) => {
           </thead>
           <tbody>
             {turnos.map((turno) => (
-              <Turno key={turno.id} turno={turno} />
+              <Turno
+                key={turno.id}
+                turno={turno}
+                URLTurnos={URLTurnos}
+                getTurnos={getTurnos}
+              />
             ))}
           </tbody>
         </Table>

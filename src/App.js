@@ -27,9 +27,7 @@ function App() {
   const [user, setUser] = useState([]);
   const URLUser = process.env.REACT_APP_API_USER;
   const [turnos, setTurnos] = useState([]);
-  console.log(turnos, "turnos");
   const URLTurnos = process.env.REACT_APP_API_CRUDTURNOS;
-  console.log(URLTurnos, "url Turnos");
   const key = process.env.REACT_APP_KEY;
 
   useEffect(() => {
@@ -43,7 +41,6 @@ function App() {
     try {
       const res = await fetch(URL);
       const pacientesApi = await res.json();
-      console.log(pacientesApi);
       setPacientes(pacientesApi);
     } catch (error) {
       console.log(error);
@@ -63,9 +60,7 @@ function App() {
   const getTurnos = async () => {
     try {
       const res = await fetch(URLTurnos);
-      console.log(res, "res");
       const turnosApi = await res.json();
-      console.log(turnosApi, "turnosapi");
       setTurnos(turnosApi);
     } catch (error) {
       console.log(error);
@@ -89,8 +84,7 @@ function App() {
         wind: `${openWthJson.wind.speed}`,
       };
       setWeather(weather);
-      console.log(weather.city);
-      console.log(weather.temp);
+      
     } catch (error) {
       console.log(error);
     }
@@ -174,7 +168,7 @@ function App() {
               ></ListadoTurnos>
             }
           ></Route>
-          <Route exact path="/admin" element={<Admin></Admin>}></Route>
+          <Route exact path="/admin" element={<Admin/>}></Route>
         </Routes>
       </Router>
       <Footer></Footer>

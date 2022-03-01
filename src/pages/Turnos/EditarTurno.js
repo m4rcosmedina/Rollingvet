@@ -46,7 +46,6 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
     try {
       const res = await fetch(`${URLTurnos}/${id}`);
       const turnoEditado = await res.json();
-      console.log(turnoEditado, "getturnos");
       setTurnoEditado(turnoEditado);
       setStartDate(parseISO(turnoEditado.startDate));
     } catch (error) {
