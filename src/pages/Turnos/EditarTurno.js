@@ -24,7 +24,6 @@ registerLocale("es", es);
 
 const EditarTurno = ({ getTurnos, URLTurnos }) => {
   const [startDate, setStartDate] = useState();
-   
 
   //State
   const [turnoEditado, setTurnoEditado] = useState({});
@@ -68,7 +67,7 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
     //guardo el objeto
     const turnoGuardado = {
       profesional: turnoEditado.profesional,
-      startDate: startDate   ,
+      startDate: startDate,
       nombreMascota: nombreMascotaRef.current.value,
       motivoConsulta: motivoConsultaRef.current.value,
     };

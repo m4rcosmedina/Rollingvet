@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../../CSS/App.css";
 import { Form, FormControl, InputGroup } from "react-bootstrap";
-import DatePicker, {registerLocale} from "react-datepicker";
+import DatePicker, { registerLocale } from "react-datepicker";
 import es from "date-fns/locale/es";
 import "react-datepicker/dist/react-datepicker.css";
 import { setHours, setMinutes, parseISO } from "date-fns";
@@ -20,7 +20,7 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
   const [startDate, setStartDate] = useState(
     setHours(setMinutes(new Date(), 0), 8)
   );
-  
+
   const [nombreMascota, setNombreMascota] = useState("");
   const [motivoConsulta, setMotivoConsulta] = useState("");
 
@@ -91,8 +91,8 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
         </Form.Select>
         <Form.Group>
           <Form.Label>Seleccione fecha y hora </Form.Label>
-          
-           <DatePicker
+
+          <DatePicker
             locale={es}
             selected={startDate}
             onChange={(date) => parseISO(setStartDate(date))}
@@ -106,7 +106,7 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
             minTime={parseISO(setHours(setMinutes(new Date(), 0), 8))}
             maxTime={parseISO(setHours(setMinutes(new Date(), 0), 21))}
             dateFormat="dd/MM/yyyy  hh:mm"
-          ></DatePicker> 
+          ></DatePicker>
         </Form.Group>
         <Form.Label>Nombre de Mascota</Form.Label>
         <InputGroup className="mb-3">

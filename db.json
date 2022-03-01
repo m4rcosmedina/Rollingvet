@@ -102,13 +102,5 @@
       "password": "11d0e6287202fced83f79975ec59a3a6"
     }
   ],
-  "ListadoTurnos": [
-    {
-      "profesional": "Dr. Pablo Dominguez",
-      "startDate": "2022-03-30T12:00:00.000Z",
-      "nombreMascota": "negro",
-      "motivoConsulta": "pulgas",
-      "id": 1
-    }
-  ]
+  "ListadoTurnos": []
 }

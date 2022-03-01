@@ -1,15 +1,14 @@
 //import { tr } from "date-fns/locale";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const Turno = ({ getTurnos, turno, URLTurnos,  }) => {
+const Turno = ({ getTurnos, turno, URLTurnos }) => {
   const date = new Date(turno.startDate);
   const fecha = date.toLocaleString();
 
- 
   console.log(getTurnos, "pasoturnoss");
-  
+
   const handleDelete = (id) => {
     Swal.fire({
       title: "Estas seguro de eliminar ?",
@@ -26,11 +25,9 @@ const Turno = ({ getTurnos, turno, URLTurnos,  }) => {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
           });
-          if  ( res.status === 200) {
-            Swal.fire("Eliminado", 
-             "success"
-             );
-             getTurnos();   
+          if (res.status === 200) {
+            Swal.fire("Eliminado", "success");
+            getTurnos();
           }
         } catch (error) {
           console.log(error);
@@ -38,13 +35,12 @@ const Turno = ({ getTurnos, turno, URLTurnos,  }) => {
       }
     });
   };
-   
-  
+
   return (
     <>
       <tr>
         {/* <td>{turno.profesional}</td> */}
-        
+
         <td>{fecha}</td>
         <td>{turno.nombreMascota}</td>
         <td>{turno.motivoConsulta}</td>

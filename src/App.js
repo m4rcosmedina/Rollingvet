@@ -84,7 +84,6 @@ function App() {
         wind: `${openWthJson.wind.speed}`,
       };
       setWeather(weather);
-      
     } catch (error) {
       console.log(error);
     }
@@ -168,7 +167,7 @@ function App() {
               ></ListadoTurnos>
             }
           ></Route>
-          <Route exact path="/admin" element={<Admin/>}></Route>
+          <Route exact path="/admin" element={<Admin />}></Route>
         </Routes>
       </Router>
       <Footer></Footer>
