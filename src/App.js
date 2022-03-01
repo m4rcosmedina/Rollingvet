@@ -123,7 +123,9 @@ function App() {
           <Route
             exact
             path="/Login"
-            element={<Login user={user} sessionStorage={sessionStorage}></Login>}
+            element={
+              <Login user={user} sessionStorage={sessionStorage}></Login>
+            }
           ></Route>
           <Route
             exact
@@ -180,7 +182,6 @@ function App() {
             }
           ></Route>
 
-
           <Route exact path="/admin" element={<Admin></Admin>}></Route>
           <Route
             exact
@@ -193,7 +194,6 @@ function App() {
               ></OpinionesBD>
             }
           ></Route>
-
         </Routes>
       </Router>
       <Footer></Footer>
