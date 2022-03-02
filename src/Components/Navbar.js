@@ -4,6 +4,8 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoNavbar from "../assets/img/logoNavbar.png";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
+
 
 
 const Navegador = () => {
@@ -26,66 +28,66 @@ const Navegador = () => {
     <>
       <Navbar className="navbarBg" expand="lg">
         <Container fluid>
-          <Nav.Link href="/" className="navbarInicio">
+          <Link to="/" className="navbarInicio">
             {" "}
             <img
               src={LogoNavbar}
               className="imgLogoNavbar"
               alt="logoNavbar"
             />{" "}
-          </Nav.Link>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto textoNavbar text-center">
-              <Nav.Link href="/" className="navbarInicio text-white fs-5">
+              <Link to="/" className="navbarInicio text-white fs-5" style={{ marginLeft: 15 }}>
                 Inicio
-              </Nav.Link>
-              <Nav.Link
-                href="/QuienesSomos"
-                className="navbarQuienes text-white fs-5"
+              </Link>
+              <Link
+                to="/QuienesSomos"
+                className="navbarQuienes text-white fs-5" style={{ marginLeft: 15 }}
               >
                 Quiénes Somos
-              </Nav.Link>
-              <Nav.Link
-                href="/Comentarios"
-                className="navbarContacto text-white fs-5"
+              </Link>
+              <Link
+                to="/Comentarios"
+                className="navbarContacto text-white fs-5" style={{ marginLeft: 15 }}
               >
                 Opiniones
-              </Nav.Link>
-              <Nav.Link
-                href="/Contacto"
-                className="navbarContacto text-white fs-5"
+              </Link>
+              <Link
+                to="/Contacto"
+                className="navbarContacto text-white fs-5" style={{ marginLeft: 15 }}
               >
                 Contactanos
-              </Nav.Link>
+              </Link>
               
               {mostrarLog ? (
-                <Nav.Link
-                  href="/Admin"
-                  className="navbarContacto text-white fs-5"
+                <Link
+                  to="/Admin"
+                  className="navbarContacto text-white fs-5" style={{ marginLeft: 15 }}
                 >
                   {" "}
                   Administración{" "}
-                </Nav.Link>
+                </Link>
               ) : undefined}
               {mostrarLog ? (
-                <Nav.Link href="/Admin" className="text-info  fs-5">
+                <Link to="/Admin" className="text-info  fs-5" style={{ marginLeft: 15 }}>
                   {" "}
                   Sesión iniciada!{" "}
-                </Nav.Link>
+                </Link>
               ) : undefined}
               {mostrarLog ? (
-                <Nav.Link
-                  className="navbarLogin text-white fs-5"
+                <Link
+                  className="navbarLogin text-white fs-5" style={{ marginLeft: 15 }}
                   onClick={handleClose}
                 >
                   {" "}
                   LogOut
-                </Nav.Link>
+                </Link>
               ) : (
-                <Nav.Link href="/login" className="navbarLogin text-white fs-5">
+                <Link to="/login" className="navbarLogin text-white fs-5" style={{ marginLeft: 15 }}>
                   Login
-                </Nav.Link>
+                </Link>
               )}
             </Nav>
           </Navbar.Collapse>
