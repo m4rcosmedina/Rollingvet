@@ -8,3 +8,7 @@
 1. <p>Una pagina de contacto en la cual el usuario deberá ingresar su nombre y apellido, su correo electrónico, su teléfono y el motivo de consulta.
 1. <p>Una pagina de Error404</p>
 1. <p>Una pagina de turnos en la cual el usuario deberá seleccionar uno de los dos profesionales con los que cuenta nuestra veterinaria, la fecha, la hora y el motivo de consulta.</p>
+1.<p> Una pagina dedicada a brindar mas informacion sobre los planes ofrecidos. En ella, el usuario puede completar un formulario, y recibira una respuesta en su correo electronico.</p>
+1.<p>Una pagina dedicada a la carga de pacientes, y la administracion de los mismos. Esta puede ser controlada unicamente despues de iniciarsesion </p>
+1.<p> Una pagina donde se pueden dejar sugerencias</p>
+
