@@ -19,6 +19,16 @@
       "raza": "k",
       "edad": "3",
       "id": 3
+    },
+    {
+      "nombreHum": "Diegooo",
+      "email": "diego@gmail.com",
+      "tel": "4445585",
+      "nombre": "aaa",
+      "especie": "sasa",
+      "raza": "asasa",
+      "edad": "2",
+      "id": 4
     }
   ],
   "user": [
@@ -26,7 +36,7 @@
       "userName": "$2a$12$fyWNTc8d7rPiROR0cVhes.NV7fBM3pRZ0JgPc8U76PyFbBKkWls9u",
       "pass": "$2a$12$O3PHiEwIYzEOSM/KqMBmW.UcZ/Zg56UgLIAzKuRmckPJNwVtqz6lK",
       "id": 1
-    }
+    }    
   ],
   "Comentarios": [
     {

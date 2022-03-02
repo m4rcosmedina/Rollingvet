@@ -105,8 +105,8 @@ function App() {
 
   return (
     <div>
-      <Navbar />
       <Router>
+          <Navbar />
         <Routes>
           <Route
             exact
@@ -114,19 +114,17 @@ function App() {
             element={<Inicio weather={weather}></Inicio>}
           ></Route>
           <Route exact path="*" element={<Error404></Error404>}></Route>
-          <Route exact path="/Contacto" element={<Contacto></Contacto>}></Route>
+          <Route exact path="/Contacto" element={<Contacto />}></Route>
           <Route
             exact
             path="/QuienesSomos"
             element={<QuienesSomos></QuienesSomos>}
           ></Route>
-          <Route exact path="/Planes" element={<Planes></Planes>}></Route>
+          <Route exact path="/Planes" element={<Planes />}></Route>
           <Route
             exact
             path="/Login"
-            element={
-              <Login user={user} sessionStorage={sessionStorage}></Login>
-            }
+            element={<Login user={user} sessionStorage={sessionStorage} />}
           ></Route>
           <Route
             exact
@@ -136,39 +134,29 @@ function App() {
                 pacientes={pacientes}
                 URL={URL}
                 getApi={getApi}
-              ></ListadoPacientes>
+              />
             }
           ></Route>
           <Route
             exact
             path="/CrearPaciente"
-            element={<CrearPaciente URL={URL} getApi={getApi}></CrearPaciente>}
+            element={<CrearPaciente URL={URL} getApi={getApi} />}
           ></Route>
           <Route
             exact
             path="/EditarPaciente/:id"
-            element={
-              <EditarPaciente URL={URL} getApi={getApi}></EditarPaciente>
-            }
+            element={<EditarPaciente URL={URL} getApi={getApi} />}
           ></Route>
           <Route
             exact
             path="/CrearTurno"
-            element={
-              <CrearTurno
-                URLTurnos={URLTurnos}
-                getTurnos={getTurnos}
-              ></CrearTurno>
-            }
+            element={<CrearTurno URLTurnos={URLTurnos} getTurnos={getTurnos} />}
           ></Route>
           <Route
             exact
             path="/EditarTurno/:id"
             element={
-              <EditarTurno
-                URLTurnos={URLTurnos}
-                getTurnos={getTurnos}
-              ></EditarTurno>
+              <EditarTurno URLTurnos={URLTurnos} getTurnos={getTurnos} />
             }
           ></Route>
           <Route
@@ -179,11 +167,11 @@ function App() {
                 turnos={turnos}
                 URLTurnos={URLTurnos}
                 getTurnos={getTurnos}
-              ></ListadoTurnos>
+              />
             }
           ></Route>
 
-          <Route exact path="/admin" element={<Admin></Admin>}></Route>
+          <Route exact path="/admin" element={<Admin />}></Route>
           <Route
             exact
             path="/Comentarios"
@@ -192,12 +180,12 @@ function App() {
                 comentarios={comentarios}
                 URLComent={URLComent}
                 getComentarios={getComentarios}
-              ></OpinionesBD>
+              />
             }
           ></Route>
         </Routes>
+          <Footer />
       </Router>
-      <Footer></Footer>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&family=VT323&display=swap');
