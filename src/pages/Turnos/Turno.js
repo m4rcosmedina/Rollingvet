@@ -6,7 +6,9 @@ import Swal from "sweetalert2";
 const Turno = ({ getTurnos, turno, URLTurnos }) => {
   const date = new Date(turno.startDate);
   const fecha = date.toLocaleString();
+
   console.log(getTurnos, "pasoturnoss");
+
   const handleDelete = (id) => {
     Swal.fire({
       title: "Estas seguro de eliminar ?",
@@ -15,7 +17,7 @@ const Turno = ({ getTurnos, turno, URLTurnos }) => {
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
-      confirmButtonText: "Turno eliminado!",
+      confirmButtonText: "Eliminar!",
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
@@ -24,7 +26,7 @@ const Turno = ({ getTurnos, turno, URLTurnos }) => {
             headers: { "Content-Type": "application/json" },
           });
           if (res.status === 200) {
-            Swal.fire("Eliminado", "success");
+            Swal.fire("Eliminado");
             getTurnos();
           }
         } catch (error) {
@@ -38,19 +40,20 @@ const Turno = ({ getTurnos, turno, URLTurnos }) => {
     <>
       <tr>
         {/* <td>{turno.profesional}</td> */}
+
         <td>{fecha}</td>
         <td>{turno.nombreMascota}</td>
         <td>{turno.motivoConsulta}</td>
         <td className="d-flex justify-content-center">
           <Link
-            to={`/EditarTurno/${turno._id}`}
+            to={`/EditarTurno/${turno.id}`}
             className="btn btn-outline-primary mx-1 text-center text-decoration-none"
           >
             Modificar
           </Link>
           <button
             className="btn btn-outline-danger mx-1 text-center"
-            onClick={() => handleDelete(turno._id)}
+            onClick={() => handleDelete(turno.id)}
           >
             Eliminar
           </button>

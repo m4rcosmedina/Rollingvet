@@ -58,19 +58,7 @@ const Navegador = () => {
               >
                 Contactanos
               </Nav.Link>
-              {mostrarLog ? (
-                <Nav.Link
-                  className="navbarLogin text-white fs-5"
-                  onClick={handleClose}
-                >
-                  {" "}
-                  LogOut
-                </Nav.Link>
-              ) : (
-                <Nav.Link href="/login" className="navbarLogin text-white fs-5">
-                  Login
-                </Nav.Link>
-              )}
+              
               {mostrarLog ? (
                 <Nav.Link
                   href="/Admin"
@@ -86,6 +74,19 @@ const Navegador = () => {
                   Sesión iniciada!{" "}
                 </Nav.Link>
               ) : undefined}
+              {mostrarLog ? (
+                <Nav.Link
+                  className="navbarLogin text-white fs-5"
+                  onClick={handleClose}
+                >
+                  {" "}
+                  LogOut
+                </Nav.Link>
+              ) : (
+                <Nav.Link href="/login" className="navbarLogin text-white fs-5">
+                  Login
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

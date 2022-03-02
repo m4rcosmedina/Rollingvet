@@ -94,7 +94,7 @@ const CrearPaciente = ({ URL, getApi }) => {
             <Form.Label>Nombre y Apellido del Humano</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Ej: Natalia Acevedo"
+              placeholder="Ej: Juan Fernado Quinteros"
               onChange={(e) => setNombreHum(e.target.value)}
             ></Form.Control>
           </Form.Group>
@@ -102,7 +102,7 @@ const CrearPaciente = ({ URL, getApi }) => {
             <Form.Label>Email</Form.Label>
             <Form.Control
               type="Email"
-              placeholder="Ej:naty@obantamail.com"
+              placeholder="Ej:Eltercero@gmail.com"
               onChange={(e) => setEmail(e.target.value)}
             ></Form.Control>
           </Form.Group>
@@ -110,7 +110,7 @@ const CrearPaciente = ({ URL, getApi }) => {
             <Form.Label>Telefono</Form.Label>
             <Form.Control
               type="number"
-              placeholder="444-555"
+              placeholder="+54 091218"
               onChange={(e) => setTel(e.target.value)}
             ></Form.Control>
           </Form.Group>
@@ -126,7 +126,7 @@ const CrearPaciente = ({ URL, getApi }) => {
             <Form.Label>Especie</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Ej:Gato"
+              placeholder="Ej:Burrito"
               onChange={(e) => setEspecie(e.target.value)}
             ></Form.Control>
           </Form.Group>

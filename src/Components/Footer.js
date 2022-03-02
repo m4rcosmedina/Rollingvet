@@ -9,6 +9,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -68,27 +69,27 @@ const Footer = () => {
           <h3 className="Text-center">SEGUINOS!</h3>
           <div>
             <ul className="py-5 iconosFooter">
-              <Nav.Link href="/*">
+              <Link to="/*">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   className="iconoRedes"
                   style={{ fontSize: "4em" }}
                 />
-              </Nav.Link>
-              <Nav.Link href="https://www.instagram.com/rollingvet/">
+              </Link>
+              <Link to="https://www.instagram.com/rollingvet/">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="iconoRedes"
                   style={{ fontSize: "4em" }}
                 />
-              </Nav.Link>
-              <Nav.Link href="/*">
+              </Link>
+              <Link to="/*">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className="iconoRedes"
                   style={{ fontSize: "4em" }}
                 />
-              </Nav.Link>
+              </Link>
             </ul>
           </div>
         </Col>

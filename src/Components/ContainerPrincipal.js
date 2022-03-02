@@ -15,6 +15,8 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 import "../CSS/App.css";
+import { Link } from "react-router-dom";
+
 
 const ContainerPrincipal = () => {
   const [show, setShow] = useState(false);
@@ -153,7 +155,8 @@ const ContainerPrincipal = () => {
               className="movimiento "
             />
             <Card.Body className="text-center py-4">
-              <Nav.Link href="/Planes" className="navbarInicio">
+              <Link to="/planes" className="navbarInicio">
+              {/* <Nav.Link href="/Planes" className="navbarInicio"> */}
                 <Button
                   type="submit"
                   variant="outline-primary"
@@ -161,7 +164,8 @@ const ContainerPrincipal = () => {
                 >
                   QUIERO SABER MÁS
                 </Button>
-              </Nav.Link>
+                </Link>
+              {/* </Nav.Link> */}
             </Card.Body>
           </Card>
           <Card className="">
@@ -173,7 +177,7 @@ const ContainerPrincipal = () => {
               src="https://trello.com/1/cards/61f2fe6cd74cc3228c316da2/attachments/6201995cfa9b5821f4335116/previews/6201995dfa9b5821f433524e/download/promociones-02.png"
             />
             <Card.Body className="text-center py-4">
-              <Nav.Link href="/*" className="navbarInicio">
+              <Link to="/*" className="navbarInicio">
                 <Button
                   type="submit"
                   variant="outline-primary"
@@ -181,7 +185,7 @@ const ContainerPrincipal = () => {
                 >
                   RESERVAR TURNO
                 </Button>
-              </Nav.Link>
+              </Link>
             </Card.Body>
           </Card>
         </CardGroup>

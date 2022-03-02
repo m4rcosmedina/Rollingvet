@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Nav, Col } from "react-bootstrap";
 import "../CSS/App.css";
+import { Link } from "react-router-dom";
+
 
 const Admin = () => {
   return (
@@ -12,43 +14,43 @@ const Admin = () => {
           <Row sm={12} m={6}>
             <Col>
               <h2 className="text-center py-3">CONSOLA PACIENTES</h2>
-              <Nav.Link
+              <Link
                 className="text-center py-3 mx-4 botonesPacientes"
-                href="/Listadopacientes"
+                to="/Listadopacientes"
               >
                 <button className="btn btn-outline-primary">
                   LISTADO DE PACIENTES
                 </button>
-              </Nav.Link>
-              <Nav.Link
+              </Link>
+              <Link
                 className="text-center py-3 mx-4 botonesPacientes"
-                href="/CrearPaciente"
+                to="/CrearPaciente"
               >
                 <button className="btn btn-outline-success">
                   AGREGAR NUEVO PACIENTE
                 </button>
-              </Nav.Link>
+              </Link>
             </Col>
 
             <Col>
               <h2 className="text-center py-3"> CONSOLA TURNOS</h2>
 
-              <Nav.Link
+              <Link
                 className="text-center py-3 mx-4 botonesPacientes"
-                href="/ListadoTurnos"
+                to="/ListadoTurnos"
               >
                 <button className="btn btn-outline-primary">
                   LISTADO DE TURNOS
                 </button>
-              </Nav.Link>
-              <Nav.Link
+              </Link>
+              <Link
                 className="text-center py-3 mx-4 botonesPacientes"
-                href="/CrearTurno"
+                to="/CrearTurno"
               >
                 <button className="btn btn-outline-success">
                   AGREGAR NUEVO TURNO
                 </button>
-              </Nav.Link>
+              </Link>
             </Col>
           </Row>
         </Container>

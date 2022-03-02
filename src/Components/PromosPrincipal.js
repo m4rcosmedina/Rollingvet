@@ -8,6 +8,8 @@ import {
   Nav,
   Button,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 const PromosPrincipal = () => {
   return (
@@ -119,7 +121,7 @@ const PromosPrincipal = () => {
             </CardGroup>
           </Carousel.Item>
         </Carousel>
-        <Nav.Link href="/*" className="text-center my-5">
+        <Link to="/*" className="text-center my-5">
           {" "}
           <Button
             type="submit"
@@ -128,7 +130,7 @@ const PromosPrincipal = () => {
           >
             IR A LA TIENDA!
           </Button>
-        </Nav.Link>
+        </Link>
       </Container>
     </div>
   );
