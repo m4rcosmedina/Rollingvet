@@ -14,8 +14,8 @@ const Login = ({ user, sessionStorage }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      bcrypt.compareSync(logUser, user[0].userName) &&
-      bcrypt.compareSync(logPass, user[0].pass)
+      bcrypt.compareSync(logUser, user[1].userName) &&
+      bcrypt.compareSync(logPass, user[1].pass)
     ) {
       sesionUsuario = true;
       sessionStorage.setItem("stateSession", JSON.stringify(sesionUsuario));
