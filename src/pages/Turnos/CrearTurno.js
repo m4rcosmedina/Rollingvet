@@ -25,12 +25,9 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
   const [motivoConsulta, setMotivoConsulta] = useState("");
 
   const navigate = useNavigate();
-
-  // funciones para crear el turno
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    //validar los campos
     if (
       !validarNombreMascota(nombreMascota) ||
       !validarMotivoConsulta(motivoConsulta)
@@ -39,7 +36,6 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
       return;
     }
 
-    //guardar datos
     const newTurno = {
       profesional,
       startDate,
@@ -91,7 +87,6 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
         </Form.Select>
         <Form.Group>
           <Form.Label>Seleccione fecha y hora </Form.Label>
-
           <DatePicker
             locale={es}
             selected={startDate}
@@ -107,7 +102,6 @@ const CrearTurno = ({ getTurnos, URLTurnos }) => {
             minTime={parseISO(setHours(setMinutes(new Date(), 0), 8))}
             maxTime={parseISO(setHours(setMinutes(new Date(), 0), 21))}
             dateFormat="dd/MM/yyyy  hh:mm"
-
           ></DatePicker>
         </Form.Group>
         <Form.Label>Nombre de Mascota</Form.Label>

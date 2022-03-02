@@ -6,9 +6,7 @@ import Swal from "sweetalert2";
 const Turno = ({ getTurnos, turno, URLTurnos }) => {
   const date = new Date(turno.startDate);
   const fecha = date.toLocaleString();
-
   console.log(getTurnos, "pasoturnoss");
-
   const handleDelete = (id) => {
     Swal.fire({
       title: "Estas seguro de eliminar ?",
@@ -40,7 +38,6 @@ const Turno = ({ getTurnos, turno, URLTurnos }) => {
     <>
       <tr>
         {/* <td>{turno.profesional}</td> */}
-
         <td>{fecha}</td>
         <td>{turno.nombreMascota}</td>
         <td>{turno.motivoConsulta}</td>

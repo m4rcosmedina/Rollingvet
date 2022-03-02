@@ -22,23 +22,14 @@ registerLocale("es", es);
 
 const EditarTurno = ({ getTurnos, URLTurnos }) => {
   const [startDate, setStartDate] = useState();
-
-  //State
   const [turnoEditado, setTurnoEditado] = useState({});
-
-  //Parametro
   const { id } = useParams();
-
-  //Referencias
   const profesionalRef = useRef("");
   const startDateRef = useRef("");
   const nombreMascotaRef = useRef("");
   const motivoConsultaRef = useRef("");
-
-  //navigate
   const navigate = useNavigate();
 
-  //useEffect
   useEffect(async () => {
     try {
       const res = await fetch(`${URLTurnos}/${id}`);
@@ -49,11 +40,8 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
       console.log(error);
     }
   }, []);
-
-  // funciones
   const handleSubmit = (e) => {
     e.preventDefault();
-    //validar los campos
     if (
       !validarNombreMascota(nombreMascotaRef.current.value) ||
       !validarMotivoConsulta(motivoConsultaRef.current.value)
@@ -61,8 +49,6 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
       Swal.fire("Ingresa nuevamente los datos");
       return;
     }
-
-    //guardo el objeto
     const turnoGuardado = {
       profesional: turnoEditado.profesional,
       startDate: startDate,
@@ -118,7 +104,6 @@ const EditarTurno = ({ getTurnos, URLTurnos }) => {
         </Form.Select>
         <Form.Group>
           <Form.Label>Seleccione fecha y hora</Form.Label>
-
           <DatePicker
             value={startDate}
             ref={startDateRef}
